@@ -1,0 +1,2 @@
+[console_scripts]
+compass = compass.cli:app

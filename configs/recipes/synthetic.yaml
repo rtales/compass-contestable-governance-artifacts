@@ -1,0 +1,32 @@
+recipe_id: synthetic_run_v1
+seed: 42
+
+dataset:
+  id: synthetic_v1
+  local_path: data/synthetic_v1/processed
+
+model:
+  type: numpy_linear
+  params:
+    l2: 1e-3
+
+policy:
+  topk:
+    k: 100
+  abstain:
+    enabled: true
+    gamma_entropy: 0.65  # abstain if entropy(score) > gamma
+  ecl:
+    enabled: true
+    constraints:
+      max_delta_eopp_at_k: 0.05
+      min_coverage: 0.60
+  mas:
+    enabled: true
+    tie_breakers: ["min_abs_delta_eopp", "max_utility", "min_abstain_rate"]
+
+outputs:
+  root: outputs
+  decision_brief: true
+  bundle_zip: true
+  decision_packets: true

@@ -1,0 +1,5 @@
+{
+  "recommended_repo_name": "compass-audit-artifacts-pipeline",
+  "description_en_<=250": "Offline, recipe-driven pipeline to reproduce contestable decision-system experiments and emit auditable artifacts (decision packets, policy/dataset hashes, decision briefs, and Overleaf-ready bundles) for governance-first ML research.",
+  "license": "MIT"
+}

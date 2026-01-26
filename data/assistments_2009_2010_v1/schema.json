@@ -1,0 +1,74 @@
+{
+  "X": {
+    "dtype": "float32",
+    "key": "arr_0",
+    "path": "processed/X.npz",
+    "shape": [
+      525534,
+      20
+    ]
+  },
+  "dataset_id": "assistments_2009_2010_v1",
+  "features": {
+    "categorical_one_hot": {
+      "answer_type": [
+        "choice",
+        "string",
+        "numeric",
+        "UNKNOWN"
+      ],
+      "tutor_mode": [
+        "tutor",
+        "test",
+        "UNKNOWN"
+      ],
+      "type": [
+        "Algebra",
+        "Geometry",
+        "Arithmetic",
+        "Other",
+        "UNKNOWN"
+      ]
+    },
+    "numeric": [
+      "attempt_count",
+      "log1p_ms_first_response",
+      "hint_count",
+      "hint_total",
+      "log1p_overlap_time",
+      "opportunity",
+      "original",
+      "skill_id_mod_1000"
+    ]
+  },
+  "format": "npz+npy",
+  "label": {
+    "name": "correct",
+    "positive": 1
+  },
+  "preprocessing": {
+    "encoding_errors": "replace",
+    "encoding_try_order": [
+      "utf-8",
+      "utf-8-sig",
+      "cp1252",
+      "latin-1"
+    ],
+    "on_bad_lines": "skip"
+  },
+  "sensitive": {
+    "name": "school_id_mod2",
+    "note": "Deterministic proxy; not a demographic attribute.",
+    "values": [
+      0,
+      1
+    ]
+  },
+  "y": {
+    "dtype": "int64",
+    "path": "processed/y.npy",
+    "shape": [
+      525534
+    ]
+  }
+}

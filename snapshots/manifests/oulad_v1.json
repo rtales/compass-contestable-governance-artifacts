@@ -1,0 +1,6 @@
+{
+  "dataset_id": "oulad_v1",
+  "mode": "local_process",
+  "raw": "datasets/anonymisedData.zip",
+  "schema_version": 2
+}

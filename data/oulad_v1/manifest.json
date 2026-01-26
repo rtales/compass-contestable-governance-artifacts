@@ -1,0 +1,30 @@
+{
+  "dataset_id": "oulad_v1",
+  "schema_version": 2,
+  "format": "npz+npy",
+  "raw_file": "datasets/anonymisedData.zip",
+  "n": 32593,
+  "d": 54,
+  "label": {
+    "name": "success",
+    "definition": "1 if final_result in {Pass, Distinction} else 0"
+  },
+  "sensitive": {
+    "name": "gender",
+    "definition": "F=0, M=1"
+  },
+  "files": {
+    "processed/X.npz": {
+      "sha256": "2e01c6a20b0bd13ff3b1083ecce07d6075fc10299d86311331b2e88969bc41cf"
+    },
+    "processed/y.npy": {
+      "sha256": "470809c3304c0d49f83003da0448afefd1404b6ad64fcb2b31eac4054105aedc"
+    },
+    "processed/sensitive.npy": {
+      "sha256": "0fd24c5c42b319dd457d0c9ce383543c4c7a36d762505d0e1f9d42d608834d63"
+    }
+  },
+  "raw_file_basename": "anonymisedData.zip",
+  "raw_source": "OULAD dataset (anonymisedData.zip). See the OULAD dataset page for acquisition terms.",
+  "raw_sha256": null
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Compass Artifacts: Recipe-driven reproducible governance outputs"
+type: software
+authors:
+  - family-names: "Matos"
+    given-names: "Tales"
+  - family-names: "Contributors"
+    given-names: "Compass Artifacts"
+version: 0.1.0
+date-released: 2026-01-25

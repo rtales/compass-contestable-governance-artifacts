@@ -1,0 +1,6 @@
+{
+  "dataset_id": "assistments_2009_2010_v1",
+  "mode": "local_process",
+  "raw": "datasets/skill_builder_data.csv",
+  "schema_version": 2
+}

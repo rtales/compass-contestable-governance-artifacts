@@ -1,0 +1,23 @@
+# Offline snapshot catalog.
+# All datasets are assumed to exist locally under ./datasets (not committed).
+
+snapshots:
+  - dataset_id: synthetic_v1
+    mode: local_generate
+    unpack_dir: data/synthetic_v1
+    schema_version: 2
+    notes: "Deterministic synthetic dataset generated locally."
+
+  - dataset_id: oulad_v1
+    mode: local_process
+    raw_path: datasets/anonymisedData.zip
+    unpack_dir: data/oulad_v1
+    schema_version: 2
+    notes: "Process OULAD raw zip into a stable processed dataset folder."
+
+  - dataset_id: assistments_2009_2010_v1
+    mode: local_process
+    raw_path: datasets/skill_builder_data.csv
+    unpack_dir: data/assistments_2009_2010_v1
+    schema_version: 2
+    notes: "Process ASSISTments Skill Builder 2009–2010 CSV into a stable processed dataset folder."

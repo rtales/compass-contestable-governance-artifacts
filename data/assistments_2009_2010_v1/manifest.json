@@ -1,0 +1,9 @@
+{
+  "n_features": 20,
+  "n_rows_processed": 525534,
+  "n_rows_raw": 525534,
+  "raw_sha256": "f22e3fb7872c1784ce93b0f9ebabbe0cbcac4f896fd8b4a11667b9715d77dbdc",
+  "source_raw": "datasets/skill_builder_data.csv",
+  "raw_file_basename": "skill_builder_data.csv",
+  "raw_source": "ASSISTments 2009-2010 skill_builder_data.csv (see dataset source/terms)."
+}

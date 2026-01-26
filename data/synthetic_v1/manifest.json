@@ -1,0 +1,19 @@
+{
+  "dataset_id": "synthetic_v1",
+  "schema_version": 1,
+  "format": "csv",
+  "seed": 42,
+  "n": 5000,
+  "d": 20,
+  "files": {
+    "X.csv": {
+      "sha256": "d7e43ca74ba7b3bd322f64ece3d254021bfe9c3787ffd67407aea3d1f7a21dd9"
+    },
+    "y.csv": {
+      "sha256": "a573c56277db05cac0f51e03e97338e2cf5f1e10e14fddc3e3fc8022e70ea954"
+    },
+    "sensitive.csv": {
+      "sha256": "b1fc9ae12e8f7f73e3fbf61806991cb37b2df2a7ec65ae0b7b820fa0ff7136c3"
+    }
+  }
+}

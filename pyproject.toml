@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compass-artifacts"
+version = "0.1.0"
+description = "Recipe-driven reproducible pipeline producing auditable artifacts (decision briefs, bundles, packets)."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [{name="Tales Matos"}]
+dependencies = [
+  "pyyaml>=6.0.1",
+  "typer>=0.12.3",
+  "pydantic>=2.7.0",
+  "rich>=13.7.1",
+  "numpy>=2.0.0",
+]
+
+[project.optional-dependencies]
+core = [
+  "pytest>=8.2.0",
+  "scikit-learn>=1.5.0",
+]
+full = [
+  "pytest>=8.2.0",
+  "pandas>=2.2.2",
+  "scikit-learn>=1.5.0",
+  "matplotlib>=3.9.0",
+  "reportlab>=4.2.0",
+  "pyarrow>=16.1.0",
+]
+paper = [
+  "pytest>=8.2.0",
+  "reportlab>=4.2.0",
+]
+
+[project.scripts]
+compass = "compass.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
