@@ -1,3 +1,6 @@
+task:
+  description: Student success - positive=Pass/Distinction; descending predicted success; not early warning
+
 recipe_id: oulad_run_v1
 seed: 42
 
@@ -13,9 +16,14 @@ model:
     C: 1.0
 
 policy:
+  schema_version: "2.0"
+  mode: allocation
+  descending: true
   topk:
     k: 500
   abstain:
+    unit: bits
+    scope: global
     enabled: true
     gamma_entropy: 0.60
   ecl:
@@ -24,6 +32,7 @@ policy:
       max_delta_eopp_at_k: 0.05
       min_coverage: 0.50
   mas:
+    tolerances: {}
     enabled: true
     tie_breakers: ["min_abs_delta_eopp", "max_utility", "min_abstain_rate"]
 

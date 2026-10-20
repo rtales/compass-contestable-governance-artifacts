@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 import json
+import pickle
+import subprocess
 from datetime import datetime, timezone
 
 import yaml
@@ -13,18 +15,19 @@ from compass.utils.hashing import sha256_bytes
 from compass.data.validation import validate_processed_dataset
 from compass.data.io import load_processed
 from compass.models.registry import build_model
-from compass.policy.decision import apply_topk_with_abstain
-from compass.metrics.utility import utility_at_k, coverage_rate, abstain_rate
-from compass.metrics.fairness import delta_eopp_at_k
-from compass.metrics.contestability import ContestabilityScorecard
+from compass.policy.decision import apply_policy
+from compass.policy.governance import audit_decisions, assess_constraints, canonical_bytes, digest, evaluate_policy_candidates
+from compass.artifacts.validation import verify_run
 from compass.artifacts.packets import emit_decision_packets
 from compass.reporting.decision_brief import write_decision_brief_md, try_write_decision_brief_pdf
 from compass.reporting.bundle import build_paper_bundle
 
 
-def _git_sha() -> str:
-    # Offline execution: do not invoke git commands.
-    return "LOCAL"
+def _git_sha() -> str | None:
+    try:
+        return subprocess.check_output(["git", "-C", str(Path(__file__).resolve().parents[3]), "rev-parse", "HEAD"], text=True).strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
 
 
 def run_recipe(recipe_path: Path) -> Path:
@@ -64,46 +67,52 @@ def run_recipe(recipe_path: Path) -> Path:
 
     # Policy apply
     pol = recipe.get("policy", {})
+    pol.setdefault("schema_version", "2.0")
+    pol.setdefault("mode", "allocation")
+    pol.setdefault("descending", True)
+    pol.setdefault("abstain", {}).setdefault("unit", "bits")
+    pol["abstain"].setdefault("scope", "global")
+    case_ids = [f"{dataset_id}:row:{int(i):012d}" for i in te]
     k = int(pol.get("topk", {}).get("k", 100))
     abst_cfg = pol.get("abstain", {})
     gamma = abst_cfg.get("gamma_entropy") if abst_cfg.get("enabled", True) else None
 
-    dec = apply_topk_with_abstain(scores, k=k, gamma_entropy=gamma)
+    selection_report = evaluate_policy_candidates(scores, yte, ste, pol, case_ids)
+    if pol.get("mas", {}).get("enabled", True) and selection_report["selected"] is not None:
+        pol = selection_report["selected"]["policy"]
+    dec = apply_policy(scores, pol, case_ids)
     selected = dec["selected"]
     abstain = dec["abstain"]
     entropy = dec["entropy"]
 
-    # Metrics
-    util = utility_at_k(yte, selected)
-    cov = coverage_rate(abstain)
-    abst = abstain_rate(abstain)
-    deopp = delta_eopp_at_k(yte, selected, ste)
-
-    # ECL check (simple constraints)
-    ecl = pol.get("ecl", {})
-    issues = []
-    if ecl.get("enabled", False):
-        c = ecl.get("constraints", {})
-        max_deopp = float(c.get("max_delta_eopp_at_k", 1.0))
-        min_cov = float(c.get("min_coverage", 0.0))
-        if abs(deopp) > max_deopp:
-            issues.append(f"ECL violation: |ΔEOpp@K|={abs(deopp):.4f} > {max_deopp}")
-        if cov < min_cov:
-            issues.append(f"ECL violation: coverage={cov:.4f} < {min_cov}")
+    # Retrospective audit, separate from authorization of any deployment output.
+    audit = audit_decisions(yte, ste, dec["decision"], dec["eligible"])
+    constraints = pol.get("ecl", {}).get("constraints", {}) if pol.get("ecl", {}).get("enabled", False) else {}
+    ecl_result = assess_constraints(audit, constraints)
+    issues = ecl_result["violations"]
+    util, cov, abst, deopp = (audit[key] for key in ["utility_at_k", "coverage", "abstain_rate", "delta_eopp_at_k"])
 
     # Output directory (stable run id)
     gitsha = _git_sha()
-    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    run_id = f"{recipe.get('recipe_id','run')}_{dataset_id}_seed{seed}_{ts}_{gitsha[:7]}"
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    run_id = f"{recipe.get('recipe_id','run')}_{dataset_id}_seed{seed}_{ts}_{(gitsha or 'snapshot')[:7]}"
     out_root = Path(recipe.get("outputs", {}).get("root", "outputs"))
     run_dir = out_root / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
+    (run_dir / "selection_report.json").write_bytes(canonical_bytes(selection_report))
+
     # Run metadata
     policy_yaml = yaml.safe_dump(pol, sort_keys=True)
-    policy_hash = sha256_bytes(policy_yaml.encode("utf-8"))
+    policy_hash = digest(pol)
+    (run_dir / "policy.json").write_bytes(canonical_bytes(pol))
+    (run_dir / "dataset_manifest.json").write_bytes((dataset_dir / "manifest.json").read_bytes())
+    model_bytes = pickle.dumps(model, protocol=5)
+    (run_dir / "model.pkl").write_bytes(model_bytes)
     dataset_manifest_hash = sha256_bytes((dataset_dir / "manifest.json").read_bytes())
-    model_hash = sha256_bytes(json.dumps(model_cfg, sort_keys=True).encode("utf-8"))
+    model_hash = sha256_bytes(model_bytes)
+    source_root = Path(__file__).resolve().parents[1]
+    source_files = {str(f.relative_to(source_root)): sha256_bytes(f.read_bytes()) for f in sorted(source_root.rglob("*.py"))}
 
     env = collect_env_info().to_dict()
     meta = {
@@ -116,6 +125,14 @@ def run_recipe(recipe_path: Path) -> Path:
         "dataset_manifest_hash": dataset_manifest_hash,
         "policy_hash": policy_hash,
         "model_hash": model_hash,
+        "model_config_hash": digest(model_cfg),
+        "source_files": source_files,
+        "source_tree_hash": digest(source_files),
+        "case_ids": case_ids,
+        "schema_version": "2.0",
+        "entropy_unit": "bits",
+        "execution_scope": "retrospective_candidate_evaluation",
+        "task": recipe.get("task", {}),
         "seed": seed,
         "created_utc": ts,
         "env": env,
@@ -129,23 +146,24 @@ def run_recipe(recipe_path: Path) -> Path:
             packets_dir, scores, selected, abstain, entropy, yte, ste, meta
         )
 
-    # Contestability scorecard (minimal)
-    scorecard = ContestabilityScorecard(
-        replayable=True,
-        has_policy_hash=True,
-        has_dataset_manifest=True,
-        packet_complete=True,
-    ).to_dict()
-
-    metrics = {
-        "utility_at_k": util,
-        "coverage": cov,
-        "abstain_rate": abst,
-        "delta_eopp_at_k": deopp,
-        "ecl_issues": issues,
-        "contestability_scorecard": scorecard,
-    }
-    (run_dir / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    scorecard = verify_run(run_dir)
+    metrics = {**audit, "ecl_issues": issues, "ecl": ecl_result,
+               "contestability_scorecard": scorecard}
+    if not scorecard["replayable"]:
+        ecl_result = {"status": "insufficient_evidence", "deployment_authorized": False,
+                      "violations": [*issues, "artifact_validation_failed"]}
+        metrics["ecl"] = ecl_result
+    # Packets remain candidate evidence even if the export gate is closed.
+    (run_dir / "deployment_gate.json").write_bytes(canonical_bytes(ecl_result))
+    if ecl_result["deployment_authorized"]:
+        exported = [{"case_id": case_id, "decision": str(state)}
+                    for case_id, state in zip(case_ids, dec["decision"])]
+        (run_dir / "authorized_decisions.json").write_bytes(canonical_bytes(exported))
+    else:
+        (run_dir / "review_required.json").write_bytes(canonical_bytes({
+            "case_ids": case_ids, "reasons": ecl_result["violations"],
+            "delivery_status": "not_connected_to_human_queue"}))
+    (run_dir / "metrics.json").write_bytes(canonical_bytes(metrics))
 
     # Decision brief
     brief = {
@@ -159,17 +177,18 @@ def run_recipe(recipe_path: Path) -> Path:
             "dataset_manifest_hash": dataset_manifest_hash,
         },
         "metrics": {
-            "utility_at_k": round(util, 6),
+            "utility_at_k": round(util, 6) if util is not None else None,
             "coverage": round(cov, 6),
             "abstain_rate": round(abst, 6),
-            "delta_eopp_at_k": round(deopp, 6),
+            "delta_eopp_at_k": round(deopp, 6) if deopp is not None else None,
             "contestability_score": scorecard["score"],
             "contestability_max": scorecard["max_score"],
         },
         "policy_yaml": policy_yaml,
         "notes": [
             "This brief is auto-generated for decision support and auditability.",
-            "ECL constraints are checked deterministically; infeasibility/violations are reported as issues.",
+            "Candidate metrics are retrospective. Consult deployment_gate.json before any operational use.",
+            "No human queue is connected; review_required.json records a need, not a delivered review.",
             "Metrics are computed on a deterministic 80/20 shuffled split.",
         ] + (issues if issues else []),
     }

@@ -3,11 +3,11 @@ from __future__ import annotations
 import numpy as np
 
 
-def utility_at_k(y_true: np.ndarray, selected: np.ndarray) -> float:
-    # fraction of positives among selected (precision-like). If none selected, 0.
+def utility_at_k(y_true: np.ndarray, selected: np.ndarray) -> float | None:
+    # Undefined when selection is empty; never report fabricated precision.
     idx = np.where(selected)[0]
     if idx.size == 0:
-        return 0.0
+        return None
     return float(np.mean(y_true[idx]))
 
 

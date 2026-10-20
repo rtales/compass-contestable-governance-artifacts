@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Recomputed entropy validation. ECE uses 10 equal-width probability bins including score 1; Spearman uses average ranks for ties. Both baseline and temperature stress use entropy in bits.}
+\label{tab:uncertainty_proxy_validation}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & ECE & $\rho$ & ECE ($T=2$) & $\rho$ ($T=2$) \\
+\midrule
+ASSISTments & 0.0271 & 0.9789 & 0.0905 & 0.9818 \\
+OULAD & 0.0128 & 0.4166 & 0.0703 & 0.4166 \\
+Synthetic & 0.2914 & 0.6774 & 0.2398 & 0.6774 \\
+\bottomrule
+\end{tabular}
+\end{table}

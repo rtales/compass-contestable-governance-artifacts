@@ -1,0 +1,30 @@
+\section{Notation and Core Definitions}
+\label{sec:notation}
+
+Table~\ref{tab:notation} summarizes the symbols used throughout the paper. We emphasize that all fairness metrics are defined \emph{under the deployed decision rule} (Top-$K$ with abstention), not merely on raw scores.
+
+\begin{table}[t]
+\centering
+\caption{Notation summary.}
+\label{tab:notation}
+\begin{tabular}{ll}
+\toprule
+Symbol & Meaning \\
+\midrule
+$n$ & number of instances in a dataset split \\
+$x_i, y_i, a_i$ & features, label, sensitive attribute for instance $i$ \\
+$f_\theta$ & predictive model with parameters $\theta$ \\
+$s_i$ & score $s_i=f_\theta(x_i)\in[0,1]$ \\
+$u_i$ & predictive entropy in bits, $0\leq u_i\leq1$ \\
+$\gamma$ & abstention threshold (eligibility) \\
+$\mathcal{E}_\gamma$ & eligible set $\{i: u_i\le \gamma\}$ \\
+$K$ & selection capacity ceiling (Top-$K$) \\
+$\text{TopK}(\cdot)$ & selected intervention set under Top-$K$ \\
+$C$ & automation coverage $(n_{\mathrm{sel}}+n_{\mathrm{rej}})/n$ \\
+$\Delta_{\mathrm{EOpp@K}}$ & equality of opportunity gap under Top-$K$ \\
+$\Delta_{\mathrm{DP@K}}$ & demographic parity gap under Top-$K$ \\
+$H$ & explanation entropy proxy (global) \\
+$d_{\mathrm{eff}}$ & effective feature count proxy \\
+\bottomrule
+\end{tabular}
+\end{table}

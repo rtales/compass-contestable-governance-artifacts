@@ -2,6 +2,24 @@
 
 This repository provides a **recipe-driven** pipeline that emits **auditable artifacts** (decision packets, manifests, briefs, and Overleaf-ready bundles) for contestable decision-system experiments.
 
+## Governance and manuscript revision — 20 October 2026
+
+The reference implementation now uses explicit binary entropy in **bits**, stable case-ID tie rules, feasible Pareto filtering, deterministic policy selection, persisted evidence verification, and an authorization gate for infeasible or unverifiable candidates. The implemented tasks predict interaction correctness or student success; early-warning intervention targeting remains a separate proposed use.
+
+- [Implementation changes and scope](docs/REVISION_V2.md)
+- [Revised article: PDF](paper/artigo_revisado.pdf), [editable Word](paper/artigo_acm_corrigido.docx), and [LaTeX source](paper/latex/main.tex)
+- [Article files and typesetting limitations](paper/README.md)
+- [Frozen reproduction package and checksums](reproduction/2026-10-20/README.md)
+- [Publication inventory and verification](docs/PUBLICATION_2026-10-20.md)
+
+The software tests cover policy semantics, deterministic selection, evidence tampering and authorization behavior. Historical model scores were not refit. Participant-level study responses are not distributed in this update; the included study results are aggregates. No connected human-review queue, medical-exception engine, prospective fairness guarantee or measured educational benefit is claimed.
+
+Run application checks from the repository root:
+
+```bash
+PYTHONPATH=src python -m pytest
+```
+
 ## Key idea: `data/` is a versioned snapshot artifact
 To maximize reproducibility, this repo versions **processed dataset snapshots** under `data/` (with checksums and schema). This enables **fully offline reproduction** without requiring raw dataset downloads.
 
@@ -87,6 +105,8 @@ At minimum, record:
 ## Documentation
 - Reproducibility contract: `docs/REPRODUCIBILITY.md`
 - Snapshot policy: `docs/SNAPSHOTS.md`
+- Governance revision: `docs/REVISION_V2.md`
+- Manuscript and public inventory: `docs/PUBLICATION_2026-10-20.md`
 
 ---
 

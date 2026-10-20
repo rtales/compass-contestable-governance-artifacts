@@ -16,11 +16,16 @@ def emit_decision_packets(out_dir: Path, scores: np.ndarray, selected: np.ndarra
     policy_hash = run_meta.get("policy_hash", "")
     dataset_manifest_hash = run_meta.get("dataset_manifest_hash", "")
     model_hash = run_meta.get("model_hash", "")
+    case_ids = run_meta.get("case_ids", list(range(len(scores))))
 
     with open(packets_path, "w", encoding="utf-8") as f:
         for i in range(scores.shape[0]):
             pkt = {
-                "case_id": int(i),
+                "schema_version": "2.0",
+                "case_id": case_ids[i],
+                "entropy_unit": "bits",
+                "entropy_epsilon": 1e-7,
+                "replay_scope": "fixed_scores_topk",
                 "score": float(scores[i]),
                 "entropy": float(entropy[i]),
                 "decision": "abstain" if bool(abstain[i]) else ("select" if bool(selected[i]) else "reject"),

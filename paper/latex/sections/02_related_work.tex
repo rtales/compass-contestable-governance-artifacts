@@ -1,0 +1,35 @@
+\section{Related Work}
+\label{sec:related}
+
+FAccT research has repeatedly shown that ``getting the metric right'' is insufficient when systems are embedded in institutions with asymmetric power, weak recourse, and opaque accountability.
+We position \compa-\ecl-\mas at the intersection of (i) contestability and procedural justice for algorithmic systems, (ii) principle-to-practice governance, and (iii) model-level fairness tooling and trade-offs.
+
+\input{tables/positioning}
+
+\subsection{Contestability, Due Process, and Institutional Accountability}
+A central FAccT concern is whether affected people can \emph{understand, challenge, and obtain remedy} when algorithmic systems shape life chances.
+Citron and Pasquale argue that scoring systems can erode due process by obscuring decision logic and shifting power toward institutions \cite{CitronPasquale2014ScoredSociety}.
+Subsequent work emphasizes that accountability is not a property of an algorithm alone, but of the socio-technical system: what is documented, what is disclosed, who can audit, and what remedies exist \cite{Wieringa2020AccountFor,Metcalf2021AIA,Selbst2019Abstraction}.
+In HCI and socio-technical design, contestability-by-design frameworks articulate practices that keep systems responsive to human intervention throughout the lifecycle \cite{Alfrink2023ContestableAI}.
+
+Our contribution aligns with this line: we treat \emph{audit artifacts} (policy manifests, constraint reports, decision traces) as first-class outputs required for contestation and institutional oversight.
+
+\subsection{From Principle-Level Ethics to Operational Governance}
+Major AI governance frameworks---NIST AI RMF, OECD AI Principles, UNESCO, and EU Trustworthy AI guidelines---converge on high-level desiderata (fairness, transparency, accountability, robustness) but remain implementation-agnostic \cite{NISTAIRMF2023,OECD2019AI,UNESCO2021AI,EUHLEG2019Trustworthy}.
+Scholars have highlighted the ``last-mile'' gap between ethical principles and operational mechanisms \cite{Dignum2018EthicsSpecialIssue,Mittelstadt2019Principles}.
+We build on this insight, but focus on a specific public-sector domain where legitimacy and recourse are central: educational decision support.
+
+\subsection{Fairness Tooling, Trade-offs, and Preference-Based Selection}
+Model-level toolkits such as Fairlearn and Aequitas provide practical metrics, mitigation strategies, and reporting to support fairness evaluation \cite{Weerts2023Fairlearn,Saleiro2018Aequitas}.
+However, they do not by themselves specify institutional procedures for contestation, nor do they enforce policy versioning or create audit-ready decision artifacts.
+Trade-offs between utility, fairness, and other constraints are unavoidable; preference-based selection over Pareto-feasible candidates has been explored in multiple forms, including ``fairness without harm'' style decision rules and policy-oriented selection \cite{Ustun2019FairnessWithoutHarm}.
+Our system-level contribution is to embed such choices into \emph{versioned policy} and to couple selection with a procedural safeguard (abstention to human review) and an artifact trail.
+
+\subsection{Algorithmic Systems in Education}
+Educational prediction systems (early warning, risk scoring, intervention targeting) are widespread, but educational data often contains measurement and historical biases that complicate fairness claims \cite{BakerHawn2022AlgorithmicBiasEducation}.
+Our setting therefore emphasizes governance practices (documentation, auditability, and recourse) in addition to model metrics.
+
+
+\paragraph{Abstention, selective prediction, and distribution-free uncertainty.}
+Our triage setting uses abstention (``reject option'') to route uncertain cases to humans. This idea has a long history in statistical decision theory (e.g., Chow's rule) and has been revisited in modern \emph{selective classification} and distribution-free uncertainty quantification (e.g., SelectiveNet; conformal prediction).\cite{Chow1970Reject,Geifman2019SelectiveNet,Angelopoulos2021Conformal} These lines of work motivate two design choices in our system: (i) treating high abstention as a \emph{governance signal} rather than a silent knob, and (ii) recording the abstention policy in a replayable artifact so that institutions can audit when and why automation deferred to humans.
+

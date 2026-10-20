@@ -7,7 +7,7 @@ def tpr_at_k(y_true: np.ndarray, selected: np.ndarray, group: np.ndarray, group_
     g = group == group_value
     positives = np.where(g & (y_true == 1))[0]
     if positives.size == 0:
-        return 0.0
+        return float("nan")
     return float(np.mean(selected[positives]))
 
 

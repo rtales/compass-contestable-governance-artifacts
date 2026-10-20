@@ -1,0 +1,1056 @@
+{
+  "snapshot_id": "166012d5587ca9c66afc177f808691f4adc109d2050a58f23c1ff4110a0ae1b0",
+  "files": [
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/README.md",
+      "sha256": "0f0964a5d43340931bae151f69e0df3883f57081bab3ebead6f29bd01aea4740",
+      "bytes": 1241
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/README_reproduce.md",
+      "sha256": "37ebf442b7892c8766608671072e5a70f550ee686cf807de00b5456243fb8682",
+      "bytes": 1135
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/SUBMISSION_CHECKLIST.md",
+      "sha256": "91d9eed01648ff999d6e4311e99a0ba30fdb8c52c7e020da023146a480e33d81",
+      "bytes": 957
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/appendices/appendix_A.tex",
+      "sha256": "3e5018b6614da58190c39999a70a87f9fbd421e69069932883e7515a841e5cc3",
+      "bytes": 2469
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/appendices/appendix_B.tex",
+      "sha256": "4fa4fa30e9878ea0010e240ee0d7100d8c735261a0d91503d876d2e0a4e1cc56",
+      "bytes": 1591
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/appendices/appendix_C.tex",
+      "sha256": "74634731a4e57534e02ef99e21ffe393897b6ec44ded436c7df46bd02a3bfcbb",
+      "bytes": 1010
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/appendices/appendix_D.tex",
+      "sha256": "1c732bbf9eee0f7c4020b673d596109b1b6e8e4f91eaf213ace983f67ec202f9",
+      "bytes": 2616
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/appendices/appendix_E.tex",
+      "sha256": "84de7a4468504430d36876228f85f7081b0a867443eb96a62311d2f1253dc5a5",
+      "bytes": 2765
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/_runtime.py",
+      "sha256": "e823125b1a7f081fd6a569f5a79086e146dfa416c632f57d62770acfc89bf68e",
+      "bytes": 869
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/decol_example.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/generate_sweeps.py",
+      "sha256": "0befd13b7d8e339d43096ea8093a3bc2bca7982ce9d5f8f6ea1e5bb03bb2cc13",
+      "bytes": 1039
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/plot_pareto.py",
+      "sha256": "d8e8b5dac3d2de923b60a68e2ca776c08dc574cdb2ab61dde091795ae570d929",
+      "bytes": 2190
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/replay_and_measure.py",
+      "sha256": "3dde4f5cbe1bcd561d015a9fafe7b6ba818b6a88e2467141adbe0cf266fffde3",
+      "bytes": 1273
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/stability_eval.py",
+      "sha256": "6ae60f4dcdc0ce471b1208b6f7d5de391749bd08a28c1edcd6e8fc7b2264bdb2",
+      "bytes": 1301
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/code/validate_uncertainty_proxy.py",
+      "sha256": "2a5f3921773181ea50a617d8149788f5a891227d1086cea1c32751cad91ec3d6",
+      "bytes": 1085
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/figures/human_label_accuracy_by_case.png",
+      "sha256": "7487335ccbfa1fff7a00fad1df132c70b19089e24d7ef5ac45be5f8be036b67b",
+      "bytes": 43563
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/main.tex",
+      "sha256": "275f89a106a9c8d1514fbd122e79026bfa876ab0af32881e25a6d5779c286cdb",
+      "bytes": 5141
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C1.json",
+      "sha256": "32f9ebbb1ba52f0a66dc14cc6c1143bc87a313444bcb97652ecd28ed82c2283a",
+      "bytes": 772
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C2.json",
+      "sha256": "efa28ddfca11dad044df0eef1d0beb22f342d5428eec270c4bf6db78e30582b9",
+      "bytes": 801
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C3.json",
+      "sha256": "28cbc474077dd58da3e51477722778eecff8ab06b705b687a052f2363772c930",
+      "bytes": 714
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C4.json",
+      "sha256": "09ab8a9cda80c8b8b8aa2e67936759fce5c720cc9c9671676c3520918d54e4bb",
+      "bytes": 739
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C5.json",
+      "sha256": "f55124880c2887a77fa693c906f17164efd481ed162535802439697eb4fde5fe",
+      "bytes": 761
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C6.json",
+      "sha256": "d9153ba68c5dd485fd9dabb5763edc583c20ba6d41dbdc3dc3ab5a03a88f94a2",
+      "bytes": 832
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C7.json",
+      "sha256": "ffc6c852666f006af5a9afb44fb9c496be8e9ada8ef93d192a07ae285c046413",
+      "bytes": 752
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/case_C8.json",
+      "sha256": "09df2b073023dc7534fb94e7ec2f15a3218f276aec43bc30a9b893392568aeff",
+      "bytes": 787
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/appeals/cases_index.json",
+      "sha256": "87b67d1ba0cc14d18163362117c460a2c7cb2c942d4c04f12d0d222f5718e4ec",
+      "bytes": 1059
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/baselines/baseline_matrix.csv",
+      "sha256": "c3de1e283d7b11b593122136050c81d34f9fa9d2572c266c8e9e5f967c904f2f",
+      "bytes": 735
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/claim_evidence/claim_evidence_map.csv",
+      "sha256": "1cf6204414be37c3db1a6c000e7e5d925e4a21cf54a2589ee0ae5daaafe75ca3",
+      "bytes": 1390
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/contestability/contestability_metrics.csv",
+      "sha256": "ca1ba22ccec876d4e691532fb8a8cb32de77cf58477ade5e6a67b3a26803d171",
+      "bytes": 454
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/contestability/contestability_protocol.md",
+      "sha256": "6db3f1c53159d9f2f663fa9e7583698b6601cd08758cb380bc527b8c8004d8a6",
+      "bytes": 1295
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/policy/policy_profile.yaml",
+      "sha256": "512bd7f587abd2b89e84ba4ce2d37a8d44b3d708ac657d8050a47dd094303cfe",
+      "bytes": 351
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/policy/policy_schema.json",
+      "sha256": "e451284f358481234ba6774894d83a8efda6987e371bc4a6a024f249ed90f084",
+      "bytes": 1001
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/results_macros.tex",
+      "sha256": "0bb4b34963a8c6be3786cf8f96305d707a2d8fba996a51bddd23a2cbc1e8401d",
+      "bytes": 259
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/assistments_candidates.csv",
+      "sha256": "38c7f51d54942c92c3c7184da8eb985117da7749b994d0ee40febb56081fdd19",
+      "bytes": 15088
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/computational_report.json",
+      "sha256": "1587300d288494562309578543c89464ff80e02bd4803015bd737bf52a38179b",
+      "bytes": 72917
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/figure_alt_text.txt",
+      "sha256": "9a8a86874ec0471b5abef204a16f3dd93eaa8953b4a287e3b03955fe981576d6",
+      "bytes": 293
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/oulad_candidates.csv",
+      "sha256": "08093e60be8fc6c8331f66a91e6ce4dfb5b27998a277f333138f77f8b1e7d46d",
+      "bytes": 11877
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/study_case_counts.csv",
+      "sha256": "d3e07b3c5794a9b943f820601f88a9b0f25bef32605630e47d8d598dd7d13335",
+      "bytes": 153
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/study_report.json",
+      "sha256": "f9f504476939afe13f7c6eb23ace76287e4b6f95f9006a1f77bb5b0094ee7d47",
+      "bytes": 3147
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/revised/synthetic_candidates.csv",
+      "sha256": "4fbc568be21ab4ce58d4a4c2610443a8556112d74324c68c8f1d4972f18207f4",
+      "bytes": 8972
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/run_meta.tex",
+      "sha256": "8f8fd1219b4afe8020c64dc490dca785618db35bb9d2abe1a6da18834ede38d0",
+      "bytes": 1260
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/assistments_mas_selection.json",
+      "sha256": "179a16c5252f1df280e2de9237a6b9c933a7bb136fe802a80b792c773ee5a3ae",
+      "bytes": 287
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/assistments_selected.json",
+      "sha256": "beac5468ee6769f6eb3b0eec90a9b5a3668cc4f110e285eb74d271e68ed77180",
+      "bytes": 279
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/oulad_mas_selection.json",
+      "sha256": "3f74b9af975bf5accd6bfcbf4dcd27f4e3d9ace8174452c5d86c68953569682c",
+      "bytes": 279
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/oulad_selected.json",
+      "sha256": "992d3c226aad5aa87c21ea89fadbdb2218d451f9fa1f4481089b41e7047a9073",
+      "bytes": 279
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/policy_profile_tradeoffs.json",
+      "sha256": "63c673930c53ff67f9311754689e9e97199e15747689d35699ccf15b2208a42a",
+      "bytes": 4533
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/synthetic_mas_selection.json",
+      "sha256": "453c69570d2297c1ae007be788cb38639147cecc8a20a0fd056a0e0aaa038c28",
+      "bytes": 263
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/selections/synthetic_selected.json",
+      "sha256": "453c69570d2297c1ae007be788cb38639147cecc8a20a0fd056a0e0aaa038c28",
+      "bytes": 263
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/stability/stability_report.json",
+      "sha256": "6a012a650f220efa3042646f91810e61cfdbef88a0b37e7ee5353f5d7ab9af04",
+      "bytes": 4179
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/sweeps/assistments_candidates.csv",
+      "sha256": "7004dab8c2bcaaa576a4efcac4c0f1e6c64674437a7aaa8c0152aadb1c3f0b8e",
+      "bytes": 8717
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/sweeps/assistments_pareto.json",
+      "sha256": "5d18fffb65bcd41e8baa71edbd471215c4691dd4ab0a45d7b28636b44c39a331",
+      "bytes": 914
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/sweeps/oulad_candidates.csv",
+      "sha256": "fa91262cb229b399e79912fdd394cf1b60f2efb72cc32b5ce7747b5009b24d0b",
+      "bytes": 6696
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/sweeps/oulad_pareto.json",
+      "sha256": "0641bc7aa30e2b1faacb2db1a4ae73a8db49d7daab24b44533d2226f5a32269d",
+      "bytes": 601
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/sweeps/synthetic_candidates.csv",
+      "sha256": "038575798751b7644f010491c4e3a8348533e339702c97e3040f3b8ad8211246",
+      "bytes": 4523
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/sweeps/synthetic_pareto.json",
+      "sha256": "aee91887c3900d0ca1bdbdf364b746206bc245647ee55309498a79f5f860a8da",
+      "bytes": 277
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/paper_assets/uncertainty_proxy/validation_report.json",
+      "sha256": "1ad5ab7abf65b22f49fc1292c034e2e5f11a9517437d1c9eaddd03b76fc29169",
+      "bytes": 1049
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/references/references.bib",
+      "sha256": "f4e05dc09189c051198ef6690192b78c427c58ac0fb085f86c7b291ded9660f2",
+      "bytes": 15393
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/reproduce.sh",
+      "sha256": "c0dad8abe524b2a9593e9c81f64739def96b39a9c5cb49d03389ab2668ba3cae",
+      "bytes": 254
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/00_notation.tex",
+      "sha256": "f18b1d3fcf14546549635241b1c08ebcf8f8332006d7ab5a64f78bf17640c55b",
+      "bytes": 1268
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/01_introduction.tex",
+      "sha256": "5dcee59f97ea341bac8c0a424b111d56e628a324ea0cbf42504cde5d2ff1631b",
+      "bytes": 5433
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/02_related_work.tex",
+      "sha256": "061d6e840dae7a2bbd7560c1562388fa05d7ce4c82d350f26bb85800b35e6db5",
+      "bytes": 4350
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/03_method.tex",
+      "sha256": "afba417bd26c11e382564a005a29df7b571b6ac928d677e2194504849a83f49f",
+      "bytes": 5165
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/04_design_rationale.tex",
+      "sha256": "fca7a09c74847f33a4cd4f8599b3b98197405cf01d5157c7768f3b5214b5bafa",
+      "bytes": 1790
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/05_experiments.tex",
+      "sha256": "6d2b35e58e7c68c285843d142932e0b91e3086e350e31cbaba1338bed75fdc7e",
+      "bytes": 4530
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/06_results.tex",
+      "sha256": "f1dd2fbe2c35ccba717c4599300688b3a2716d5bb90b4e0601b99270ddf3ec61",
+      "bytes": 4949
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/07_discussion.tex",
+      "sha256": "8d45786425d1a787f3e9fe9e7248d2694a82354425a4a1f0a6b132df27541392",
+      "bytes": 3870
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/sections/08_conclusion.tex",
+      "sha256": "d7751aecfa6394d737b3db54a61f14bf29179564750d03ce05a0f0e0e317f50c",
+      "bytes": 1382
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/appeal_scenarios.tex",
+      "sha256": "4f150b299707ae993e1e4058208e7df7074f79fdf36cef22c40504c6f1c087c1",
+      "bytes": 1500
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/assist_mas_selected.tex",
+      "sha256": "d626316501b8ae32b4cacc8392c7501ac6650f90a26b68e31986f10e6996f3ac",
+      "bytes": 88
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/baselines.tex",
+      "sha256": "1844625e53fe24476d9b5bd1fe3fd2ef770afbf8f63c21f9ca3cc54854237895",
+      "bytes": 873
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/claim_evidence_map.tex",
+      "sha256": "397d810b751d3c1aea66ebb1638301236a572a5089303d212ca1c57c1f3790a3",
+      "bytes": 1186
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/contestability_operational.tex",
+      "sha256": "12babe9f64fd5124d97d8abd63ea9138367aac7fa4c089411dff0edf0dc129f6",
+      "bytes": 557
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/contestability_scorecard.tex",
+      "sha256": "e22d0065711f3bdb3e0522b78397ed0aeba931536b8f106a36ead286caa74e3a",
+      "bytes": 642
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/cost_breakdown.tex",
+      "sha256": "f87c801f9e1c01bdae3308159c86ca13b87a4601bdc54ff23ac5f7b76a6afd95",
+      "bytes": 505
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/decision_states.tex",
+      "sha256": "a771b4798f6068abf0e415aa0c853afd7594464697b8f2f68e5707d2c771f79c",
+      "bytes": 507
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/human_study_keycases.tex",
+      "sha256": "7b8839b4e66f6a3fee69272ec1ed38fcee14db6065ce2c47844a85b421014e9c",
+      "bytes": 440
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/human_study_summary.tex",
+      "sha256": "c7b0ca57930a2c35c96b2f442fb43daffa156babb2b129a9ba1487b5957e0325",
+      "bytes": 781
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/mas_selection.tex",
+      "sha256": "51cb04ac781ba6d0b3ef14a889ed27cd7c4f5050866de7dcb364a67700f94171",
+      "bytes": 597
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/oulad_dataset_card.tex",
+      "sha256": "265d937284cfcbdda4ef17f1435fc3b96bd7c4b3194d6e0a6bcc3326c7ddd1d3",
+      "bytes": 770
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/oulad_fairness_family_compare.tex",
+      "sha256": "399691dbd8ce78172ffbd7a49c3bb4d014186cd487c21d97ce58f5c04c700d2c",
+      "bytes": 508
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/oulad_mas_selected.tex",
+      "sha256": "7996c02d479e0974f0c9f13bb7c239a31818ce1e9262c5d7669e9802698bba5e",
+      "bytes": 513
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/policy_profile_tradeoffs.tex",
+      "sha256": "5348755fd6193a83019605370893cedf18ee31fd73479f74158598c8e281d0f5",
+      "bytes": 843
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/policy_replay.tex",
+      "sha256": "c6b6c44fd669901041eb4027bad8092b6a44c89c1bd7d0e333464550b2d20662",
+      "bytes": 591
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/positioning.tex",
+      "sha256": "417d4c2078fbaad6f407f81109a9dc2128ee899769e64d358b6e5f3e72d67a9f",
+      "bytes": 903
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/recovered_metrics.tex",
+      "sha256": "61a7e72099a7ca9337cc43192f5fe802b3076a34f4695ce26d8a71b9179de6fd",
+      "bytes": 588
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/run_initial.tex",
+      "sha256": "85b5b027ba4508de968a95c7d0f085b5f73c4c08b597a2618ab1b16a17fcfd44",
+      "bytes": 608
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/run_sweep_summary.tex",
+      "sha256": "2c22ef8ea6ff0fcb3df4458d1ffea277f2db8aaba75b0d1fcfe36ff9593f26ec",
+      "bytes": 473
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/scalability.tex",
+      "sha256": "c4ed89a2dcd7b49e9530c7ab9b31378fb7f9aa175ae3dd1829c5269de293edef",
+      "bytes": 454
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/selection_stability.tex",
+      "sha256": "260a7e372ce0b2c6be2948049b2278f20303a187e346353d2120e2a1e521e849",
+      "bytes": 444
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/state_counts.tex",
+      "sha256": "0cb2792644bd3359ccd2197784730bbc97afb035907c421e199aacc156dfa5aa",
+      "bytes": 427
+    },
+    {
+      "path": "Governing_by_Artifacts__An_Auditable_Constraint_Based_Framework_for_Contestable_Educational_Decision_Systems/tables/uncertainty_proxy_validation.tex",
+      "sha256": "66e2e6a99a6c24547c6e80b4e4582b13683c1f4f4febb463bf5e6b6fb3fdf7e9",
+      "bytes": 554
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/assistments_run_v1_assistments_2009_2010_v1_seed42_20260126T031036Z_LOCAL/artifacts/decision_packets.jsonl",
+      "sha256": "2f232d55dde176828f649c983f973a67f6b868916c8c59fe3922ece4596cd324",
+      "bytes": 49531754
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/assistments_run_v1_assistments_2009_2010_v1_seed42_20260126T031036Z_LOCAL/metrics.json",
+      "sha256": "9e1ad4b559fad630baf4b790614f125d8f66205fce23ff19d6590c2d3f172d04",
+      "bytes": 352
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/assistments_run_v1_assistments_2009_2010_v1_seed42_20260126T031036Z_LOCAL/reports/decision_brief.json",
+      "sha256": "6a595e8f4bb4610c7a329d70f2f833f80e71492ae80dcd328c88cbe81318be04",
+      "bytes": 1185
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/assistments_run_v1_assistments_2009_2010_v1_seed42_20260126T031036Z_LOCAL/run_metadata.json",
+      "sha256": "297c2d4980467d7b3df8be4a85cb186cb7746ef646618ee4ff00402048b42c59",
+      "bytes": 6235
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/oulad_run_v1_oulad_v1_seed42_20260126T031033Z_LOCAL/artifacts/decision_packets.jsonl",
+      "sha256": "08e8eb75440c30b2acdf1ed55e99bce29dd2b671d7cf2fe069de7bdf04a1b4dc",
+      "bytes": 3069729
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/oulad_run_v1_oulad_v1_seed42_20260126T031033Z_LOCAL/metrics.json",
+      "sha256": "42858a6bb5aefa81e3794a2db33e643eb61835fa26f3d6f5772fdb90d437845d",
+      "bytes": 412
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/oulad_run_v1_oulad_v1_seed42_20260126T031033Z_LOCAL/reports/decision_brief.json",
+      "sha256": "c7542bea37bcb201ebbbde61f0f134de34498676a769fe51c208286780a9d30f",
+      "bytes": 1178
+    },
+    {
+      "path": "compass_artifacts_repo/outputs/oulad_run_v1_oulad_v1_seed42_20260126T031033Z_LOCAL/run_metadata.json",
+      "sha256": "311e864c3f1fdf4a626ebdec85ce1d7f2339b0c04071ea6a1c5397e8f87a608f",
+      "bytes": 6165
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/README.md",
+      "sha256": "9e50c3ab4c4647e75dc08854a98c52fd77feb8b322d2bb59d23cb0b344a2d60f",
+      "bytes": 3054
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/configs/recipes/assistments_2009_2010.yaml",
+      "sha256": "eb4a6e53f5f897c7be26af66b0cbe2400d535316a3549583980337cef7a3112b",
+      "bytes": 884
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/configs/recipes/oulad.yaml",
+      "sha256": "b3321a7fa25567219cdf438adb0a518b1de6ec51a168a49fae9a2ff7857b8505",
+      "bytes": 829
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/configs/recipes/synthetic.yaml",
+      "sha256": "4f3c33fb50ef302b0ab3381fa653a123bc1747b35397b7ae0e8caff112a773b1",
+      "bytes": 754
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/data/synthetic_v1/manifest.json",
+      "sha256": "01e6c15b986c94a65d77d8b7b62c01b4863b2e53a37b121e13683f1075b17765",
+      "bytes": 454
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/data/synthetic_v1/processed/X.csv",
+      "sha256": "d7e43ca74ba7b3bd322f64ece3d254021bfe9c3787ffd67407aea3d1f7a21dd9",
+      "bytes": 2550124
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/data/synthetic_v1/processed/sensitive.csv",
+      "sha256": "b1fc9ae12e8f7f73e3fbf61806991cb37b2df2a7ec65ae0b7b820fa0ff7136c3",
+      "bytes": 10000
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/data/synthetic_v1/processed/y.csv",
+      "sha256": "a573c56277db05cac0f51e03e97338e2cf5f1e10e14fddc3e3fc8022e70ea954",
+      "bytes": 10000
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/docs/REPRODUCIBILITY.md",
+      "sha256": "de95976e23de66165bdfe2f002dbbe7b59a37ce53b4f47b025df4595243d260a",
+      "bytes": 1419
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/docs/REVISION_V2.md",
+      "sha256": "86f8e81811d32cb2fd19597daf0ec330eaea398eeaa82cac5156b34cf95188bf",
+      "bytes": 2008
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/docs/SNAPSHOTS.md",
+      "sha256": "a6eca1c4862d8aaf82cb1ed8580855a856ef611cf0bfe35c7607051b7a4cf15d",
+      "bytes": 802
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/outputs/synthetic_run_v1_synthetic_v1_seed42_20260126T234652Z_LOCAL/artifacts/decision_packets.jsonl",
+      "sha256": "4176118d5a3bab9a8645a884f88586d1425f23b9f0e4819879f663150e3292d9",
+      "bytes": 469711
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/outputs/synthetic_run_v1_synthetic_v1_seed42_20260126T234652Z_LOCAL/metrics.json",
+      "sha256": "de0824b3a4cd96d3a7c43b1b174513aa1a0dfb6cddab8e31c0bc9c33a76202b3",
+      "bytes": 369
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/outputs/synthetic_run_v1_synthetic_v1_seed42_20260126T234652Z_LOCAL/reports/decision_brief.json",
+      "sha256": "fe80eca3c4e425f8923c3d0761baf7dc3a5afb43526489e7581d7a91b6dea622",
+      "bytes": 1185
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/outputs/synthetic_run_v1_synthetic_v1_seed42_20260126T234652Z_LOCAL/run_metadata.json",
+      "sha256": "3792e3a8dbef6b57495183d5d33df67eda0b1848aa937d933177c768a51c94b7",
+      "bytes": 1872
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/paper_template/main.tex",
+      "sha256": "33c4dd48021a2f5cc25d077d6a06b8d94a6374c8cce993b9b30b32da1e31a876",
+      "bytes": 518
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/pyproject.toml",
+      "sha256": "03cab4762753511e029dde3af45fcf1b5f37f34ec897d76097924f45238a8b25",
+      "bytes": 1013
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/snapshots/catalog.yaml",
+      "sha256": "cc0ecf56cc8cd7afb95dd03ee2706507822a20de2bb5f032c0018491ca4d96ad",
+      "bytes": 794
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/snapshots/manifests/assistments_2009_2010_v1.json",
+      "sha256": "be114960b675efe0710169e58a1b29fb4504ae238e80d663f4fe1364154f5149",
+      "bytes": 140
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/snapshots/manifests/oulad_v1.json",
+      "sha256": "12d0fbec7d44a8b9e6ca2bd97f4c3d7453646f887738bac506147178a4e4faa3",
+      "bytes": 120
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/__init__.py",
+      "sha256": "75ad4f4c2943325f88064ad2beae890b59674be2bf0404b30afc5584dc4de4bb",
+      "bytes": 13
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/artifacts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/artifacts/packets.py",
+      "sha256": "5f7729dd8ba1d4cb99d7b2312e95d92da2578ae741aeed2e3217b17027dc8b01",
+      "bytes": 1707
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/artifacts/validation.py",
+      "sha256": "ad1e3a2c2606c6743d1cb8e7aef4f7518af03b25d47b5348637f6e6a39dec030",
+      "bytes": 2701
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/cli.py",
+      "sha256": "baffc8c13b36e3849632bd1518825cd71307dd122aab5d88d6045e33c790e83c",
+      "bytes": 776
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/data/assistments.py",
+      "sha256": "540774d4f3fc7d78ba556694323f29120a8e78a4335789cf8f6863fa6dcb7b72",
+      "bytes": 7352
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/data/io.py",
+      "sha256": "0e2cd51ce506aa5b00f4f82a6493769850967bc323ec7e7bf2a744347bb7cf26",
+      "bytes": 1982
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/data/oulad.py",
+      "sha256": "b40e28a8adbaabadaa05293323f9dbccb28c4249a95588d8c3571572a928edbe",
+      "bytes": 4037
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/data/synthetic.py",
+      "sha256": "7898eaff1f994e2a57ca3430821f9af8377c487ceb7d8a55770fa7886673ad21",
+      "bytes": 1977
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/data/validation.py",
+      "sha256": "d43195afa2b633d09e7fef1d77ed4c71d1f66ef73bc2da02a0a4d7ab8b66d968",
+      "bytes": 1980
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/metrics/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/metrics/contestability.py",
+      "sha256": "e8d83428bcb5a6e42fca8c633ea80a4bb09f6af1bcca089eaf18c23cd203ab25",
+      "bytes": 706
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/metrics/fairness.py",
+      "sha256": "09b162efab46e31ae4fa1b7e6189372ecd8a37d55a0a39bf032a086eca30e1c6",
+      "bytes": 621
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/metrics/utility.py",
+      "sha256": "fcb58c70733ebca08f76314a9d804cf408e006fec82c39ad70fb933dbe6d5c20",
+      "bytes": 494
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/models/base.py",
+      "sha256": "85deb6a87699e378e74b0c08e4a8e173a8960a590f5debbffba1b0f235fc319b",
+      "bytes": 366
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/models/numpy_linear.py",
+      "sha256": "8dc39935818ca4d8e09c081dc267ec128bb3ba46727ca71c80d01a6285d928e2",
+      "bytes": 1115
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/models/registry.py",
+      "sha256": "716b8d7d777523b884ee5dcd637714603ed63b0cfdce3add20d769566c671deb",
+      "bytes": 412
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/models/sklearn_logreg.py",
+      "sha256": "5a908c86a202e12bd9304dc63f1e2edc092dc022698afaed07b04a197cae42e6",
+      "bytes": 1377
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/pipeline/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/pipeline/run.py",
+      "sha256": "b858f2373ea2f376bf2dec7b0d14950e312ea248f2574acaa9711e3db61554d5",
+      "bytes": 8724
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/policy/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/policy/decision.py",
+      "sha256": "8382ada81840f4db5eab246209b746e50c04070bb442ffd8e5bcb60fdbaa3805",
+      "bytes": 3040
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/policy/governance.py",
+      "sha256": "b6b119974809b2c5cb2713c353b3630e83765a0d73482626bb4913d29720ec89",
+      "bytes": 7009
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/reporting/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/reporting/bundle.py",
+      "sha256": "59447dbfa30efb1ab8511311abb966fd2430d3abdbf12b887e011792a7fe4af4",
+      "bytes": 1807
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/reporting/decision_brief.py",
+      "sha256": "ba74357e2a2359af8cfb852e5ac37fd8643e8d59eb960435863aa05cab7beae4",
+      "bytes": 2765
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/snapshots/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/snapshots/fetch.py",
+      "sha256": "e1c40dc1182a24d1ec7c80b8015186479863370a511353b92a747b1d9a724f86",
+      "bytes": 2136
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/utils/env.py",
+      "sha256": "a210cb3b239f11ecc4743b3531fa6591082d52387f3cdabd3601b41b3d9b7a4e",
+      "bytes": 743
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/utils/hashing.py",
+      "sha256": "11be4870c41f2e1110e78dab1f89efccb3d2f01be768e3faabc6796712bf3747",
+      "bytes": 720
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/utils/io.py",
+      "sha256": "d3d55f8ce73f0571d1e9b92f9d73439ad04a77b81eecd514b0aaf8d0269c9e7a",
+      "bytes": 1054
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/utils/net.py",
+      "sha256": "ab20591ac68fb1c4b04543ef26d1b597a425fce6efd1c53828e642e87396b5c4",
+      "bytes": 465
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/src/compass/utils/seeds.py",
+      "sha256": "af86eabfe07461d91158d1e8b534676d4d3671ba0eca250ab21d0c5e7ad48fbd",
+      "bytes": 1282
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_assistments_encoding.py",
+      "sha256": "eed13f0b60104c1a65d109607ca8504315e6289e22fbb4d486174a2336bf9992",
+      "bytes": 1016
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_compileall.py",
+      "sha256": "ee4e1d203fcba4cd2ed2498897efc90f679ee8b236a0a06b11340c4abc4b64a1",
+      "bytes": 258
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_entropy.py",
+      "sha256": "3caaa3368e7f388b67ca9e954861cb2e8fe6c415a5ed476d66d58fbf1cd9b1f8",
+      "bytes": 243
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_entropy_edges.py",
+      "sha256": "c619efefcdaec309e65b2aaa5bb3a72ff5dc832c014911ee1f347f8d1f8f9392",
+      "bytes": 264
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_fetch_local_process.py",
+      "sha256": "00f0f295a7e1b6262f8e9759674cd5df5d7317a2a573c4cf2f121f89e7b27db8",
+      "bytes": 816
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_governance_v2.py",
+      "sha256": "17bfef89360255d1f80485f4e007e24965c544132975aa77e38fcd3a1abafcf6",
+      "bytes": 7077
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_npz_key_tolerance.py",
+      "sha256": "468c3788a3393d5924b63ac3c33f206c30cce51bf8271ce77ef02a94249e38c9",
+      "bytes": 669
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_run_recipe.py",
+      "sha256": "89647856ed53ecd9692882a634a1657980df7fc8a73d3eb90e16b291d336e57e",
+      "bytes": 891
+    },
+    {
+      "path": "compass_github/compass-contestable-governance-artifacts/tests/test_synthetic_snapshot.py",
+      "sha256": "db912f8d84973e8225a3325137421dc01f1eeef40172b6770d520c4adcc681a9",
+      "bytes": 404
+    },
+    {
+      "path": "revisao_artigo/DECISOES_E_PENDENCIAS.md",
+      "sha256": "60abe8bb97a4321619fac2a9e902de323d85311851605ab6a7fca0e28f42ef17",
+      "bytes": 4365
+    },
+    {
+      "path": "revisao_artigo/DIARIO_DE_TRABALHO.md",
+      "sha256": "6264d1d0c7e3e699fffa63bb7dd41129de70b5ec8a2009468c2739097595b7f2",
+      "bytes": 11260
+    },
+    {
+      "path": "revisao_artigo/ESPECIFICACAO_CIENTIFICA.md",
+      "sha256": "eb67cb3a9ef67ddc911d41ecdab3814f7f663f8af13ae75e9b28c38ac5e37d69",
+      "bytes": 3792
+    },
+    {
+      "path": "revisao_artigo/INVENTARIO_DE_VERSOES.md",
+      "sha256": "9f8d2248022458241915111eb7576473e349abddfbe4224496198d7be5dd5d96",
+      "bytes": 2172
+    },
+    {
+      "path": "revisao_artigo/MATRIZ_DE_CORRECOES.md",
+      "sha256": "a26a4979ac839b66fe179324f3639042d923c0b64420bb2d1fa3ab8f2e110366",
+      "bytes": 9091
+    },
+    {
+      "path": "revisao_artigo/METODO_DE_EXECUCAO.md",
+      "sha256": "7977e065a50152042295527a89479eb8b3f227a921c49694ef485e43a2f3116d",
+      "bytes": 3347
+    },
+    {
+      "path": "revisao_artigo/PLANO_PASSO_A_PASSO.md",
+      "sha256": "7eb54cf5432f2c1d9501f08451c85ceb20fa13614019d06884c2ac5c0687856a",
+      "bytes": 18714
+    },
+    {
+      "path": "revisao_artigo/README.md",
+      "sha256": "6aadda5fbd5eb650b68bd7f68c945f3f5ffc6820b858802897328ecbd8e358ac",
+      "bytes": 3679
+    },
+    {
+      "path": "revisao_artigo/RECONCILIACAO_NUMERICA.md",
+      "sha256": "aafd790fc3b07acb3c7b9de80a82567bf0e1ec005ecf92d5c3a5556ebffaa274",
+      "bytes": 694
+    },
+    {
+      "path": "revisao_artigo/RELATORIO_ESTUDO_N16.md",
+      "sha256": "315fbcc5ca3f67996cbec32d8e95efc08f6be57c22cbbf1dcc83a2ab4a17eff7",
+      "bytes": 1600
+    },
+    {
+      "path": "revisao_artigo/RELATORIO_FINAL.md",
+      "sha256": "f6b44b3927aa860fd253b41627e5aa10d56e9dcc2f522220a2607c53b39f696d",
+      "bytes": 5268
+    },
+    {
+      "path": "revisao_artigo/VALIDACAO_E_LIBERACAO.md",
+      "sha256": "fb0cd22dab2fbbdbe05dfc770dda540fed4a88aab42d6999c062ea70ec8dbcd5",
+      "bytes": 6794
+    },
+    {
+      "path": "revisao_artigo/VERIFICACAO_ARTEFATOS_HISTORICOS.md",
+      "sha256": "458f02f7d96d859922dad09971554d8924857c50bc8b77b23b06e5420b819117",
+      "bytes": 459
+    },
+    {
+      "path": "revisao_artigo/evidencias/alteracoes_fontes.json",
+      "sha256": "d4583892f2314069150b50146f927594703fd9f636f087de4e3d38baf483b831",
+      "bytes": 14044
+    },
+    {
+      "path": "revisao_artigo/evidencias/artigo_revisado.pdf",
+      "sha256": "c80539c7142cdcdccd28090f8613f09cfe80869226a844000a84d464ef86941f",
+      "bytes": 209639
+    },
+    {
+      "path": "revisao_artigo/evidencias/compilacao_revisada.log",
+      "sha256": "78a7045216975ea9872f942405bde94f26b6548dc0578f90a0cda70ddc237749",
+      "bytes": 42698
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/artifacts/decision_packets.jsonl",
+      "sha256": "9a67daab4b83cae99716e949d1e9335fc8b9a391693ff382ddb021cb921a9798",
+      "bytes": 608825
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/authorized_decisions.json",
+      "sha256": "09443ed95b6abeded95845cd6f0c77e42b6b563b07ad68c3616df550525ea7df",
+      "bytes": 64001
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/dataset_manifest.json",
+      "sha256": "01e6c15b986c94a65d77d8b7b62c01b4863b2e53a37b121e13683f1075b17765",
+      "bytes": 454
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/deployment_gate.json",
+      "sha256": "525a22c581c2f79250c17621a6160116859be986e62bf1327f4d87332704f7ec",
+      "bytes": 66
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/metrics.json",
+      "sha256": "d1f8f97c5d259829bf00574fba2c07eed9cba181f94f03806f2bc170cd5d871a",
+      "bytes": 761
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/model.pkl",
+      "sha256": "59da7a378c4f66986ceca1a6cfabe6083d652b02bbbd58fb7c281b50dd2103d1",
+      "bytes": 287
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/policy.json",
+      "sha256": "bf8e0d03e5763f806581c5d11fd9b671d99f0952fd1a73656ff6e04a73fab7e1",
+      "bytes": 395
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/reports/decision_brief.json",
+      "sha256": "c2446d575fa4a9b68916218d9d82077b504277906debce6cf6f68434d22f40cd",
+      "bytes": 1532
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/run_metadata.json",
+      "sha256": "e427ea6ecfaccfbfd91df28664234a2fe3090f067a486cc603840c832510c300",
+      "bytes": 42817
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723689361Z_c6430dc/selection_report.json",
+      "sha256": "180aac06cc877663c1a44c7483ecaf6542f06f0a8f069d702e700a6f5e624626",
+      "bytes": 5353
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/artifacts/decision_packets.jsonl",
+      "sha256": "65387242e1f9a97cb0f3bd60f5f0d59b38c73ff2584effaee716b7fc0a13ac4e",
+      "bytes": 609821
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/dataset_manifest.json",
+      "sha256": "01e6c15b986c94a65d77d8b7b62c01b4863b2e53a37b121e13683f1075b17765",
+      "bytes": 454
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/deployment_gate.json",
+      "sha256": "c54b014d49e8111bce5cd2d5f4d2ee5887a2e1c5c427343a46abd59083a577b3",
+      "bytes": 85
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/metrics.json",
+      "sha256": "5886ac6e63475160fd171ee1f4bcfa1e0b069000d553946256e6c691b7eb5fb8",
+      "bytes": 809
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/model.pkl",
+      "sha256": "59da7a378c4f66986ceca1a6cfabe6083d652b02bbbd58fb7c281b50dd2103d1",
+      "bytes": 287
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/policy.json",
+      "sha256": "b1cd80966c08faa679b94bf4d73cb3feb0c2be582db00c557a82bc9a3506186f",
+      "bytes": 348
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/reports/decision_brief.json",
+      "sha256": "e23e38e23276a7939c3a8dd7e1dba2d3cc81a8d2d9a7a084691d351a1be48609",
+      "bytes": 1482
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/review_required.json",
+      "sha256": "aa0a80cc0686d4d601182db49ddab1988ae6ff9c27a87bfab287b04963027241",
+      "bytes": 32092
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/run_metadata.json",
+      "sha256": "7fd110428078a302b5e3116f2b1dd0ad011c77db7d62e6b103ebe35aae51886b",
+      "bytes": 42819
+    },
+    {
+      "path": "revisao_artigo/evidencias/execucoes_corrigidas/synthetic_run_v1_synthetic_v1_seed42_20261020T150723918369Z_c6430dc/selection_report.json",
+      "sha256": "7e7e25edb4875c0f81d581950ab1a65a09cecc06b1e4fa55391b66a1627379f7",
+      "bytes": 1223
+    },
+    {
+      "path": "revisao_artigo/evidencias/reproducao_pacote.json",
+      "sha256": "e245c0ae3fb5d99df7c55a73c595c20d8aecf141f3537247fa611b6a10d67f6a",
+      "bytes": 287
+    },
+    {
+      "path": "revisao_artigo/evidencias/testes_aplicacao.xml",
+      "sha256": "97b7c9da7c8bce8d8f4c6d11dd5770ac42c4c0dc12224c9f7e62ab3bb1c831b3",
+      "bytes": 2076
+    },
+    {
+      "path": "revisao_artigo/evidencias/testes_pacote_limpo.xml",
+      "sha256": "cb19fd0b3c5bb7f15cedd9dd0a15eb5284a9906de58ebc824481d64ccf05709b",
+      "bytes": 2076
+    },
+    {
+      "path": "revisao_artigo/evidencias/validacao_integrada.json",
+      "sha256": "385d9aa35bce205995e9561b061301a26514498dd007d05183c455730520b440",
+      "bytes": 1391
+    },
+    {
+      "path": "revisao_artigo/ferramentas/tectonic_origem.json",
+      "sha256": "45fd53f3a7b0034f5fe35f29243285a373fabc11652ece4c40a054e39c444cf3",
+      "bytes": 175
+    },
+    {
+      "path": "revisao_artigo/requirements.lock",
+      "sha256": "fefaf1711a612543d19287337fe39271ce3cddad6d0bf5dd1a1c5aab3b3c81de",
+      "bytes": 599
+    },
+    {
+      "path": "revisao_artigo/scripts/empacotar_revisao.py",
+      "sha256": "24b6e6df61a6c11b934b085137890cda89ca7a279413e385b168dc31c0a2b59b",
+      "bytes": 3285
+    },
+    {
+      "path": "revisao_artigo/scripts/recalcular_evidencias.py",
+      "sha256": "620190eb26d92bbb2d04f84cb1f34ab4c87f09100eaf993bacd77304932ee1ab",
+      "bytes": 19170
+    },
+    {
+      "path": "revisao_artigo/scripts/revisar_manuscrito.py",
+      "sha256": "3065b78288f73bc21a660167f00f8e6d9ff556b5be9a88ad4137049f631b7cb2",
+      "bytes": 39314
+    },
+    {
+      "path": "revisao_artigo/scripts/validar_entrega.py",
+      "sha256": "9ebf04c0d30043c675348f6c06fb960a8334edf3c5f5b5e99912e26e36ceda65",
+      "bytes": 3816
+    }
+  ],
+  "participant_responses_included": false
+}

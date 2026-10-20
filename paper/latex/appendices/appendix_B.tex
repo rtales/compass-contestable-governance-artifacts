@@ -1,0 +1,9 @@
+\section{Implementation and Version-Specific Inventory}
+\label{app:implementation}
+The historical release contains one scored run per dataset, metrics, metadata, decision briefs and case packets. Sweeps and illustrative appeal materials exist in the paper project, and original N=16 responses are available locally to the author. The previous statement that the release lacked sweeps and human evaluation was inconsistent with these materials and has been removed. The study AIES N=18 is a different version and is not used here.
+
+The revised application is in the repository directory named \path{compass-contestable-governance-artifacts}. New runs persist policy content, a dataset-manifest copy, fitted-model bytes, separate configuration/model hashes, source-file hashes, selection reports, candidate packets, computed artifact checks and an authorization gate. A Git HEAD alone does not identify uncommitted source changes. Model snapshots are hashed as opaque bytes; verifying integrity does not require loading untrusted serialized code.
+
+A feasible run may export authorized candidate decisions. Infeasible or insufficient-evidence runs preserve evaluation evidence and write a review-required record without an authorized export. They do not claim delivery to a human queue. Candidate metrics remain distinguishable from the gate result.
+
+No broad predictive-baseline study, multi-seed model evaluation, field deployment or individually timed appeal-cost study is claimed. Historical outputs are preserved; revision reports identify which values match and which procedures changed.

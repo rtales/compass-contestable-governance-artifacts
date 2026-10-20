@@ -1,0 +1,2908 @@
+{
+  "assistments": {
+    "packet_path": "compass_artifacts_repo/outputs/assistments_run_v1_assistments_2009_2010_v1_seed42_20260126T031036Z_LOCAL/artifacts/decision_packets.jsonl",
+    "sha256": "2f232d55dde176828f649c983f973a67f6b868916c8c59fe3922ece4596cd324",
+    "initial_historical": {
+      "n": 105107,
+      "n_selected": 1000,
+      "n_rejected": 78730,
+      "n_abstained": 25377,
+      "coverage": 0.7585603242410115,
+      "selection_rate": 0.009514114188398488,
+      "abstain_rate": 0.24143967575898845,
+      "n_eligible": 79730,
+      "utility_at_k": 0.981,
+      "delta_eopp_at_k": -0.004974502375782331,
+      "abs_delta_eopp_at_k": 0.004974502375782331,
+      "group_counts": {
+        "0": {
+          "n": 78779,
+          "positive": 53958,
+          "positive_selected": 804,
+          "select": 821,
+          "reject": 58743,
+          "abstain": 19215,
+          "tpr": 0.014900478149671968
+        },
+        "1": {
+          "n": 26328,
+          "positive": 17832,
+          "positive_selected": 177,
+          "select": 179,
+          "reject": 19987,
+          "abstain": 6162,
+          "tpr": 0.009925975773889636
+        }
+      },
+      "fairness_status": "available"
+    },
+    "initial_recomputed": {
+      "n": 105107,
+      "n_selected": 1000,
+      "n_rejected": 78730,
+      "n_abstained": 25377,
+      "coverage": 0.7585603242410115,
+      "selection_rate": 0.009514114188398488,
+      "abstain_rate": 0.24143967575898845,
+      "n_eligible": 79730,
+      "utility_at_k": 0.981,
+      "delta_eopp_at_k": -0.004974502375782331,
+      "abs_delta_eopp_at_k": 0.004974502375782331,
+      "group_counts": {
+        "0": {
+          "n": 78779,
+          "positive": 53958,
+          "positive_selected": 804,
+          "select": 821,
+          "reject": 58743,
+          "abstain": 19215,
+          "tpr": 0.014900478149671968
+        },
+        "1": {
+          "n": 26328,
+          "positive": 17832,
+          "positive_selected": 177,
+          "select": 179,
+          "reject": 19987,
+          "abstain": 6162,
+          "tpr": 0.009925975773889636
+        }
+      },
+      "fairness_status": "available"
+    },
+    "initial_decision_mismatches": 0,
+    "grid": {
+      "k": [
+        100,
+        250,
+        500,
+        1000,
+        2000
+      ],
+      "gamma_bits": [
+        0.01,
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        0.995,
+        0.999
+      ]
+    },
+    "max_difference_from_historical_csv": {
+      "utility_at_k": 0.0,
+      "utility_at_k_undefined_mismatch_count": 0,
+      "coverage": 1.1102230246251565e-16,
+      "coverage_undefined_mismatch_count": 0,
+      "abstain_rate": 1.1427490897997217e-16,
+      "abstain_rate_undefined_mismatch_count": 0,
+      "abs_delta_eopp_at_k": 8.776616586270158e-17,
+      "abs_delta_eopp_at_k_undefined_mismatch_count": 0,
+      "n_selected": 0.0,
+      "n_selected_undefined_mismatch_count": 0,
+      "n_non_abstain": 0.0,
+      "n_non_abstain_undefined_mismatch_count": 0
+    },
+    "fixed_k": {
+      "status": "feasible",
+      "selected": {
+        "candidate_id": "assistments:k=001000:g=0.999",
+        "k": 1000,
+        "gamma_entropy": 0.999,
+        "n": 105107,
+        "n_selected": 1000,
+        "n_rejected": 104049,
+        "n_abstained": 58,
+        "coverage": 0.9994481813770729,
+        "selection_rate": 0.009514114188398488,
+        "abstain_rate": 0.0005518186229271124,
+        "n_eligible": 105049,
+        "utility_at_k": 0.981,
+        "delta_eopp_at_k": -0.004974502375782331,
+        "abs_delta_eopp_at_k": 0.004974502375782331,
+        "group_counts": {
+          "0": {
+            "n": 78779,
+            "positive": 53958,
+            "positive_selected": 804,
+            "select": 821,
+            "reject": 77918,
+            "abstain": 40,
+            "tpr": 0.014900478149671968
+          },
+          "1": {
+            "n": 26328,
+            "positive": 17832,
+            "positive_selected": 177,
+            "select": 179,
+            "reject": 26131,
+            "abstain": 18,
+            "tpr": 0.009925975773889636
+          }
+        },
+        "fairness_status": "available"
+      },
+      "n_candidates": 16,
+      "n_feasible": 11,
+      "n_pareto": 1,
+      "order": [
+        "min_abs_delta_eopp",
+        "max_utility",
+        "min_abstain_rate"
+      ],
+      "tolerances": {},
+      "pareto_candidate_ids": [
+        "assistments:k=001000:g=0.999"
+      ]
+    },
+    "variable_k": {
+      "status": "feasible",
+      "selected": {
+        "candidate_id": "assistments:k=000100:g=0.999",
+        "k": 100,
+        "gamma_entropy": 0.999,
+        "n": 105107,
+        "n_selected": 100,
+        "n_rejected": 104949,
+        "n_abstained": 58,
+        "coverage": 0.9994481813770729,
+        "selection_rate": 0.000951411418839849,
+        "abstain_rate": 0.0005518186229271124,
+        "n_eligible": 105049,
+        "utility_at_k": 0.98,
+        "delta_eopp_at_k": -0.0003986014844205878,
+        "abs_delta_eopp_at_k": 0.0003986014844205878,
+        "group_counts": {
+          "0": {
+            "n": 78779,
+            "positive": 53958,
+            "positive_selected": 79,
+            "select": 81,
+            "reject": 78658,
+            "abstain": 40,
+            "tpr": 0.0014641017087364246
+          },
+          "1": {
+            "n": 26328,
+            "positive": 17832,
+            "positive_selected": 19,
+            "select": 19,
+            "reject": 26291,
+            "abstain": 18,
+            "tpr": 0.0010655002243158368
+          }
+        },
+        "fairness_status": "available"
+      },
+      "n_candidates": 80,
+      "n_feasible": 55,
+      "n_pareto": 3,
+      "order": [
+        "min_abs_delta_eopp",
+        "max_utility",
+        "min_abstain_rate"
+      ],
+      "tolerances": {},
+      "pareto_candidate_ids": [
+        "assistments:k=000100:g=0.999",
+        "assistments:k=000250:g=0.999",
+        "assistments:k=002000:g=0.999"
+      ]
+    },
+    "profiles": {
+      "Fairness-first": {
+        "status": "feasible",
+        "selected": {
+          "candidate_id": "assistments:k=000100:g=0.999",
+          "k": 100,
+          "gamma_entropy": 0.999,
+          "n": 105107,
+          "n_selected": 100,
+          "n_rejected": 104949,
+          "n_abstained": 58,
+          "coverage": 0.9994481813770729,
+          "selection_rate": 0.000951411418839849,
+          "abstain_rate": 0.0005518186229271124,
+          "n_eligible": 105049,
+          "utility_at_k": 0.98,
+          "delta_eopp_at_k": -0.0003986014844205878,
+          "abs_delta_eopp_at_k": 0.0003986014844205878,
+          "group_counts": {
+            "0": {
+              "n": 78779,
+              "positive": 53958,
+              "positive_selected": 79,
+              "select": 81,
+              "reject": 78658,
+              "abstain": 40,
+              "tpr": 0.0014641017087364246
+            },
+            "1": {
+              "n": 26328,
+              "positive": 17832,
+              "positive_selected": 19,
+              "select": 19,
+              "reject": 26291,
+              "abstain": 18,
+              "tpr": 0.0010655002243158368
+            }
+          },
+          "fairness_status": "available"
+        },
+        "n_candidates": 80,
+        "n_feasible": 55,
+        "n_pareto": 3,
+        "order": [
+          "min_abs_delta_eopp",
+          "max_utility",
+          "min_abstain_rate"
+        ],
+        "tolerances": {},
+        "pareto_candidate_ids": [
+          "assistments:k=000100:g=0.999",
+          "assistments:k=000250:g=0.999",
+          "assistments:k=002000:g=0.999"
+        ]
+      },
+      "Utility-first": {
+        "status": "feasible",
+        "selected": {
+          "candidate_id": "assistments:k=000250:g=0.999",
+          "k": 250,
+          "gamma_entropy": 0.999,
+          "n": 105107,
+          "n_selected": 250,
+          "n_rejected": 104799,
+          "n_abstained": 58,
+          "coverage": 0.9994481813770729,
+          "selection_rate": 0.002378528547099622,
+          "abstain_rate": 0.0005518186229271124,
+          "n_eligible": 105049,
+          "utility_at_k": 0.992,
+          "delta_eopp_at_k": -0.00205936305477013,
+          "abs_delta_eopp_at_k": 0.00205936305477013,
+          "group_counts": {
+            "0": {
+              "n": 78779,
+              "positive": 53958,
+              "positive_selected": 214,
+              "select": 216,
+              "reject": 78523,
+              "abstain": 40,
+              "tpr": 0.0039660476667037325
+            },
+            "1": {
+              "n": 26328,
+              "positive": 17832,
+              "positive_selected": 34,
+              "select": 34,
+              "reject": 26276,
+              "abstain": 18,
+              "tpr": 0.0019066846119336026
+            }
+          },
+          "fairness_status": "available"
+        },
+        "n_candidates": 80,
+        "n_feasible": 55,
+        "n_pareto": 3,
+        "order": [
+          "max_utility",
+          "min_abs_delta_eopp",
+          "min_abstain_rate"
+        ],
+        "tolerances": {},
+        "pareto_candidate_ids": [
+          "assistments:k=000100:g=0.999",
+          "assistments:k=000250:g=0.999",
+          "assistments:k=002000:g=0.999"
+        ]
+      }
+    },
+    "stability": [
+      {
+        "order": [
+          "min_abs_delta_eopp",
+          "max_utility",
+          "min_abstain_rate"
+        ],
+        "candidate_id": "assistments:k=000100:g=0.999"
+      },
+      {
+        "order": [
+          "min_abs_delta_eopp",
+          "min_abstain_rate",
+          "max_utility"
+        ],
+        "candidate_id": "assistments:k=000100:g=0.999"
+      },
+      {
+        "order": [
+          "max_utility",
+          "min_abs_delta_eopp",
+          "min_abstain_rate"
+        ],
+        "candidate_id": "assistments:k=000250:g=0.999"
+      },
+      {
+        "order": [
+          "max_utility",
+          "min_abstain_rate",
+          "min_abs_delta_eopp"
+        ],
+        "candidate_id": "assistments:k=000250:g=0.999"
+      },
+      {
+        "order": [
+          "min_abstain_rate",
+          "min_abs_delta_eopp",
+          "max_utility"
+        ],
+        "candidate_id": "assistments:k=000100:g=0.999"
+      },
+      {
+        "order": [
+          "min_abstain_rate",
+          "max_utility",
+          "min_abs_delta_eopp"
+        ],
+        "candidate_id": "assistments:k=000250:g=0.999"
+      }
+    ],
+    "uncertainty": {
+      "1": {
+        "ece": 0.02705088574234559,
+        "spearman_entropy_abs_error": 0.978897305990167
+      },
+      "0.5": {
+        "ece": 0.047987449499716756,
+        "spearman_entropy_abs_error": 0.9797161394274142
+      },
+      "2": {
+        "ece": 0.09049041762332921,
+        "spearman_entropy_abs_error": 0.9818267666697339
+      },
+      "row_bootstrap": {
+        "replicates": 200,
+        "seed": 42,
+        "ece_ci": [
+          0.025619754984940138,
+          0.028353170692616135
+        ],
+        "spearman_ci": [
+          0.9780038732624501,
+          0.9798077864033339
+        ],
+        "limitation": "Conditional row resampling; historical packets lack student cluster IDs. ASSISTments intervals do not establish cluster-robust population uncertainty."
+      },
+      "selective_risk": [
+        {
+          "gamma_bits": 0.01,
+          "group": "all",
+          "n_eligible": 22390,
+          "n_errors": 13,
+          "risk": 0.0005806163465832961,
+          "wilson_ci": [
+            0.00033936044293218824,
+            0.0009932139112967908
+          ]
+        },
+        {
+          "gamma_bits": 0.01,
+          "group": "0",
+          "n_eligible": 16802,
+          "n_errors": 10,
+          "risk": 0.0005951672419950006,
+          "wilson_ci": [
+            0.00032332496468601255,
+            0.0010953162190424422
+          ]
+        },
+        {
+          "gamma_bits": 0.01,
+          "group": "1",
+          "n_eligible": 5588,
+          "n_errors": 3,
+          "risk": 0.0005368647100930566,
+          "wilson_ci": [
+            0.0001825988687917902,
+            0.0015773685575325004
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "all",
+          "n_eligible": 27401,
+          "n_errors": 79,
+          "risk": 0.0028831064559687604,
+          "wilson_ci": [
+            0.002314175072325574,
+            0.0035914040226632357
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "0",
+          "n_eligible": 20502,
+          "n_errors": 70,
+          "risk": 0.003414301043800605,
+          "wilson_ci": [
+            0.0027035329123681873,
+            0.004311124794293247
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "1",
+          "n_eligible": 6899,
+          "n_errors": 9,
+          "risk": 0.0013045368894042614,
+          "wilson_ci": [
+            0.000686488448529045,
+            0.0024776373612538727
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "all",
+          "n_eligible": 35755,
+          "n_errors": 120,
+          "risk": 0.0033561739616836807,
+          "wilson_ci": [
+            0.002807713240783614,
+            0.00401134042183289
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "0",
+          "n_eligible": 26528,
+          "n_errors": 95,
+          "risk": 0.0035811218335343787,
+          "wilson_ci": [
+            0.002930633815277623,
+            0.004375359593493114
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "1",
+          "n_eligible": 9227,
+          "n_errors": 25,
+          "risk": 0.002709439687872548,
+          "wilson_ci": [
+            0.001835963920451041,
+            0.003996815145345282
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "all",
+          "n_eligible": 44243,
+          "n_errors": 167,
+          "risk": 0.0037746084126302464,
+          "wilson_ci": [
+            0.0032446926160713614,
+            0.004390687620845974
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "0",
+          "n_eligible": 32029,
+          "n_errors": 119,
+          "risk": 0.0037153829342158667,
+          "wilson_ci": [
+            0.003105985517738351,
+            0.004443811746784359
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "1",
+          "n_eligible": 12214,
+          "n_errors": 48,
+          "risk": 0.003929916489274603,
+          "wilson_ci": [
+            0.002965579176947275,
+            0.005206196431469496
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "all",
+          "n_eligible": 52125,
+          "n_errors": 240,
+          "risk": 0.00460431654676259,
+          "wilson_ci": [
+            0.004058525855096241,
+            0.005223120260191125
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "0",
+          "n_eligible": 37859,
+          "n_errors": 175,
+          "risk": 0.00462241474946512,
+          "wilson_ci": [
+            0.003987593662471507,
+            0.005357755106598799
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "1",
+          "n_eligible": 14266,
+          "n_errors": 65,
+          "risk": 0.004556287676994252,
+          "wilson_ci": [
+            0.00357666653128767,
+            0.00580265693260141
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "all",
+          "n_eligible": 67035,
+          "n_errors": 406,
+          "risk": 0.00605653762959648,
+          "wilson_ci": [
+            0.0054968357702659355,
+            0.006672847372630163
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "0",
+          "n_eligible": 49570,
+          "n_errors": 288,
+          "risk": 0.005809965705063547,
+          "wilson_ci": [
+            0.005178138772600988,
+            0.006518381847096172
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "1",
+          "n_eligible": 17465,
+          "n_errors": 118,
+          "risk": 0.006756369882622387,
+          "wilson_ci": [
+            0.005645214709946451,
+            0.008084457025072293
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "all",
+          "n_eligible": 74395,
+          "n_errors": 576,
+          "risk": 0.007742455810202298,
+          "wilson_ci": [
+            0.00713753986064654,
+            0.008398205537491753
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "0",
+          "n_eligible": 55795,
+          "n_errors": 422,
+          "risk": 0.007563401738507035,
+          "wilson_ci": [
+            0.006877642558427576,
+            0.008316964294591006
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "1",
+          "n_eligible": 18600,
+          "n_errors": 154,
+          "risk": 0.008279569892473118,
+          "wilson_ci": [
+            0.007075048438079116,
+            0.009687159491447172
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "all",
+          "n_eligible": 77762,
+          "n_errors": 715,
+          "risk": 0.009194722357964044,
+          "wilson_ci": [
+            0.008547691901289059,
+            0.009890242182918793
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "0",
+          "n_eligible": 58633,
+          "n_errors": 531,
+          "risk": 0.009056333464090188,
+          "wilson_ci": [
+            0.00832105511385665,
+            0.009855937921643222
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "1",
+          "n_eligible": 19129,
+          "n_errors": 184,
+          "risk": 0.009618903235924512,
+          "wilson_ci": [
+            0.00833086045859685,
+            0.011103861750386194
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "all",
+          "n_eligible": 79730,
+          "n_errors": 1112,
+          "risk": 0.013947071365859777,
+          "wilson_ci": [
+            0.013156163213920663,
+            0.01478481414349519
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "0",
+          "n_eligible": 59564,
+          "n_errors": 644,
+          "risk": 0.010811899805251494,
+          "wilson_ci": [
+            0.010012361438108117,
+            0.011674532482896984
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "1",
+          "n_eligible": 20166,
+          "n_errors": 468,
+          "risk": 0.023207378756322523,
+          "wilson_ci": [
+            0.021218368123228495,
+            0.025378005018300672
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "all",
+          "n_eligible": 81028,
+          "n_errors": 1578,
+          "risk": 0.019474749469319246,
+          "wilson_ci": [
+            0.018545807838673527,
+            0.020449251411294066
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "0",
+          "n_eligible": 60540,
+          "n_errors": 982,
+          "risk": 0.01622068054179055,
+          "wilson_ci": [
+            0.015244679677367324,
+            0.017258072236039677
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "1",
+          "n_eligible": 20488,
+          "n_errors": 596,
+          "risk": 0.029090199140960563,
+          "wilson_ci": [
+            0.02687576450245328,
+            0.03148118995787636
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "all",
+          "n_eligible": 85014,
+          "n_errors": 2485,
+          "risk": 0.029230479685698828,
+          "wilson_ci": [
+            0.028119231453344724,
+            0.030384270558404522
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "0",
+          "n_eligible": 63323,
+          "n_errors": 1674,
+          "risk": 0.026435892171880675,
+          "wilson_ci": [
+            0.02521479689539196,
+            0.02771444103289289
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "1",
+          "n_eligible": 21691,
+          "n_errors": 811,
+          "risk": 0.037388778756166155,
+          "wilson_ci": [
+            0.034944918488526815,
+            0.03999646616767031
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "all",
+          "n_eligible": 96753,
+          "n_errors": 5468,
+          "risk": 0.05651504346118467,
+          "wilson_ci": [
+            0.055077565094696745,
+            0.05798773647859454
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "0",
+          "n_eligible": 72183,
+          "n_errors": 3964,
+          "risk": 0.0549159774462131,
+          "wilson_ci": [
+            0.05327759881326408,
+            0.056601726816261466
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "1",
+          "n_eligible": 24570,
+          "n_errors": 1504,
+          "risk": 0.061212861212861215,
+          "wilson_ci": [
+            0.0582834638367449,
+            0.06427944371141965
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "all",
+          "n_eligible": 102608,
+          "n_errors": 7767,
+          "risk": 0.07569585217526899,
+          "wilson_ci": [
+            0.07409323282933966,
+            0.0773302406988711
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "0",
+          "n_eligible": 76822,
+          "n_errors": 5747,
+          "risk": 0.07480929941943713,
+          "wilson_ci": [
+            0.0729701175540812,
+            0.07669100220057365
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "1",
+          "n_eligible": 25786,
+          "n_errors": 2020,
+          "risk": 0.07833708213759405,
+          "wilson_ci": [
+            0.07511989512354889,
+            0.08167988456015332
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "all",
+          "n_eligible": 104857,
+          "n_errors": 8784,
+          "risk": 0.08377123129595544,
+          "wilson_ci": [
+            0.08210957309924692,
+            0.08546338563693902
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "0",
+          "n_eligible": 78603,
+          "n_errors": 6520,
+          "risk": 0.08294848797119703,
+          "wilson_ci": [
+            0.08104070802153188,
+            0.08489702992528403
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "1",
+          "n_eligible": 26254,
+          "n_errors": 2264,
+          "risk": 0.08623447855564867,
+          "wilson_ci": [
+            0.08289918532890062,
+            0.08969083757636492
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "all",
+          "n_eligible": 104984,
+          "n_errors": 8835,
+          "risk": 0.08415568086565572,
+          "wilson_ci": [
+            0.08249151648916335,
+            0.08585027636265839
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "0",
+          "n_eligible": 78698,
+          "n_errors": 6557,
+          "risk": 0.08331850872957382,
+          "wilson_ci": [
+            0.08140794738157443,
+            0.08526974675706102
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "1",
+          "n_eligible": 26286,
+          "n_errors": 2278,
+          "risk": 0.08666210149889675,
+          "wilson_ci": [
+            0.08332113563296907,
+            0.09012386082937317
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "all",
+          "n_eligible": 105049,
+          "n_errors": 8868,
+          "risk": 0.08441774790811907,
+          "wilson_ci": [
+            0.08275171306123669,
+            0.08611417588070569
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "0",
+          "n_eligible": 78739,
+          "n_errors": 6582,
+          "risk": 0.08359262881164353,
+          "wilson_ci": [
+            0.08167966297861459,
+            0.08554622339871332
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "1",
+          "n_eligible": 26310,
+          "n_errors": 2286,
+          "risk": 0.08688711516533637,
+          "wilson_ci": [
+            0.08354362369210407,
+            0.0903512242335233
+          ]
+        }
+      ]
+    },
+    "taxonomy": {
+      "Global abstention": {
+        "n": 105107,
+        "n_selected": 1000,
+        "n_rejected": 78730,
+        "n_abstained": 25377,
+        "coverage": 0.7585603242410115,
+        "selection_rate": 0.009514114188398488,
+        "abstain_rate": 0.24143967575898845,
+        "n_eligible": 79730,
+        "utility_at_k": 0.981,
+        "delta_eopp_at_k": -0.004974502375782331,
+        "abs_delta_eopp_at_k": 0.004974502375782331,
+        "group_counts": {
+          "0": {
+            "n": 78779,
+            "positive": 53958,
+            "positive_selected": 804,
+            "select": 821,
+            "reject": 58743,
+            "abstain": 19215,
+            "tpr": 0.014900478149671968
+          },
+          "1": {
+            "n": 26328,
+            "positive": 17832,
+            "positive_selected": 177,
+            "select": 179,
+            "reject": 19987,
+            "abstain": 6162,
+            "tpr": 0.009925975773889636
+          }
+        },
+        "fairness_status": "available"
+      },
+      "Top-K-only abstention": {
+        "n": 105107,
+        "n_selected": 1000,
+        "n_rejected": 104107,
+        "n_abstained": 0,
+        "coverage": 1.0,
+        "selection_rate": 0.009514114188398488,
+        "abstain_rate": 0.0,
+        "n_eligible": 79730,
+        "utility_at_k": 0.981,
+        "delta_eopp_at_k": -0.004974502375782331,
+        "abs_delta_eopp_at_k": 0.004974502375782331,
+        "group_counts": {
+          "0": {
+            "n": 78779,
+            "positive": 53958,
+            "positive_selected": 804,
+            "select": 821,
+            "reject": 77958,
+            "abstain": 0,
+            "tpr": 0.014900478149671968
+          },
+          "1": {
+            "n": 26328,
+            "positive": 17832,
+            "positive_selected": 177,
+            "select": 179,
+            "reject": 26149,
+            "abstain": 0,
+            "tpr": 0.009925975773889636
+          }
+        },
+        "fairness_status": "available"
+      },
+      "Defer remainder": {
+        "n": 105107,
+        "n_selected": 1000,
+        "n_rejected": 0,
+        "n_abstained": 104107,
+        "coverage": 0.009514114188398537,
+        "selection_rate": 0.009514114188398488,
+        "abstain_rate": 0.9904858858116015,
+        "n_eligible": 79730,
+        "utility_at_k": 0.981,
+        "delta_eopp_at_k": -0.004974502375782331,
+        "abs_delta_eopp_at_k": 0.004974502375782331,
+        "group_counts": {
+          "0": {
+            "n": 78779,
+            "positive": 53958,
+            "positive_selected": 804,
+            "select": 821,
+            "reject": 0,
+            "abstain": 77958,
+            "tpr": 0.014900478149671968
+          },
+          "1": {
+            "n": 26328,
+            "positive": 17832,
+            "positive_selected": 177,
+            "select": 179,
+            "reject": 0,
+            "abstain": 26149,
+            "tpr": 0.009925975773889636
+          }
+        },
+        "fairness_status": "available"
+      }
+    }
+  },
+  "oulad": {
+    "packet_path": "compass_artifacts_repo/outputs/oulad_run_v1_oulad_v1_seed42_20260126T031033Z_LOCAL/artifacts/decision_packets.jsonl",
+    "sha256": "08e8eb75440c30b2acdf1ed55e99bce29dd2b671d7cf2fe069de7bdf04a1b4dc",
+    "initial_historical": {
+      "n": 6519,
+      "n_selected": 69,
+      "n_rejected": 0,
+      "n_abstained": 6450,
+      "coverage": 0.010584445467096137,
+      "selection_rate": 0.01058444546709618,
+      "abstain_rate": 0.9894155545329039,
+      "n_eligible": 69,
+      "utility_at_k": 0.17391304347826086,
+      "delta_eopp_at_k": 0.0019223328507075687,
+      "abs_delta_eopp_at_k": 0.0019223328507075687,
+      "group_counts": {
+        "0": {
+          "n": 2894,
+          "positive": 1378,
+          "positive_selected": 4,
+          "select": 26,
+          "reject": 0,
+          "abstain": 2868,
+          "tpr": 0.002902757619738752
+        },
+        "1": {
+          "n": 3625,
+          "positive": 1658,
+          "positive_selected": 8,
+          "select": 43,
+          "reject": 0,
+          "abstain": 3582,
+          "tpr": 0.0048250904704463205
+        }
+      },
+      "fairness_status": "available"
+    },
+    "initial_recomputed": {
+      "n": 6519,
+      "n_selected": 69,
+      "n_rejected": 0,
+      "n_abstained": 6450,
+      "coverage": 0.010584445467096137,
+      "selection_rate": 0.01058444546709618,
+      "abstain_rate": 0.9894155545329039,
+      "n_eligible": 69,
+      "utility_at_k": 0.17391304347826086,
+      "delta_eopp_at_k": 0.0019223328507075687,
+      "abs_delta_eopp_at_k": 0.0019223328507075687,
+      "group_counts": {
+        "0": {
+          "n": 2894,
+          "positive": 1378,
+          "positive_selected": 4,
+          "select": 26,
+          "reject": 0,
+          "abstain": 2868,
+          "tpr": 0.002902757619738752
+        },
+        "1": {
+          "n": 3625,
+          "positive": 1658,
+          "positive_selected": 8,
+          "select": 43,
+          "reject": 0,
+          "abstain": 3582,
+          "tpr": 0.0048250904704463205
+        }
+      },
+      "fairness_status": "available"
+    },
+    "initial_decision_mismatches": 0,
+    "grid": {
+      "k": [
+        50,
+        100,
+        200,
+        500,
+        1000
+      ],
+      "gamma_bits": [
+        0.01,
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        0.995,
+        0.999
+      ]
+    },
+    "max_difference_from_historical_csv": {
+      "utility_at_k": 5.551115123125783e-17,
+      "utility_at_k_undefined_mismatch_count": 0,
+      "coverage": 9.71445146547012e-17,
+      "coverage_undefined_mismatch_count": 0,
+      "abstain_rate": 1.1102230246251565e-16,
+      "abstain_rate_undefined_mismatch_count": 0,
+      "abs_delta_eopp_at_k": 9.578926193909432e-17,
+      "abs_delta_eopp_at_k_undefined_mismatch_count": 0,
+      "n_selected": 0.0,
+      "n_selected_undefined_mismatch_count": 0,
+      "n_non_abstain": 0.0,
+      "n_non_abstain_undefined_mismatch_count": 0
+    },
+    "fixed_k": {
+      "status": "feasible",
+      "selected": {
+        "candidate_id": "oulad:k=000500:g=0.999",
+        "k": 500,
+        "gamma_entropy": 0.999,
+        "n": 6519,
+        "n_selected": 500,
+        "n_rejected": 5409,
+        "n_abstained": 610,
+        "coverage": 0.906427366160454,
+        "selection_rate": 0.07669888019634913,
+        "abstain_rate": 0.09357263383954595,
+        "n_eligible": 5909,
+        "utility_at_k": 0.732,
+        "delta_eopp_at_k": 0.013451077679404594,
+        "abs_delta_eopp_at_k": 0.013451077679404594,
+        "group_counts": {
+          "0": {
+            "n": 2894,
+            "positive": 1378,
+            "positive_selected": 156,
+            "select": 210,
+            "reject": 2435,
+            "abstain": 249,
+            "tpr": 0.11320754716981132
+          },
+          "1": {
+            "n": 3625,
+            "positive": 1658,
+            "positive_selected": 210,
+            "select": 290,
+            "reject": 2974,
+            "abstain": 361,
+            "tpr": 0.12665862484921592
+          }
+        },
+        "fairness_status": "available"
+      },
+      "n_candidates": 16,
+      "n_feasible": 3,
+      "n_pareto": 1,
+      "order": [
+        "min_abs_delta_eopp",
+        "max_utility",
+        "min_abstain_rate"
+      ],
+      "tolerances": {},
+      "pareto_candidate_ids": [
+        "oulad:k=000500:g=0.999"
+      ]
+    },
+    "variable_k": {
+      "status": "feasible",
+      "selected": {
+        "candidate_id": "oulad:k=000050:g=0.999",
+        "k": 50,
+        "gamma_entropy": 0.999,
+        "n": 6519,
+        "n_selected": 50,
+        "n_rejected": 5859,
+        "n_abstained": 610,
+        "coverage": 0.906427366160454,
+        "selection_rate": 0.007669888019634913,
+        "abstain_rate": 0.09357263383954595,
+        "n_eligible": 5909,
+        "utility_at_k": 0.8,
+        "delta_eopp_at_k": 0.00685071807360539,
+        "abs_delta_eopp_at_k": 0.00685071807360539,
+        "group_counts": {
+          "0": {
+            "n": 2894,
+            "positive": 1378,
+            "positive_selected": 13,
+            "select": 14,
+            "reject": 2631,
+            "abstain": 249,
+            "tpr": 0.009433962264150943
+          },
+          "1": {
+            "n": 3625,
+            "positive": 1658,
+            "positive_selected": 27,
+            "select": 36,
+            "reject": 3228,
+            "abstain": 361,
+            "tpr": 0.016284680337756333
+          }
+        },
+        "fairness_status": "available"
+      },
+      "n_candidates": 80,
+      "n_feasible": 15,
+      "n_pareto": 2,
+      "order": [
+        "min_abs_delta_eopp",
+        "max_utility",
+        "min_abstain_rate"
+      ],
+      "tolerances": {},
+      "pareto_candidate_ids": [
+        "oulad:k=000050:g=0.999",
+        "oulad:k=000100:g=0.999"
+      ]
+    },
+    "profiles": {
+      "Fairness-first": {
+        "status": "feasible",
+        "selected": {
+          "candidate_id": "oulad:k=000050:g=0.999",
+          "k": 50,
+          "gamma_entropy": 0.999,
+          "n": 6519,
+          "n_selected": 50,
+          "n_rejected": 5859,
+          "n_abstained": 610,
+          "coverage": 0.906427366160454,
+          "selection_rate": 0.007669888019634913,
+          "abstain_rate": 0.09357263383954595,
+          "n_eligible": 5909,
+          "utility_at_k": 0.8,
+          "delta_eopp_at_k": 0.00685071807360539,
+          "abs_delta_eopp_at_k": 0.00685071807360539,
+          "group_counts": {
+            "0": {
+              "n": 2894,
+              "positive": 1378,
+              "positive_selected": 13,
+              "select": 14,
+              "reject": 2631,
+              "abstain": 249,
+              "tpr": 0.009433962264150943
+            },
+            "1": {
+              "n": 3625,
+              "positive": 1658,
+              "positive_selected": 27,
+              "select": 36,
+              "reject": 3228,
+              "abstain": 361,
+              "tpr": 0.016284680337756333
+            }
+          },
+          "fairness_status": "available"
+        },
+        "n_candidates": 80,
+        "n_feasible": 15,
+        "n_pareto": 2,
+        "order": [
+          "min_abs_delta_eopp",
+          "max_utility",
+          "min_abstain_rate"
+        ],
+        "tolerances": {},
+        "pareto_candidate_ids": [
+          "oulad:k=000050:g=0.999",
+          "oulad:k=000100:g=0.999"
+        ]
+      },
+      "Utility-first": {
+        "status": "feasible",
+        "selected": {
+          "candidate_id": "oulad:k=000100:g=0.999",
+          "k": 100,
+          "gamma_entropy": 0.999,
+          "n": 6519,
+          "n_selected": 100,
+          "n_rejected": 5809,
+          "n_abstained": 610,
+          "coverage": 0.906427366160454,
+          "selection_rate": 0.015339776039269826,
+          "abstain_rate": 0.09357263383954595,
+          "n_eligible": 5909,
+          "utility_at_k": 0.83,
+          "delta_eopp_at_k": 0.0075378907911852824,
+          "abs_delta_eopp_at_k": 0.0075378907911852824,
+          "group_counts": {
+            "0": {
+              "n": 2894,
+              "positive": 1378,
+              "positive_selected": 32,
+              "select": 38,
+              "reject": 2607,
+              "abstain": 249,
+              "tpr": 0.023222060957910014
+            },
+            "1": {
+              "n": 3625,
+              "positive": 1658,
+              "positive_selected": 51,
+              "select": 62,
+              "reject": 3202,
+              "abstain": 361,
+              "tpr": 0.030759951749095297
+            }
+          },
+          "fairness_status": "available"
+        },
+        "n_candidates": 80,
+        "n_feasible": 15,
+        "n_pareto": 2,
+        "order": [
+          "max_utility",
+          "min_abs_delta_eopp",
+          "min_abstain_rate"
+        ],
+        "tolerances": {},
+        "pareto_candidate_ids": [
+          "oulad:k=000050:g=0.999",
+          "oulad:k=000100:g=0.999"
+        ]
+      }
+    },
+    "stability": [
+      {
+        "order": [
+          "min_abs_delta_eopp",
+          "max_utility",
+          "min_abstain_rate"
+        ],
+        "candidate_id": "oulad:k=000050:g=0.999"
+      },
+      {
+        "order": [
+          "min_abs_delta_eopp",
+          "min_abstain_rate",
+          "max_utility"
+        ],
+        "candidate_id": "oulad:k=000050:g=0.999"
+      },
+      {
+        "order": [
+          "max_utility",
+          "min_abs_delta_eopp",
+          "min_abstain_rate"
+        ],
+        "candidate_id": "oulad:k=000100:g=0.999"
+      },
+      {
+        "order": [
+          "max_utility",
+          "min_abstain_rate",
+          "min_abs_delta_eopp"
+        ],
+        "candidate_id": "oulad:k=000100:g=0.999"
+      },
+      {
+        "order": [
+          "min_abstain_rate",
+          "min_abs_delta_eopp",
+          "max_utility"
+        ],
+        "candidate_id": "oulad:k=000050:g=0.999"
+      },
+      {
+        "order": [
+          "min_abstain_rate",
+          "max_utility",
+          "min_abs_delta_eopp"
+        ],
+        "candidate_id": "oulad:k=000100:g=0.999"
+      }
+    ],
+    "uncertainty": {
+      "1": {
+        "ece": 0.012789724734121084,
+        "spearman_entropy_abs_error": 0.4166168447537088
+      },
+      "0.5": {
+        "ece": 0.0772688086967206,
+        "spearman_entropy_abs_error": 0.4166168447537088
+      },
+      "2": {
+        "ece": 0.0703300557801326,
+        "spearman_entropy_abs_error": 0.4166168447537088
+      },
+      "row_bootstrap": {
+        "replicates": 200,
+        "seed": 42,
+        "ece_ci": [
+          0.009727544527447155,
+          0.02733747163384754
+        ],
+        "spearman_ci": [
+          0.3867124438681013,
+          0.439941216326245
+        ],
+        "limitation": "Conditional row resampling; historical packets lack student cluster IDs. ASSISTments intervals do not establish cluster-robust population uncertainty."
+      },
+      "selective_risk": [
+        {
+          "gamma_bits": 0.01,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.01,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.01,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "all",
+          "n_eligible": 1,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.7934506856227626
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "1",
+          "n_eligible": 1,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.7934506856227626
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "all",
+          "n_eligible": 2,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.6576197724933469
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "1",
+          "n_eligible": 2,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.6576197724933469
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "all",
+          "n_eligible": 2,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.6576197724933469
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "1",
+          "n_eligible": 2,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.6576197724933469
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "all",
+          "n_eligible": 6,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            2.7755575615628914e-17,
+            0.3903342879021653
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "1",
+          "n_eligible": 6,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            2.7755575615628914e-17,
+            0.3903342879021653
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "all",
+          "n_eligible": 23,
+          "n_errors": 3,
+          "risk": 0.13043478260869565,
+          "wilson_ci": [
+            0.04537659093631238,
+            0.32127482270095964
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "0",
+          "n_eligible": 9,
+          "n_errors": 2,
+          "risk": 0.2222222222222222,
+          "wilson_ci": [
+            0.06322510711784671,
+            0.5474110308930111
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "1",
+          "n_eligible": 14,
+          "n_errors": 1,
+          "risk": 0.07142857142857142,
+          "wilson_ci": [
+            0.012722215247890939,
+            0.31468704424151117
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "all",
+          "n_eligible": 69,
+          "n_errors": 10,
+          "risk": 0.14492753623188406,
+          "wilson_ci": [
+            0.08067095280675704,
+            0.24663521605213476
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "0",
+          "n_eligible": 26,
+          "n_errors": 4,
+          "risk": 0.15384615384615385,
+          "wilson_ci": [
+            0.06150033723578355,
+            0.3353119932821348
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "1",
+          "n_eligible": 43,
+          "n_errors": 6,
+          "risk": 0.13953488372093023,
+          "wilson_ci": [
+            0.06555723427964878,
+            0.2726358796738286
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "all",
+          "n_eligible": 226,
+          "n_errors": 36,
+          "risk": 0.1592920353982301,
+          "wilson_ci": [
+            0.11733493149018384,
+            0.21263799510814677
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "0",
+          "n_eligible": 96,
+          "n_errors": 16,
+          "risk": 0.16666666666666666,
+          "wilson_ci": [
+            0.10527382371950136,
+            0.2537099015189491
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "1",
+          "n_eligible": 130,
+          "n_errors": 20,
+          "risk": 0.15384615384615385,
+          "wilson_ci": [
+            0.10185389061437025,
+            0.22570872867408234
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "all",
+          "n_eligible": 543,
+          "n_errors": 95,
+          "risk": 0.17495395948434622,
+          "wilson_ci": [
+            0.14531226364640457,
+            0.2091624304243929
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "0",
+          "n_eligible": 225,
+          "n_errors": 44,
+          "risk": 0.19555555555555557,
+          "wilson_ci": [
+            0.14902437732662316,
+            0.2523078781745767
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "1",
+          "n_eligible": 318,
+          "n_errors": 51,
+          "risk": 0.16037735849056603,
+          "wilson_ci": [
+            0.12413620214937406,
+            0.2047259003545207
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "all",
+          "n_eligible": 1465,
+          "n_errors": 360,
+          "risk": 0.24573378839590443,
+          "wilson_ci": [
+            0.22437186969300862,
+            0.2684256711674279
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "0",
+          "n_eligible": 625,
+          "n_errors": 162,
+          "risk": 0.2592,
+          "wilson_ci": [
+            0.22639061018020967,
+            0.29495138186261116
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "1",
+          "n_eligible": 840,
+          "n_errors": 198,
+          "risk": 0.2357142857142857,
+          "wilson_ci": [
+            0.20825442141688594,
+            0.265580390372867
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "all",
+          "n_eligible": 2628,
+          "n_errors": 743,
+          "risk": 0.2827245053272451,
+          "wilson_ci": [
+            0.2658341843159279,
+            0.3002491007647318
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "0",
+          "n_eligible": 1136,
+          "n_errors": 336,
+          "risk": 0.29577464788732394,
+          "wilson_ci": [
+            0.2699590907403086,
+            0.3229667531046197
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "1",
+          "n_eligible": 1492,
+          "n_errors": 407,
+          "risk": 0.2727882037533512,
+          "wilson_ci": [
+            0.2507932800785113,
+            0.2959501291230707
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "all",
+          "n_eligible": 4649,
+          "n_errors": 1515,
+          "risk": 0.32587653258765326,
+          "wilson_ci": [
+            0.3125520787881692,
+            0.33948850451372764
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "0",
+          "n_eligible": 2062,
+          "n_errors": 654,
+          "risk": 0.3171677982541222,
+          "wilson_ci": [
+            0.2974370339813144,
+            0.33757852019851686
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "1",
+          "n_eligible": 2587,
+          "n_errors": 861,
+          "risk": 0.3328179358330112,
+          "wilson_ci": [
+            0.3149192817412226,
+            0.35121235396537415
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "all",
+          "n_eligible": 5160,
+          "n_errors": 1755,
+          "risk": 0.34011627906976744,
+          "wilson_ci": [
+            0.3273132868184858,
+            0.3531571510990983
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "0",
+          "n_eligible": 2310,
+          "n_errors": 767,
+          "risk": 0.332034632034632,
+          "wilson_ci": [
+            0.3131225688499196,
+            0.3515044102191186
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "1",
+          "n_eligible": 2850,
+          "n_errors": 988,
+          "risk": 0.3466666666666667,
+          "wilson_ci": [
+            0.32941134584677073,
+            0.36433478104523703
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "all",
+          "n_eligible": 5909,
+          "n_errors": 2075,
+          "risk": 0.3511592486038247,
+          "wilson_ci": [
+            0.33908891122608786,
+            0.36342298390075534
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "0",
+          "n_eligible": 2645,
+          "n_errors": 902,
+          "risk": 0.34102079395085066,
+          "wilson_ci": [
+            0.32319700413105945,
+            0.35930570013632757
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "1",
+          "n_eligible": 3264,
+          "n_errors": 1173,
+          "risk": 0.359375,
+          "wilson_ci": [
+            0.34308843454067406,
+            0.375992184403646
+          ]
+        }
+      ]
+    }
+  },
+  "synthetic": {
+    "packet_path": "compass_github/compass-contestable-governance-artifacts/outputs/synthetic_run_v1_synthetic_v1_seed42_20260126T234652Z_LOCAL/artifacts/decision_packets.jsonl",
+    "sha256": "4176118d5a3bab9a8645a884f88586d1425f23b9f0e4819879f663150e3292d9",
+    "initial_historical": {
+      "n": 1000,
+      "n_selected": 4,
+      "n_rejected": 0,
+      "n_abstained": 996,
+      "coverage": 0.0040000000000000036,
+      "selection_rate": 0.004,
+      "abstain_rate": 0.996,
+      "n_eligible": 4,
+      "utility_at_k": 1.0,
+      "delta_eopp_at_k": -0.008948410293701775,
+      "abs_delta_eopp_at_k": 0.008948410293701775,
+      "group_counts": {
+        "0": {
+          "n": 497,
+          "positive": 223,
+          "positive_selected": 3,
+          "select": 3,
+          "reject": 0,
+          "abstain": 494,
+          "tpr": 0.013452914798206279
+        },
+        "1": {
+          "n": 503,
+          "positive": 222,
+          "positive_selected": 1,
+          "select": 1,
+          "reject": 0,
+          "abstain": 502,
+          "tpr": 0.0045045045045045045
+        }
+      },
+      "fairness_status": "available"
+    },
+    "initial_recomputed": {
+      "n": 1000,
+      "n_selected": 4,
+      "n_rejected": 0,
+      "n_abstained": 996,
+      "coverage": 0.0040000000000000036,
+      "selection_rate": 0.004,
+      "abstain_rate": 0.996,
+      "n_eligible": 4,
+      "utility_at_k": 1.0,
+      "delta_eopp_at_k": -0.008948410293701775,
+      "abs_delta_eopp_at_k": 0.008948410293701775,
+      "group_counts": {
+        "0": {
+          "n": 497,
+          "positive": 223,
+          "positive_selected": 3,
+          "select": 3,
+          "reject": 0,
+          "abstain": 494,
+          "tpr": 0.013452914798206279
+        },
+        "1": {
+          "n": 503,
+          "positive": 222,
+          "positive_selected": 1,
+          "select": 1,
+          "reject": 0,
+          "abstain": 502,
+          "tpr": 0.0045045045045045045
+        }
+      },
+      "fairness_status": "available"
+    },
+    "initial_decision_mismatches": 0,
+    "grid": {
+      "k": [
+        20,
+        50,
+        100,
+        200,
+        300
+      ],
+      "gamma_bits": [
+        0.01,
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        0.995,
+        0.999
+      ]
+    },
+    "max_difference_from_historical_csv": {
+      "utility_at_k": 1.1102230246251565e-16,
+      "utility_at_k_undefined_mismatch_count": 0,
+      "coverage": 5.551115123125783e-17,
+      "coverage_undefined_mismatch_count": 0,
+      "abstain_rate": 1.1102230246251565e-16,
+      "abstain_rate_undefined_mismatch_count": 0,
+      "abs_delta_eopp_at_k": 8.521829075736065e-17,
+      "abs_delta_eopp_at_k_undefined_mismatch_count": 0,
+      "n_selected": 0.0,
+      "n_selected_undefined_mismatch_count": 0,
+      "n_non_abstain": 0.0,
+      "n_non_abstain_undefined_mismatch_count": 0
+    },
+    "fixed_k": {
+      "status": "feasible",
+      "selected": {
+        "candidate_id": "synthetic:k=000100:g=0.999",
+        "k": 100,
+        "gamma_entropy": 0.999,
+        "n": 1000,
+        "n_selected": 100,
+        "n_rejected": 833,
+        "n_abstained": 67,
+        "coverage": 0.933,
+        "selection_rate": 0.1,
+        "abstain_rate": 0.067,
+        "n_eligible": 933,
+        "utility_at_k": 1.0,
+        "delta_eopp_at_k": -0.01696764028602593,
+        "abs_delta_eopp_at_k": 0.01696764028602593,
+        "group_counts": {
+          "0": {
+            "n": 497,
+            "positive": 223,
+            "positive_selected": 52,
+            "select": 52,
+            "reject": 411,
+            "abstain": 34,
+            "tpr": 0.23318385650224216
+          },
+          "1": {
+            "n": 503,
+            "positive": 222,
+            "positive_selected": 48,
+            "select": 48,
+            "reject": 422,
+            "abstain": 33,
+            "tpr": 0.21621621621621623
+          }
+        },
+        "fairness_status": "available"
+      },
+      "n_candidates": 16,
+      "n_feasible": 3,
+      "n_pareto": 1,
+      "order": [
+        "min_abs_delta_eopp",
+        "max_utility",
+        "min_abstain_rate"
+      ],
+      "tolerances": {},
+      "pareto_candidate_ids": [
+        "synthetic:k=000100:g=0.999"
+      ]
+    },
+    "variable_k": {
+      "status": "feasible",
+      "selected": {
+        "candidate_id": "synthetic:k=000020:g=0.999",
+        "k": 20,
+        "gamma_entropy": 0.999,
+        "n": 1000,
+        "n_selected": 20,
+        "n_rejected": 913,
+        "n_abstained": 67,
+        "coverage": 0.933,
+        "selection_rate": 0.02,
+        "abstain_rate": 0.067,
+        "n_eligible": 933,
+        "utility_at_k": 1.0,
+        "delta_eopp_at_k": 0.00020199571769078523,
+        "abs_delta_eopp_at_k": 0.00020199571769078523,
+        "group_counts": {
+          "0": {
+            "n": 497,
+            "positive": 223,
+            "positive_selected": 10,
+            "select": 10,
+            "reject": 453,
+            "abstain": 34,
+            "tpr": 0.04484304932735426
+          },
+          "1": {
+            "n": 503,
+            "positive": 222,
+            "positive_selected": 10,
+            "select": 10,
+            "reject": 460,
+            "abstain": 33,
+            "tpr": 0.04504504504504504
+          }
+        },
+        "fairness_status": "available"
+      },
+      "n_candidates": 80,
+      "n_feasible": 12,
+      "n_pareto": 1,
+      "order": [
+        "min_abs_delta_eopp",
+        "max_utility",
+        "min_abstain_rate"
+      ],
+      "tolerances": {},
+      "pareto_candidate_ids": [
+        "synthetic:k=000020:g=0.999"
+      ]
+    },
+    "profiles": {
+      "Fairness-first": {
+        "status": "feasible",
+        "selected": {
+          "candidate_id": "synthetic:k=000020:g=0.999",
+          "k": 20,
+          "gamma_entropy": 0.999,
+          "n": 1000,
+          "n_selected": 20,
+          "n_rejected": 913,
+          "n_abstained": 67,
+          "coverage": 0.933,
+          "selection_rate": 0.02,
+          "abstain_rate": 0.067,
+          "n_eligible": 933,
+          "utility_at_k": 1.0,
+          "delta_eopp_at_k": 0.00020199571769078523,
+          "abs_delta_eopp_at_k": 0.00020199571769078523,
+          "group_counts": {
+            "0": {
+              "n": 497,
+              "positive": 223,
+              "positive_selected": 10,
+              "select": 10,
+              "reject": 453,
+              "abstain": 34,
+              "tpr": 0.04484304932735426
+            },
+            "1": {
+              "n": 503,
+              "positive": 222,
+              "positive_selected": 10,
+              "select": 10,
+              "reject": 460,
+              "abstain": 33,
+              "tpr": 0.04504504504504504
+            }
+          },
+          "fairness_status": "available"
+        },
+        "n_candidates": 80,
+        "n_feasible": 12,
+        "n_pareto": 1,
+        "order": [
+          "min_abs_delta_eopp",
+          "max_utility",
+          "min_abstain_rate"
+        ],
+        "tolerances": {},
+        "pareto_candidate_ids": [
+          "synthetic:k=000020:g=0.999"
+        ]
+      },
+      "Utility-first": {
+        "status": "feasible",
+        "selected": {
+          "candidate_id": "synthetic:k=000020:g=0.999",
+          "k": 20,
+          "gamma_entropy": 0.999,
+          "n": 1000,
+          "n_selected": 20,
+          "n_rejected": 913,
+          "n_abstained": 67,
+          "coverage": 0.933,
+          "selection_rate": 0.02,
+          "abstain_rate": 0.067,
+          "n_eligible": 933,
+          "utility_at_k": 1.0,
+          "delta_eopp_at_k": 0.00020199571769078523,
+          "abs_delta_eopp_at_k": 0.00020199571769078523,
+          "group_counts": {
+            "0": {
+              "n": 497,
+              "positive": 223,
+              "positive_selected": 10,
+              "select": 10,
+              "reject": 453,
+              "abstain": 34,
+              "tpr": 0.04484304932735426
+            },
+            "1": {
+              "n": 503,
+              "positive": 222,
+              "positive_selected": 10,
+              "select": 10,
+              "reject": 460,
+              "abstain": 33,
+              "tpr": 0.04504504504504504
+            }
+          },
+          "fairness_status": "available"
+        },
+        "n_candidates": 80,
+        "n_feasible": 12,
+        "n_pareto": 1,
+        "order": [
+          "max_utility",
+          "min_abs_delta_eopp",
+          "min_abstain_rate"
+        ],
+        "tolerances": {},
+        "pareto_candidate_ids": [
+          "synthetic:k=000020:g=0.999"
+        ]
+      }
+    },
+    "stability": [
+      {
+        "order": [
+          "min_abs_delta_eopp",
+          "max_utility",
+          "min_abstain_rate"
+        ],
+        "candidate_id": "synthetic:k=000020:g=0.999"
+      },
+      {
+        "order": [
+          "min_abs_delta_eopp",
+          "min_abstain_rate",
+          "max_utility"
+        ],
+        "candidate_id": "synthetic:k=000020:g=0.999"
+      },
+      {
+        "order": [
+          "max_utility",
+          "min_abs_delta_eopp",
+          "min_abstain_rate"
+        ],
+        "candidate_id": "synthetic:k=000020:g=0.999"
+      },
+      {
+        "order": [
+          "max_utility",
+          "min_abstain_rate",
+          "min_abs_delta_eopp"
+        ],
+        "candidate_id": "synthetic:k=000020:g=0.999"
+      },
+      {
+        "order": [
+          "min_abstain_rate",
+          "min_abs_delta_eopp",
+          "max_utility"
+        ],
+        "candidate_id": "synthetic:k=000020:g=0.999"
+      },
+      {
+        "order": [
+          "min_abstain_rate",
+          "max_utility",
+          "min_abs_delta_eopp"
+        ],
+        "candidate_id": "synthetic:k=000020:g=0.999"
+      }
+    ],
+    "uncertainty": {
+      "1": {
+        "ece": 0.29136409139633185,
+        "spearman_entropy_abs_error": 0.6773689973689974
+      },
+      "0.5": {
+        "ece": 0.3223445994891437,
+        "spearman_entropy_abs_error": 0.6773689973689974
+      },
+      "2": {
+        "ece": 0.2398451199616527,
+        "spearman_entropy_abs_error": 0.6773689973689974
+      },
+      "row_bootstrap": {
+        "replicates": 200,
+        "seed": 42,
+        "ece_ci": [
+          0.2711996784768998,
+          0.3125305085174739
+        ],
+        "spearman_ci": [
+          0.6155003013805631,
+          0.7211972705395375
+        ],
+        "limitation": "Conditional row resampling; historical packets lack student cluster IDs. ASSISTments intervals do not establish cluster-robust population uncertainty."
+      },
+      "selective_risk": [
+        {
+          "gamma_bits": 0.01,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.01,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.01,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.05,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.1,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.15,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.2,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.3,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.4,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "all",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "0",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.5,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "all",
+          "n_eligible": 1,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.7934506856227626
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "0",
+          "n_eligible": 1,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.7934506856227626
+          ]
+        },
+        {
+          "gamma_bits": 0.6,
+          "group": "1",
+          "n_eligible": 0,
+          "n_errors": 0,
+          "risk": null,
+          "wilson_ci": [
+            null,
+            null
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "all",
+          "n_eligible": 9,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.2991450484195441
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "0",
+          "n_eligible": 4,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.4898908364545973
+          ]
+        },
+        {
+          "gamma_bits": 0.7,
+          "group": "1",
+          "n_eligible": 5,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.43448246478317476
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "all",
+          "n_eligible": 49,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            6.938893903907228e-18,
+            0.07269781922049637
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "0",
+          "n_eligible": 26,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.1287289218592153
+          ]
+        },
+        {
+          "gamma_bits": 0.8,
+          "group": "1",
+          "n_eligible": 23,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.14311661845042686
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "all",
+          "n_eligible": 201,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.01875332680605788
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "0",
+          "n_eligible": 105,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            0,
+            0.035294076929109894
+          ]
+        },
+        {
+          "gamma_bits": 0.9,
+          "group": "1",
+          "n_eligible": 96,
+          "n_errors": 0,
+          "risk": 0.0,
+          "wilson_ci": [
+            3.469446951953614e-18,
+            0.038475587857675686
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "all",
+          "n_eligible": 420,
+          "n_errors": 16,
+          "risk": 0.0380952380952381,
+          "wilson_ci": [
+            0.02358283957497366,
+            0.06098052267944147
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "0",
+          "n_eligible": 221,
+          "n_errors": 9,
+          "risk": 0.04072398190045249,
+          "wilson_ci": [
+            0.02157052786731122,
+            0.07557107108536318
+          ]
+        },
+        {
+          "gamma_bits": 0.95,
+          "group": "1",
+          "n_eligible": 199,
+          "n_errors": 7,
+          "risk": 0.035175879396984924,
+          "wilson_ci": [
+            0.017141766602341124,
+            0.0708158872442793
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "all",
+          "n_eligible": 753,
+          "n_errors": 275,
+          "risk": 0.3652058432934927,
+          "wilson_ci": [
+            0.33158027934917705,
+            0.400199741903473
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "0",
+          "n_eligible": 374,
+          "n_errors": 133,
+          "risk": 0.35561497326203206,
+          "wilson_ci": [
+            0.30879296228086506,
+            0.4053728671199478
+          ]
+        },
+        {
+          "gamma_bits": 0.99,
+          "group": "1",
+          "n_eligible": 379,
+          "n_errors": 142,
+          "risk": 0.37467018469656993,
+          "wilson_ci": [
+            0.32742529234516304,
+            0.42443021386715196
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "all",
+          "n_eligible": 835,
+          "n_errors": 334,
+          "risk": 0.4,
+          "wilson_ci": [
+            0.3673024773688666,
+            0.4336134189021868
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "0",
+          "n_eligible": 417,
+          "n_errors": 163,
+          "risk": 0.3908872901678657,
+          "wilson_ci": [
+            0.3452535855732895,
+            0.43851296571895865
+          ]
+        },
+        {
+          "gamma_bits": 0.995,
+          "group": "1",
+          "n_eligible": 418,
+          "n_errors": 171,
+          "risk": 0.4090909090909091,
+          "wilson_ci": [
+            0.3629930051165297,
+            0.456844522914815
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "all",
+          "n_eligible": 933,
+          "n_errors": 401,
+          "risk": 0.42979635584137194,
+          "wilson_ci": [
+            0.3983827584485487,
+            0.4617856843903238
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "0",
+          "n_eligible": 463,
+          "n_errors": 197,
+          "risk": 0.42548596112311016,
+          "wilson_ci": [
+            0.38124554994130194,
+            0.4709526670416038
+          ]
+        },
+        {
+          "gamma_bits": 0.999,
+          "group": "1",
+          "n_eligible": 470,
+          "n_errors": 204,
+          "risk": 0.4340425531914894,
+          "wilson_ci": [
+            0.38994790129146106,
+            0.4792066464040765
+          ]
+        }
+      ]
+    }
+  }
+}

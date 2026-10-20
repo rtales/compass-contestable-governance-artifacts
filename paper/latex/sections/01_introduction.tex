@@ -1,0 +1,48 @@
+\section{Introduction}
+\label{sec:introduction}
+
+\textbf{Why FAccT should care.}
+Public education agencies increasingly deploy (or procure) predictive decision support to triage scarce interventions: tutoring slots, counseling capacity, special-needs assessments, dropout prevention programs, and scholarship support.
+When these systems fail, the harm is not only predictive error---it is a \emph{crisis of legitimacy}: affected students and families cannot understand, contest, or obtain meaningful remedy.
+
+Recent episodes illustrate this legitimacy gap.
+In 2020, the UK A-level ``grading algorithm'' was rolled out with limited contestation capacity and generated large-scale, socially salient downgrades that triggered public backlash and a policy U-turn \cite{Wired2020AlevelAlgorithm}.
+In U.S. K--12 settings, early-warning models have drawn scrutiny for inequitable risk assignments and opaque governance (e.g., Wisconsin's dropout early-warning system) \cite{Markup2023DEWS}.
+And in adjacent public-sector risk profiling, courts have struck down systems for insufficient transparency and accountability (e.g., the Dutch SyRI ruling) \cite{SyRI2020Case}.
+These cases are not outliers: they expose a recurring pattern where \emph{automation arrives before contestability and accountability}.
+
+\textbf{From metrics to contestability.}
+Responsible-AI frameworks and toolkits have matured rapidly, but many deployments still reduce governance to model-level metrics and checklists.
+This creates a risk of \emph{fairwashing}: institutions claim ethical compliance via selective indicators while offering weak recourse, unclear responsibility for trade-offs, and poor auditability \cite{CitronPasquale2014ScoredSociety,Wieringa2020AccountFor,Metcalf2021AIA,Selbst2019Abstraction}.
+In public education, where labels and historical measurements can embed structural inequities \cite{BakerHawn2022AlgorithmicBiasEducation}, governance must be treated as an institutional procedure, not a one-off model tuning exercise.
+
+\textbf{Our approach: governing by artifacts.}
+We propose \compa-\ecl-\mas, a governance-first layer that turns ethical requirements into \emph{versioned policy} and produces \emph{auditable artifacts} supporting oversight, appeals, and iterative revision.
+The central design premise is simple: \emph{if a decision can be contested, the system must ship the artifacts required to contest it.}
+Concretely, the framework (i) encodes multi-dimensional requirements as computable constraints, (ii) implements \emph{abstention as a procedural safeguard} for uncertain cases (routing to human review), and (iii) selects deployable configurations via an explicit, institution-defined policy over Pareto-feasible candidates.
+
+\subsection{Contributions}
+
+\paragraph{Scope.}
+We make \emph{mechanism-level} claims about governance infrastructure: candidate sweeps, constraint checking, deterministic selection, artifact emission, and replayability for operational contestability.
+We do \emph{not} claim downstream social impact (e.g., improved educational outcomes, reduced inequity in deployment, or field adoption).
+Our artifacts are \emph{necessary but not sufficient} for substantive recourse: institutions still must provide accessible processes, capacity, and legal safeguards.
+
+\input{tables/claim_evidence_map}
+
+This paper contributes \emph{auditable infrastructure} for contestable public educational decision support:
+
+\begin{itemize}[leftmargin=*,noitemsep]
+\item \textbf{Abstention as procedural safeguard:} We formalize a Top-$K$ decision rule with uncertainty-triggered abstention that creates a concrete pathway to human review for uncertain or policy-sensitive cases.
+\item \textbf{Artifacts for contestability:} We define an artifact schema (decision logs, constraint reports, and policy manifests) that enables third-party audits, reconstruction of past decisions, and structured appeals.
+\item \textbf{Policy versioning as transparency:} We operationalize institutional value choices as a \emph{versioned} policy (thresholds, guardrails, tie-breakers), enabling re-runs under new mandates without rewriting code.
+\item \textbf{Constraint-based multi-stakeholder governance:} We show how multiple ethical dimensions (fairness, operational capacity, transparency signals, and safeguards) can be negotiated as constraints rather than hidden in optimizer weights.
+\item \textbf{Socio-technical feasibility via trade-offs:} We provide a reproducible pipeline to surface the efficiency--fairness--oversight trade space, supporting deliberation rather than claiming a single ``best'' model.
+\end{itemize}
+
+\subsection{Scope and claims}
+This is a \emph{systems} contribution: we do not claim a new fairness definition or a new learning algorithm.
+Our claim is that contestability and accountability require \emph{procedural artifacts} and \emph{policy versioning} that are often missing from educational AI deployments.
+We evaluate the framework through controlled stress tests and an artifact-centric contestability scorecard, and we provide a reproducible fixed-score analyses, a tested reference application, and versioned artifact definitions.
+
+The reported predictors estimate correctness or student success. They are mechanism testbeds, not validated rules for assigning support to the students at greatest risk. A prospective early-warning use requires a separately specified target, horizon and evaluation.

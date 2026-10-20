@@ -1,0 +1,161 @@
+{
+  "n_participants": 16,
+  "n_case_responses": 128,
+  "n_per_condition": 64,
+  "assignment": "G1 odd=A/even=B; G2 reversed; author confirmed 2026-10-20",
+  "ethics": "Author reports voluntary participation and authorization; no formal ethics committee approval or exemption.",
+  "analysis": "Retrospective revision; two-sided exact sign enumeration of nonzero Wilcoxon midranks; Holm over four endpoints; 10000 participant bootstrap replicates, seed 42.",
+  "diagnosis_remediation_agreement": 128,
+  "outcomes": {
+    "diagnosis": {
+      "A": 0.5625,
+      "B": 0.921875,
+      "difference": 0.359375,
+      "difference_ci": [
+        0.203125,
+        0.515625
+      ],
+      "p_two_sided": 0.00146484375,
+      "n_zero_differences": 3,
+      "rank_biserial": 0.9340659340659341,
+      "p_holm": 0.0029296875
+    },
+    "remediation": {
+      "A": 0.5625,
+      "B": 0.921875,
+      "difference": 0.359375,
+      "difference_ci": [
+        0.203125,
+        0.515625
+      ],
+      "p_two_sided": 0.00146484375,
+      "n_zero_differences": 3,
+      "rank_biserial": 0.9340659340659341,
+      "p_holm": 0.0029296875
+    },
+    "confidence": {
+      "A": 3.078125,
+      "B": 4.234375,
+      "difference": 1.15625,
+      "difference_ci": [
+        0.921875,
+        1.375
+      ],
+      "p_two_sided": 3.0517578125e-05,
+      "n_zero_differences": 0,
+      "rank_biserial": 1.0,
+      "p_holm": 0.0001220703125
+    },
+    "evidence_characters": {
+      "A": 69.8125,
+      "B": 91.65625,
+      "difference": 21.84375,
+      "difference_ci": [
+        20.046875,
+        23.734375
+      ],
+      "p_two_sided": 3.0517578125e-05,
+      "n_zero_differences": 0,
+      "rank_biserial": 1.0,
+      "p_holm": 0.0001220703125
+    }
+  },
+  "case_counts": [
+    {
+      "case": 1,
+      "condition": "A",
+      "correct": 5,
+      "n": 8
+    },
+    {
+      "case": 1,
+      "condition": "B",
+      "correct": 7,
+      "n": 8
+    },
+    {
+      "case": 2,
+      "condition": "A",
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "case": 2,
+      "condition": "B",
+      "correct": 8,
+      "n": 8
+    },
+    {
+      "case": 3,
+      "condition": "A",
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "case": 3,
+      "condition": "B",
+      "correct": 8,
+      "n": 8
+    },
+    {
+      "case": 4,
+      "condition": "A",
+      "correct": 7,
+      "n": 8
+    },
+    {
+      "case": 4,
+      "condition": "B",
+      "correct": 7,
+      "n": 8
+    },
+    {
+      "case": 5,
+      "condition": "A",
+      "correct": 5,
+      "n": 8
+    },
+    {
+      "case": 5,
+      "condition": "B",
+      "correct": 7,
+      "n": 8
+    },
+    {
+      "case": 6,
+      "condition": "A",
+      "correct": 3,
+      "n": 8
+    },
+    {
+      "case": 6,
+      "condition": "B",
+      "correct": 7,
+      "n": 8
+    },
+    {
+      "case": 7,
+      "condition": "A",
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "case": 7,
+      "condition": "B",
+      "correct": 7,
+      "n": 8
+    },
+    {
+      "case": 8,
+      "condition": "A",
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "case": 8,
+      "condition": "B",
+      "correct": 8,
+      "n": 8
+    }
+  ]
+}

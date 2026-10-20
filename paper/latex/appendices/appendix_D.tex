@@ -1,0 +1,18 @@
+\section{Datasets and Implemented Tasks}
+\label{app:datasets}
+\subsection{ASSISTments}
+The 2009--2010 Skill Builder release provides student--problem interactions \cite{Feng2009ASSISTments}. The implemented target is response correctness (positive=1). School-ID parity is a synthetic group for testing constraints, not a demographic or protected attribute.
+
+The processor reads the CSV with a deterministic encoding fallback, replaces decoding errors and skips malformed lines. Numeric missing values are filled with zero, including skill and response-time fields; the implementation does not drop rows for those missing fields. Correctness is coerced to an integer and clipped to zero/one; missing labels become zero. These choices can affect measurement validity and should be audited before deployment.
+
+Features include bounded attempt and hint counts, log-transformed response and overlap times, practice opportunity, an original-item indicator, skill-ID remainder, and fixed one-hot categories for tutor mode, answer type and task type. School ID itself is excluded from the feature vector, but that does not establish absence of proxies.
+
+The runner applies a seed-42 shuffled row split (80/20); the audited output has 105107 cases. Features can describe the interaction being predicted. This is not a temporally validated early-warning task. The historical packets lack student-cluster IDs, so neither split independence nor cluster-robust intervals are established.
+
+\subsection{OULAD}
+OULAD provides anonymized student/course information \cite{Kuzilek2017OULAD}. The processor uses the student-information table. Positive means Pass or Distinction; Fail and Withdrawn are negative. Gender F/M defines the binary audit group, with other or missing gender excluded.
+
+Categorical inputs are module, presentation, region, education, deprivation band, age band and disability; numerical inputs are previous attempts and studied credits. Gender and final outcome are excluded from the score features. This is a success-prediction benchmark; it does not use a validated early-intervention time window or estimate treatment benefit. The shuffled 80/20 row split yields 6519 audited cases. Repeated student/course records are not claimed to be separated by student.
+
+\subsection{Synthetic}
+The synthetic audit has 1000 held-out cases and a binary generated group. Its purpose is to exercise capacity, abstention, infeasibility and evidence checks under a controlled label process. It is not evidence of field validity. Recipe inputs, hashes and exact group counts are included in the computational revision report.

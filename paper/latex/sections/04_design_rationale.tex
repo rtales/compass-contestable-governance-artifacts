@@ -1,0 +1,11 @@
+\section{Design Properties and Their Limits}
+\label{sec:design}
+\textbf{G1: Rule-aligned audit.} Metrics and constraint checks use the decision states actually emitted by a specified rule. This prevents a training-score metric from being mistaken for deployed-rule compliance. Historical outputs and revised decisions are reconciled separately.
+
+\textbf{G2: Reproducible policy selection.} With the same scored cases, IDs, candidate domain, objectives, policy and numerical conventions, the revised implementation applies exact Pareto filtering and deterministic tie-breaking. Tests include permuted cases and candidates. This is a computational property, not a claim of stability under new training samples or institutional preferences.
+
+\textbf{G3: Explicit failure.} An empty feasible set or insufficient evidence closes the revised authorization gate. The historical code reported violations but did not establish that operational block. Neither version demonstrates a completed human review or institutional remedy.
+
+\textbf{G4: Evidence integrity.} The revised verifier checks packet hashes, policy content, dataset-manifest bytes, fitted-model bytes, schema fields and decision replay. It never deserializes an untrusted model merely to verify its hash. Passing these checks establishes internal consistency, not truth of the source data, independent authenticity, absence of discriminatory proxies, or meaningful access to recourse.
+
+All numerical constraints are retrospective sample checks. New cases require monitoring and an appropriate evaluation design; generalization guarantees are outside this paper. Raising an entropy threshold can increase automation while admitting more errors. Neither lower abstention nor successful replay establishes improved educational outcomes.

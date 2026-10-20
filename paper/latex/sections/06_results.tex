@@ -1,0 +1,40 @@
+\section{Results}
+\label{sec:results}
+We distinguish historical emitted decisions from the revised implementation and reanalysis. All numerical tables below are generated from the preserved packets or study responses; no historical predictor was retrained.
+
+\subsection{Structured evidence in the exploratory study}
+\label{sec:human-results}
+Table~\ref{tab:human-study-summary} reports recomputed averages, paired effects and revised statistical tests. Diagnostic and remediation accuracy increase from 0.5625 to 0.921875, a difference of 0.359375. Confidence increases from 3.078125 to 4.234375. These aggregates match the historical data; revised p-values differ because a single bilateral procedure and multiplicity correction replace the previously underspecified tests. Longer evidence statements are descriptive and do not establish better reasoning. The experiment supports a benefit of the complete evidence bundle on these standardized tasks, with the limitations in Section~\ref{sec:human-study}.
+\input{tables/human_study_summary}
+\input{tables/human_study_keycases}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/human_label_accuracy_by_case.png}
+\caption{Diagnostic accuracy by case and condition. Labels give exact correct/total counts; all bars have eight responses.}
+\Description{Grouped bars compare baseline A and structured-evidence B across eight appeal cases. B equals A in C4 and is higher in the other seven cases. Exact numerators and denominators appear in the adjacent case-count table.}
+\label{fig:human-by-case}
+\end{figure}
+
+\subsection{Historical states and capacity}
+Table~\ref{tab:run-initial} recomputes the historical recipe outcomes and Table~\ref{tab:state-counts} gives exact counts. In the synthetic example $K=100$ but only four cases are eligible and selected; coverage 0.004 is therefore consistent with the capacity ceiling. OULAD similarly selects 69 of a possible 500. Violations were recorded by the historical runner; those records alone do not prove operational escalation.
+\input{tables/run_initial}
+\input{tables/state_counts}
+
+\subsection{Fixed-budget recovery and variable-budget profiles}
+Table~\ref{tab:run-sweep} separates full-grid and fixed-budget counts. Table~\ref{tab:recovered} reports achieved metrics of the revised fixed-budget MAS choices. Raising $\gamma$ recovers sample feasibility without retraining, demonstrating a policy-level route to resolve the particular violation. This does not exclude simultaneous model or measurement problems. Table~\ref{tab:policy-profiles} reports separate variable-budget comparisons with the complete profile definitions in Section~\ref{sec:method}. Full precision, group counts, exact grids and candidate IDs are in the structured revision report.
+\input{tables/run_sweep_summary}
+\input{tables/recovered_metrics}
+\input{tables/policy_profile_tradeoffs}
+
+\subsection{Taxonomy and uncertainty}
+Table~\ref{tab:policy-replay} fixes scores, $K$ and $\gamma$ while changing abstention semantics. Utility stays fixed in this example, but automation coverage changes because non-selection can be an automated rejection or a deferral. Treating this as a policy correction requires institutional justification; the numbers alone cannot establish which responsibility assignment is appropriate.
+\input{tables/policy_replay}
+
+Table~\ref{tab:uncertainty_proxy_validation} incorporates the previously disconnected numerical validation, recalculated with one entropy convention and average ranks for ties. OULAD has lower entropy/error monotonicity than ASSISTments; the synthetic predictor is poorly calibrated. Temperature scaling can worsen ECE, so we do not claim calibration robustness from preserved rank correlation. The report includes conditional row-bootstrap intervals and group-specific error counts and Wilson intervals across thresholds. Historical interaction packets lack student cluster IDs, so the ASSISTments intervals do not establish cluster-robust uncertainty or field reliability.
+\input{tables/uncertainty_proxy_validation}
+
+\subsection{Artifact checks and appeal scope}
+The historical four-point scorecard was populated by constant booleans in the runner, so it is not evidence of independent artifact validation. The revised verifier instead computes integrity and decision-reconstruction checks and tests failures after packet tampering or missing policy content. Fitted-model hashes are separated from configuration hashes; the earlier configuration-only digest is not presented as an immutable trained-model identity.
+
+The appeal pack (Table~\ref{tab:appeal_scenarios}) is a set of study materials. Medical exceptions, changing income, or removing a feature require additional policy inputs or re-scoring and are outside the fixed-score replay contract. Evidence strings in these materials are not execution logs proving that the released engine implements those operations.
+\input{tables/appeal_scenarios}

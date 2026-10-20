@@ -1,0 +1,50 @@
+\section{Method: Policy, Decisions and Artifacts}
+\label{sec:method}
+\subsection{Design scope}
+Our design makes institutional choices explicit, preserves evidence for audit, separates scoring from sensitive-attribute auditing, and treats abstention as a request for human consideration. The six COMPASS commitments---dignity, correctness, transparency, harmony, practical wisdom and active compassion---organize requirements; they are a domain-specific design vocabulary, not an exhaustive ethical theory. In the evaluated release the enforced numerical constraints are a fairness-gap cap and an automation-coverage floor. Documentation, intelligibility and institutional recourse remain separate requirements.
+
+\subsection{Decision rule and units}
+\label{sec:decision-rule}
+A score $s_i$ estimates $\Pr(y_i=1\mid x_i)$. All reported rankings are descending. Binary predictive entropy is
+\begin{equation}
+ u_i=-q_i\log_2q_i-(1-q_i)\log_2(1-q_i),
+\end{equation}
+where $q_i$ clips $s_i$ to $[10^{-7},1-10^{-7}]$ in float64. Entropy and $\gamma$ are in bits; the maximum is one. Thus $\gamma=0.999$ need not admit every case. Invalid probabilities and incompatible units are rejected.
+
+The primary rule applies global abstention first: $u_i>\gamma$ yields \texttt{abstain}. Among eligible cases, the highest scores are selected up to capacity $K$. Equal scores are resolved by ascending persistent case ID. $K$ is a ceiling: fewer than $K$ cases may be selected. In allocation mode the remainder is \texttt{reject}; in screening mode it is \texttt{abstain}. The alternative Top-$K$-only abstention mode first nominates the global Top-$K$, abstains uncertain nominees and does not refill their places. These modes are explicit policy fields in the revised implementation.
+
+\input{tables/decision_states}
+
+\paragraph{Metrics.}
+Let $n_s,n_r,n_a$ count select, reject and abstain, with $n_s+n_r+n_a=n$. Automation coverage is $C=(n_s+n_r)/n=1-n_a/n$; selection rate is $n_s/n$. In screening mode $C\leq K/n$, so a floor $C_{\min}>K/n$ is structurally infeasible. Changing a deferral into a rejection changes institutional responsibility; it does not demonstrate greater educational benefit.
+
+Utility@K is $\sum_{i:d_i=\mathrm{select}}y_i/n_s$, undefined for empty selection. For binary audit groups we report the absolute gap between $\Pr(d=\mathrm{select}\mid y=1,a=0)$ and $\Pr(d=\mathrm{select}\mid y=1,a=1)$. Positive-label denominators include all cases in each group, not only eligible cases. A missing group or zero positive denominator produces insufficient evidence, not a zero gap. Labels support retrospective evaluation; they are not inputs required to replay a future decision.
+
+\subsection{ECL and the authorization boundary}
+\label{sec:ecl}
+ECL checks a candidate against declared empirical constraints. The paper sweep uses gap $\leq0.05$ and coverage $\geq0.50$. These are example normative choices, not universal safety thresholds. The historical synthetic recipe used a 0.60 coverage floor; the common replay analysis explicitly uses 0.50. Both reject its initial 0.004 coverage.
+
+Historical runs recorded violations while retaining candidate decisions. The revised runner additionally writes an authorization gate: an infeasible or insufficient-evidence result cannot produce an authorized-decision export. Candidate packets remain available for diagnosis. A review-required record is generated, but no human queue is connected and no delivered review is claimed. Statistical feasibility on an audit sample does not certify future population fairness or legal compliance.
+
+\subsection{Candidate search and MAS}
+Candidates in the reported experiment reuse fixed scores and vary policy only. We distinguish the full 80-point $(K,\gamma)$ grid from its 16-point fixed-$K$ subset. Each candidate has an ID defined by dataset, capacity and threshold. The revised runner also supports an explicit policy grid and stores all candidates and the selection report.
+
+\begin{algorithm}[t]
+\caption{Revised empirical ECL--Pareto--MAS selection}
+\label{alg:mas}
+\begin{algorithmic}[1]
+\Require Candidates $\mathcal C$, constraints, criteria $T$, tolerances $\delta_t$
+\State $F\gets$ candidates with finite objectives satisfying constraints
+\If{$F=\varnothing$}
+\State \Return infeasible; close authorization gate
+\EndIf
+\State $F\gets$ nondominated candidates in $F$
+\For{criterion $t$ in $T$}
+\State $v^*\gets$ best value of $t$ in $F$
+\State $F\gets\{c\in F:|t(c)-v^*|\leq\delta_t\}$
+\EndFor
+\State \Return candidate with smallest persistent ID in $F$
+\end{algorithmic}
+\end{algorithm}
+
+Pareto dominance is exact over maximize utility, minimize absolute gap and minimize abstention. Equivalent candidates remain on the frontier. Fairness-first orders gap, utility, abstention; utility-first orders utility, gap, abstention. All reported tolerances are zero; the candidate ID is the final tie-breaker. These conventions replace historical underspecification and are recorded with each revised analysis. Repeated selection under an unchanged policy must be invariant to input row order. Changing criterion order tests policy sensitivity, not determinism by itself.

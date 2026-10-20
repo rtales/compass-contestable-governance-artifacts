@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-20",
+  "files": {
+    "paper/README.md": {
+      "bytes": 1796,
+      "sha256": "823521685b56183e62f36cab45ccadfa1b7e5e60fb155ae47144b971bdd67c77"
+    },
+    "paper/artigo_acm_corrigido.docx": {
+      "bytes": 2667103,
+      "sha256": "194cc2ce8e954daf7424318af233b982a4d4fcb873f7bba9824ef930ce40bae8"
+    },
+    "paper/artigo_revisado.pdf": {
+      "bytes": 209639,
+      "sha256": "c80539c7142cdcdccd28090f8613f09cfe80869226a844000a84d464ef86941f"
+    },
+    "paper/latex/appendices/appendix_A.tex": {
+      "bytes": 2469,
+      "sha256": "3e5018b6614da58190c39999a70a87f9fbd421e69069932883e7515a841e5cc3"
+    },
+    "paper/latex/appendices/appendix_B.tex": {
+      "bytes": 1591,
+      "sha256": "4fa4fa30e9878ea0010e240ee0d7100d8c735261a0d91503d876d2e0a4e1cc56"
+    },
+    "paper/latex/appendices/appendix_C.tex": {
+      "bytes": 1010,
+      "sha256": "74634731a4e57534e02ef99e21ffe393897b6ec44ded436c7df46bd02a3bfcbb"
+    },
+    "paper/latex/appendices/appendix_D.tex": {
+      "bytes": 2616,
+      "sha256": "1c732bbf9eee0f7c4020b673d596109b1b6e8e4f91eaf213ace983f67ec202f9"
+    },
+    "paper/latex/appendices/appendix_E.tex": {
+      "bytes": 2765,
+      "sha256": "84de7a4468504430d36876228f85f7081b0a867443eb96a62311d2f1253dc5a5"
+    },
+    "paper/latex/figures/human_label_accuracy_by_case.png": {
+      "bytes": 43563,
+      "sha256": "7487335ccbfa1fff7a00fad1df132c70b19089e24d7ef5ac45be5f8be036b67b"
+    },
+    "paper/latex/main.tex": {
+      "bytes": 5141,
+      "sha256": "275f89a106a9c8d1514fbd122e79026bfa876ab0af32881e25a6d5779c286cdb"
+    },
+    "paper/latex/paper_assets/results_macros.tex": {
+      "bytes": 259,
+      "sha256": "0bb4b34963a8c6be3786cf8f96305d707a2d8fba996a51bddd23a2cbc1e8401d"
+    },
+    "paper/latex/paper_assets/run_meta.tex": {
+      "bytes": 1260,
+      "sha256": "8f8fd1219b4afe8020c64dc490dca785618db35bb9d2abe1a6da18834ede38d0"
+    },
+    "paper/latex/references/references.bib": {
+      "bytes": 15393,
+      "sha256": "f4e05dc09189c051198ef6690192b78c427c58ac0fb085f86c7b291ded9660f2"
+    },
+    "paper/latex/sections/00_notation.tex": {
+      "bytes": 1268,
+      "sha256": "f18b1d3fcf14546549635241b1c08ebcf8f8332006d7ab5a64f78bf17640c55b"
+    },
+    "paper/latex/sections/01_introduction.tex": {
+      "bytes": 5433,
+      "sha256": "5dcee59f97ea341bac8c0a424b111d56e628a324ea0cbf42504cde5d2ff1631b"
+    },
+    "paper/latex/sections/02_related_work.tex": {
+      "bytes": 4350,
+      "sha256": "061d6e840dae7a2bbd7560c1562388fa05d7ce4c82d350f26bb85800b35e6db5"
+    },
+    "paper/latex/sections/03_method.tex": {
+      "bytes": 5165,
+      "sha256": "afba417bd26c11e382564a005a29df7b571b6ac928d677e2194504849a83f49f"
+    },
+    "paper/latex/sections/04_design_rationale.tex": {
+      "bytes": 1790,
+      "sha256": "fca7a09c74847f33a4cd4f8599b3b98197405cf01d5157c7768f3b5214b5bafa"
+    },
+    "paper/latex/sections/05_experiments.tex": {
+      "bytes": 4530,
+      "sha256": "6d2b35e58e7c68c285843d142932e0b91e3086e350e31cbaba1338bed75fdc7e"
+    },
+    "paper/latex/sections/06_results.tex": {
+      "bytes": 4949,
+      "sha256": "f1dd2fbe2c35ccba717c4599300688b3a2716d5bb90b4e0601b99270ddf3ec61"
+    },
+    "paper/latex/sections/07_discussion.tex": {
+      "bytes": 3870,
+      "sha256": "8d45786425d1a787f3e9fe9e7248d2694a82354425a4a1f0a6b132df27541392"
+    },
+    "paper/latex/sections/08_conclusion.tex": {
+      "bytes": 1382,
+      "sha256": "d7751aecfa6394d737b3db54a61f14bf29179564750d03ce05a0f0e0e317f50c"
+    },
+    "paper/latex/tables/appeal_scenarios.tex": {
+      "bytes": 1500,
+      "sha256": "4f150b299707ae993e1e4058208e7df7074f79fdf36cef22c40504c6f1c087c1"
+    },
+    "paper/latex/tables/claim_evidence_map.tex": {
+      "bytes": 1186,
+      "sha256": "397d810b751d3c1aea66ebb1638301236a572a5089303d212ca1c57c1f3790a3"
+    },
+    "paper/latex/tables/decision_states.tex": {
+      "bytes": 507,
+      "sha256": "a771b4798f6068abf0e415aa0c853afd7594464697b8f2f68e5707d2c771f79c"
+    },
+    "paper/latex/tables/human_study_keycases.tex": {
+      "bytes": 440,
+      "sha256": "7b8839b4e66f6a3fee69272ec1ed38fcee14db6065ce2c47844a85b421014e9c"
+    },
+    "paper/latex/tables/human_study_summary.tex": {
+      "bytes": 781,
+      "sha256": "c7b0ca57930a2c35c96b2f442fb43daffa156babb2b129a9ba1487b5957e0325"
+    },
+    "paper/latex/tables/policy_profile_tradeoffs.tex": {
+      "bytes": 843,
+      "sha256": "5348755fd6193a83019605370893cedf18ee31fd73479f74158598c8e281d0f5"
+    },
+    "paper/latex/tables/policy_replay.tex": {
+      "bytes": 591,
+      "sha256": "c6b6c44fd669901041eb4027bad8092b6a44c89c1bd7d0e333464550b2d20662"
+    },
+    "paper/latex/tables/positioning.tex": {
+      "bytes": 903,
+      "sha256": "417d4c2078fbaad6f407f81109a9dc2128ee899769e64d358b6e5f3e72d67a9f"
+    },
+    "paper/latex/tables/recovered_metrics.tex": {
+      "bytes": 588,
+      "sha256": "61a7e72099a7ca9337cc43192f5fe802b3076a34f4695ce26d8a71b9179de6fd"
+    },
+    "paper/latex/tables/run_initial.tex": {
+      "bytes": 608,
+      "sha256": "85b5b027ba4508de968a95c7d0f085b5f73c4c08b597a2618ab1b16a17fcfd44"
+    },
+    "paper/latex/tables/run_sweep_summary.tex": {
+      "bytes": 473,
+      "sha256": "2c22ef8ea6ff0fcb3df4458d1ffea277f2db8aaba75b0d1fcfe36ff9593f26ec"
+    },
+    "paper/latex/tables/state_counts.tex": {
+      "bytes": 427,
+      "sha256": "0cb2792644bd3359ccd2197784730bbc97afb035907c421e199aacc156dfa5aa"
+    },
+    "paper/latex/tables/uncertainty_proxy_validation.tex": {
+      "bytes": 554,
+      "sha256": "66e2e6a99a6c24547c6e80b4e4582b13683c1f4f4febb463bf5e6b6fb3fdf7e9"
+    },
+    "paper/results/assistments_candidates.csv": {
+      "bytes": 15088,
+      "sha256": "38c7f51d54942c92c3c7184da8eb985117da7749b994d0ee40febb56081fdd19"
+    },
+    "paper/results/computational_report.json": {
+      "bytes": 72917,
+      "sha256": "1587300d288494562309578543c89464ff80e02bd4803015bd737bf52a38179b"
+    },
+    "paper/results/figure_alt_text.txt": {
+      "bytes": 293,
+      "sha256": "9a8a86874ec0471b5abef204a16f3dd93eaa8953b4a287e3b03955fe981576d6"
+    },
+    "paper/results/oulad_candidates.csv": {
+      "bytes": 11877,
+      "sha256": "08093e60be8fc6c8331f66a91e6ce4dfb5b27998a277f333138f77f8b1e7d46d"
+    },
+    "paper/results/study_case_counts.csv": {
+      "bytes": 153,
+      "sha256": "d3e07b3c5794a9b943f820601f88a9b0f25bef32605630e47d8d598dd7d13335"
+    },
+    "paper/results/study_report.json": {
+      "bytes": 3147,
+      "sha256": "f9f504476939afe13f7c6eb23ace76287e4b6f95f9006a1f77bb5b0094ee7d47"
+    },
+    "paper/results/synthetic_candidates.csv": {
+      "bytes": 8972,
+      "sha256": "4fbc568be21ab4ce58d4a4c2610443a8556112d74324c68c8f1d4972f18207f4"
+    },
+    "reproduction/2026-10-20/README.md": {
+      "bytes": 1360,
+      "sha256": "b67ca4034103be15cbd0ec2f3777e743d8258a1a2294d2d1fdc57b4ebb90b97b"
+    },
+    "reproduction/2026-10-20/manifesto_revisao_final.json": {
+      "bytes": 51748,
+      "sha256": "930cf0173082d56790545e6ed89cb2414eb7cd970719cacce677dc2dc485851c"
+    },
+    "reproduction/2026-10-20/pacote_revisao.sha256": {
+      "bytes": 85,
+      "sha256": "18f9ea18b51d5f6d548a139551dfdbbe21f02f419f2df21cd325e0877112cc33"
+    },
+    "reproduction/2026-10-20/pacote_revisao.zip": {
+      "bytes": 9315080,
+      "sha256": "e97e6ca3c4717e0f8983cbbf8a5330dc590d0f778c80b1058e056b0452f4ec7b"
+    },
+    "reproduction/2026-10-20/requirements.lock": {
+      "bytes": 599,
+      "sha256": "fefaf1711a612543d19287337fe39271ce3cddad6d0bf5dd1a1c5aab3b3c81de"
+    }
+  }
+}

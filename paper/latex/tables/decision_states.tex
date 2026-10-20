@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering\small
+\caption{Candidate decision states. A separate run-level gate determines whether export is authorized.}
+\label{tab:decision_states}
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+State & Accounting \\
+\midrule
+\texttt{select} & Within capacity; counts toward selection and automation. \\
+\texttt{reject} & Automated non-selection; counts toward automation. \\
+\texttt{abstain} & Request for review; excluded from automation coverage. \\
+\bottomrule
+\end{tabularx}
+\end{table}

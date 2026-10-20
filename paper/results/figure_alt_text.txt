@@ -1,0 +1,1 @@
+Grouped bars compare diagnostic accuracy for baseline A and structured-evidence B across eight appeal cases. Exact correct/total counts are given in study_case_counts.csv and the manuscript table. B is equal to A in C4 and higher in the other seven cases. Each bar represents eight responses.

@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\caption{Claims, evidence and explicit boundaries of the revised manuscript.}
+\label{tab:claim_evidence}
+\begin{tabularx}{\textwidth}{p{.20\textwidth}XX}
+\toprule
+Claim & Evidence & Boundary \\
+\midrule
+Fixed-score replay & State reconciliation and taxonomy replay, Tables~\ref{tab:state-counts} and~\ref{tab:policy-replay} & Does not support changed features or medical exceptions. \\
+Empirical selection & Algorithm~\ref{alg:mas}, Tables~\ref{tab:run-sweep} and~\ref{tab:recovered} & Same-sample policy exploration; no population fairness guarantee. \\
+Explicit failure & Revised runner gate and integration tests, Section~\ref{sec:design} & Historical violation logging was not operational fail-closed; no human queue connected. \\
+Structured evidence benefit & Tables~\ref{tab:human-study-summary} and~\ref{tab:human-study-keycases} & Exploratory N=16, no formal ethics review; bundle effect, not isolated replay effect. \\
+Entropy diagnostics & Table~\ref{tab:uncertainty_proxy_validation} and structured group-risk report & Scalar proxy; conditional row intervals, not cluster-robust field validation. \\
+\bottomrule
+\end{tabularx}
+\end{table*}

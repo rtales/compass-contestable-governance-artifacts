@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering\small
+\caption{Illustrative N=16 study materials, not execution logs. Full Portuguese narratives and A/B evidence strings remain in the eight local case JSONs. The scope column distinguishes fixed-score replay from operations that the engine does not implement.}
+\label{tab:appeal_scenarios}
+\begin{tabularx}{\textwidth}{lp{.18\textwidth}Xp{.24\textwidth}}
+\toprule
+Case & Diagnostic category & Evidence illustrated in the instrument & Engine scope \\
+\midrule
+C1 & Stale input data & Income snapshot and update lineage & Corrected inputs require new inference. \\
+C2 & Policy change & Policy versions and effective dates & Fixed-score replay only for supported policy fields. \\
+C3 & Normative exception & Medical flag and force-inclusion rule & Exception rule and medical inputs are not implemented. \\
+C4 & Capacity constraint & School capacity and revised availability & Global K replay supported; per-school capacity is outside the engine. \\
+C5 & Fairness constraint & Group gap and policy cap & Retrospective candidate check; no per-person fairness reranking. \\
+C6 & Proxy risk & ZIP-code correlation and feature removal & Proxy audit/removal requires additional analysis or fitting. \\
+C7 & Abstention error & Uncertainty value and threshold & Supported score-based abstention reconstruction. \\
+C8 & Version mismatch & Declared and executed policy hashes & Content/hash consistency check; no CI/CD system integration. \\
+\bottomrule
+\end{tabularx}
+\end{table*}
