@@ -21,7 +21,7 @@ We build on this insight, but focus on a specific public-sector domain where leg
 
 \subsection{Fairness Tooling, Trade-offs, and Preference-Based Selection}
 Model-level toolkits such as Fairlearn and Aequitas provide practical metrics, mitigation strategies, and reporting to support fairness evaluation \cite{Weerts2023Fairlearn,Saleiro2018Aequitas}.
-However, they do not by themselves specify institutional procedures for contestation, nor do they enforce policy versioning or create audit-ready decision artifacts.
+These metric-oriented roles are complementary to our decision-evidence contract; we have not exhaustively audited every extension of these toolkits.
 Trade-offs between utility, fairness, and other constraints are unavoidable; preference-based selection over Pareto-feasible candidates has been explored in multiple forms, including ``fairness without harm'' style decision rules and policy-oriented selection \cite{Ustun2019FairnessWithoutHarm}.
 Our system-level contribution is to embed such choices into \emph{versioned policy} and to couple selection with a procedural safeguard (abstention to human review) and an artifact trail.
 
@@ -31,5 +31,12 @@ Our setting therefore emphasizes governance practices (documentation, auditabili
 
 
 \paragraph{Abstention, selective prediction, and distribution-free uncertainty.}
-Our triage setting uses abstention (``reject option'') to route uncertain cases to humans. This idea has a long history in statistical decision theory (e.g., Chow's rule) and has been revisited in modern \emph{selective classification} and distribution-free uncertainty quantification (e.g., SelectiveNet; conformal prediction).\cite{Chow1970Reject,Geifman2019SelectiveNet,Angelopoulos2021Conformal} These lines of work motivate two design choices in our system: (i) treating high abstention as a \emph{governance signal} rather than a silent knob, and (ii) recording the abstention policy in a replayable artifact so that institutions can audit when and why automation deferred to humans.
+Our triage setting uses abstention (``reject option'') to mark uncertain cases as requiring human review. This idea has a long history in statistical decision theory (e.g., Chow's rule) and has been revisited in modern \emph{selective classification} and distribution-free uncertainty quantification (e.g., SelectiveNet; conformal prediction) \cite{Chow1970Reject,Geifman2019SelectiveNet,Angelopoulos2021Conformal}. These lines of work motivate two design choices in our system: (i) treating high abstention as a \emph{governance signal} rather than a silent knob, and (ii) recording the abstention policy in a replayable artifact so that institutions can audit when and why automation requested human review.
 
+
+\subsection{Provenance, reconstruction and integrity mechanisms}
+Provenance and version tracking are established capabilities. PROV-O models entities, activities, agents and derivation relations \cite{Lebo2013PROVO}. ModelDB records models, pipelines, parameters and metrics \cite{Vartak2016ModelDB}; Ormenisan et al. use change capture and data versions for pipeline reproducibility and debugging \cite{Ormenisan2020TimeTravel}. Our score-only replay has a narrower scope than reconstructing inference from versioned features.
+
+Cryptographic log guarantees also predate this work. RFC 9162 specifies signed transparency-log structures and inclusion/consistency proofs for certificates \cite{Laurie2021RFC9162}. Our unsigned batch roster and byte digests do not supply those guarantees. In relation to sociotechnical contestability \cite{Alfrink2023ContestableAI}, the present engine supports scrutiny but does not enact an institutional appeal. Appendix~\ref{app:mechanism-positioning} compares these specific mechanisms without treating unexamined implementations as lacking features. The contribution is a bounded, executable decision-policy contract and its evaluated distinctions, not a new provenance standard, log-security primitive or proof of first integration.
+
+The contract in Section~\ref{sec:export-contract} makes the acceptance dependencies explicit and testable. It does not introduce a new provenance primitive: its evaluated claim is that reproducing available decisions can pass while complete evidence verification fails, and that verified evidence can still fail a declared export constraint. Table~\ref{tab:mechanism-positioning} situates the constituent mechanisms; Table~\ref{tab:fault-contracts} tests these separations in our implementation.

@@ -1,0 +1,33 @@
+{
+  "publication_files_verified": 124,
+  "evaluated_live_source_files_verified": 52,
+  "snapshot_sha256": "108d5ff9f550dec882b6691b24ec2b5340c5515ab3fd550a198e32e72e947688",
+  "frozen_snapshot": {
+    "bundle_file_hashes_verified": 120,
+    "comparisons": {
+      "partitions.json": "exact structural match (Python patch version excluded)",
+      "frozen_policies.json": "exact structural match (Python patch version excluded)",
+      "selection_test_report.json": "exact structural match (Python patch version excluded)",
+      "fault_contracts.json": "exact structural match (Python patch version excluded)"
+    },
+    "regression_tests": 20,
+    "export_contract_vectors_verified": 7,
+    "failures": 0,
+    "errors": 0,
+    "python": "3.12.14",
+    "scope": "Author-run computational reproduction; no retraining of historical predictors; restricted human responses excluded; not independent certification."
+  },
+  "full_sample_report": "exact structural match",
+  "three_candidate_csvs": "byte-identical",
+  "aggregate_study_figure": "identical RGB pixels",
+  "human_individual_reanalysis": "skipped; restricted participant responses not distributed",
+  "historical_predictors_refit": false,
+  "scope": "Author-run reproduction; not independent certification or prospective validation.",
+  "live_application_tests": {
+    "passed": 20,
+    "failures": 0,
+    "errors": 0
+  },
+  "execution": "Clean export of the staged scientific source and inputs; publication verification metadata refreshed after execution.",
+  "optional_restricted_study_path_tested_in_this_publication": false
+}

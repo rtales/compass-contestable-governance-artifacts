@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{PosRate is the selected-set positive outcome rate (legacy Utility@K), not intervention benefit. Retrospective selection/test partition of previously inspected fixed scores. The threshold is chosen using validation labels only; the same absolute capacity is used in each half. Test results never retune the policy. This is not a pristine prospective holdout or a refit of the predictor.}
+\label{tab:selection-test}
+\begin{tabular}{llrrrrrl}
+\toprule
+Dataset & Split & $n$ & $K$ & $\gamma$ (bits) & PosRate & Coverage & Gap / status \\
+\midrule
+ASSISTments & validation & 52553 & 1000 & 0.999 & 0.983 & 1.000 & 0.0000 / selected \\
+ASSISTments & test & 52554 & 1000 & 0.999 & 0.984 & 0.999 & 0.0026 / feasible \\
+OULAD & validation & 3259 & 500 & 0.999 & 0.682 & 0.912 & 0.0140 / selected \\
+OULAD & test & 3260 & 500 & 0.999 & 0.708 & 0.901 & 0.0285 / feasible \\
+Synthetic & validation & 500 & 100 & -- & -- & -- & no feasible candidate \\
+Synthetic & test & 500 & 100 & -- & -- & -- & not evaluated \\
+\bottomrule
+\end{tabular}
+\end{table*}

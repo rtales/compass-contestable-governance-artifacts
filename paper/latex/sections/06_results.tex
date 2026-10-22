@@ -1,10 +1,10 @@
 \section{Results}
 \label{sec:results}
-We distinguish historical emitted decisions from the revised implementation and reanalysis. All numerical tables below are generated from the preserved packets or study responses; no historical predictor was retrained.
+We report human task performance, policy analyses on preserved scores, and synthetic tests of the export contract. Numerical tables are generated from case packets or study responses. The policy analyses reuse the predictors' emitted scores.
 
 \subsection{Structured evidence in the exploratory study}
 \label{sec:human-results}
-Table~\ref{tab:human-study-summary} reports recomputed averages, paired effects and revised statistical tests. Diagnostic and remediation accuracy increase from 0.5625 to 0.921875, a difference of 0.359375. Confidence increases from 3.078125 to 4.234375. These aggregates match the historical data; revised p-values differ because a single bilateral procedure and multiplicity correction replace the previously underspecified tests. Longer evidence statements are descriptive and do not establish better reasoning. The experiment supports a benefit of the complete evidence bundle on these standardized tasks, with the limitations in Section~\ref{sec:human-study}.
+Table~\ref{tab:human-study-summary} reports condition averages, paired effects and multiplicity-adjusted statistical tests. Diagnostic and remediation accuracy increase from 0.5625 to 0.921875, a difference of 0.359375. Confidence increases from 3.078125 to 4.234375. The paired analysis uses the two-sided sign-enumeration procedure and Holm correction specified in Section~\ref{sec:human-study}. Longer evidence statements are descriptive and do not establish better reasoning. The experiment supports a benefit of the complete evidence bundle on these standardized tasks, with the limitations in Section~\ref{sec:human-study}.
 \input{tables/human_study_summary}
 \input{tables/human_study_keycases}
 \begin{figure}[t]
@@ -15,26 +15,37 @@ Table~\ref{tab:human-study-summary} reports recomputed averages, paired effects 
 \label{fig:human-by-case}
 \end{figure}
 
-\subsection{Historical states and capacity}
-Table~\ref{tab:run-initial} recomputes the historical recipe outcomes and Table~\ref{tab:state-counts} gives exact counts. In the synthetic example $K=100$ but only four cases are eligible and selected; coverage 0.004 is therefore consistent with the capacity ceiling. OULAD similarly selects 69 of a possible 500. Violations were recorded by the historical runner; those records alone do not prove operational escalation.
+\subsection{Initial decision states and capacity}
+Table~\ref{tab:run-initial} reports the initial recipe outcomes and Table~\ref{tab:state-counts} gives exact counts. In the synthetic example $K=100$ but only four cases are eligible and selected; coverage 0.004 is therefore consistent with the capacity ceiling. OULAD similarly selects 69 of a possible 500. These outputs use the legacy runner, which records violations while retaining candidate decisions; it does not establish an export block or delivered human review.
 \input{tables/run_initial}
 \input{tables/state_counts}
 
 \subsection{Fixed-budget recovery and variable-budget profiles}
-Table~\ref{tab:run-sweep} separates full-grid and fixed-budget counts. Table~\ref{tab:recovered} reports achieved metrics of the revised fixed-budget MAS choices. Raising $\gamma$ recovers sample feasibility without retraining, demonstrating a policy-level route to resolve the particular violation. This does not exclude simultaneous model or measurement problems. Table~\ref{tab:policy-profiles} reports separate variable-budget comparisons with the complete profile definitions in Section~\ref{sec:method}. Full precision, group counts, exact grids and candidate IDs are in the structured revision report.
+Table~\ref{tab:run-sweep} separates full-grid and fixed-budget counts. Table~\ref{tab:recovered} reports achieved metrics of the fixed-budget MAS choices. Raising $\gamma$ recovers sample feasibility without retraining, demonstrating a policy-level route to resolve the particular violation. This does not exclude simultaneous model or measurement problems. Table~\ref{tab:policy-profiles} reports separate variable-budget comparisons with the complete profile definitions in Section~\ref{sec:method}. Full precision, group counts, exact grids and candidate IDs are in the structured computational report.
 \input{tables/run_sweep_summary}
 \input{tables/recovered_metrics}
 \input{tables/policy_profile_tradeoffs}
 
 \subsection{Taxonomy and uncertainty}
-Table~\ref{tab:policy-replay} fixes scores, $K$ and $\gamma$ while changing abstention semantics. Utility stays fixed in this example, but automation coverage changes because non-selection can be an automated rejection or a deferral. Treating this as a policy correction requires institutional justification; the numbers alone cannot establish which responsibility assignment is appropriate.
+Table~\ref{tab:policy-replay} fixes scores, $K$ and $\gamma$ while changing abstention semantics. The selected-set positive outcome rate stays fixed in this example, but automation coverage changes because non-selection can be an automated rejection or a deferral. Treating this as a policy correction requires institutional justification; the numbers alone cannot establish which responsibility assignment is appropriate.
 \input{tables/policy_replay}
 
-Table~\ref{tab:uncertainty_proxy_validation} incorporates the previously disconnected numerical validation, recalculated with one entropy convention and average ranks for ties. OULAD has lower entropy/error monotonicity than ASSISTments; the synthetic predictor is poorly calibrated. Temperature scaling can worsen ECE, so we do not claim calibration robustness from preserved rank correlation. The report includes conditional row-bootstrap intervals and group-specific error counts and Wilson intervals across thresholds. Historical interaction packets lack student cluster IDs, so the ASSISTments intervals do not establish cluster-robust uncertainty or field reliability.
+Table~\ref{tab:uncertainty_proxy_validation} reports calibration and entropy/error diagnostics using entropy in bits and average ranks for ties. Here $\rho$ correlates entropy with $|y-s|$, the probabilistic absolute error, rather than the binary classification-error indicator. OULAD has lower entropy/absolute-error monotonicity than ASSISTments; the synthetic predictor is poorly calibrated. Temperature scaling can worsen ECE, so we do not claim calibration robustness from preserved rank correlation. The report includes conditional row-bootstrap intervals and group-specific error counts and Wilson intervals across thresholds. Historical interaction packets lack student cluster IDs, so the ASSISTments intervals do not establish cluster-robust uncertainty or field reliability.
 \input{tables/uncertainty_proxy_validation}
 
 \subsection{Artifact checks and appeal scope}
-The historical four-point scorecard was populated by constant booleans in the runner, so it is not evidence of independent artifact validation. The revised verifier instead computes integrity and decision-reconstruction checks and tests failures after packet tampering or missing policy content. Fitted-model hashes are separated from configuration hashes; the earlier configuration-only digest is not presented as an immutable trained-model identity.
+The schema 2.0 verifier computes integrity and decision-reconstruction checks, with failures tested after packet tampering or removal of policy content. Fitted-model hashes and configuration hashes identify separate objects. The legacy packets contain a configuration digest and a four-point scorecard populated by constant booleans; these fields establish neither fitted-model identity nor independent artifact validation.
 
 The appeal pack (Table~\ref{tab:appeal_scenarios}) is a set of study materials. Medical exceptions, changing income, or removing a feature require additional policy inputs or re-scoring and are outside the fixed-score replay contract. Evidence strings in these materials are not execution logs proving that the released engine implements those operations.
 \input{tables/appeal_scenarios}
+
+\subsection{Frozen threshold evaluation and failure contracts}
+Table~\ref{tab:selection-test} reports the retrospective partition. ASSISTments and OULAD select $\gamma=0.999$ bits on validation. Both chosen policies satisfy the empirical constraints in the test half. The synthetic validation half has zero feasible candidates, so no synthetic test policy is evaluated. This failure is retained; no threshold or capacity is adjusted after seeing it.
+
+Conditional 95\% selected-set positive outcome-rate intervals in test are [0.9742, 0.9901] for ASSISTments and [0.6667, 0.7461] for OULAD. Conservative absolute-gap intervals are [0, 0.0090] and [0, 0.0974], respectively. Thus OULAD's point gap satisfies the 0.05 cap, but its interval does not establish a population gap below that cap. Exact counts, partition hashes, policies, group denominators and intervals are released. These diagnostics do not establish prospective deployment validity.
+\input{tables/selection_test}
+
+In the seven fault contracts, the unchanged fixture passes replay, verification and the gate. Four altered fixtures preserve replay agreement (score edit, omitted case, changed model bytes and incompatible units), but fail evidence verification. Missing policy content fails both checks. A fairness-violating fixture passes replay and evidence verification but fails the gate. The omitted-case fixture shows why per-packet hashes require a complete-roster check: hashes of retained packets can remain valid after a case is removed. The result demonstrates the difference between consistency, completeness and authorization under the specified contract, not external authenticity or institutional remedy.
+
+Under the predicates in Section~\ref{sec:export-contract}, the unchanged fixture has $(R,I,A)=(1,1,1)$; the four evidence faults have $(1,0,0)$; missing policy has $(0,0,0)$; and the constraint violation has $(1,1,0)$. The patterns $(1,0,0)$ and $(1,1,0)$ refute sufficiency of replay for full verification and of full verification for export permission, respectively; they do not demonstrate logical independence. The expected/observed checks in Table~\ref{tab:fault-contracts} make the synthetic comparison explicit. Passive logs/cards have no automatic rejection contract here and are not assigned a measured detection score. Blocking an export is the observed software consequence; prevented institutional harm and delivered human review were not evaluated.
+\input{tables/fault_contracts}

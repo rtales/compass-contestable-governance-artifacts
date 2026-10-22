@@ -1,0 +1,71 @@
+{
+  "scope": "synthetic contract comparison, not efficacy or comparison with all audit systems",
+  "cases": [
+    {
+      "case": "unchanged",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": true,
+      "evidence_verifies": true,
+      "gate_authorizes": true,
+      "verification_errors": []
+    },
+    {
+      "case": "score_changed_without_rehash",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": true,
+      "evidence_verifies": false,
+      "gate_authorizes": false,
+      "verification_errors": [
+        "One or more persisted evidence checks failed."
+      ]
+    },
+    {
+      "case": "case_omitted",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": true,
+      "evidence_verifies": false,
+      "gate_authorizes": false,
+      "verification_errors": [
+        "One or more persisted evidence checks failed."
+      ]
+    },
+    {
+      "case": "wrong_model_bytes",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": true,
+      "evidence_verifies": false,
+      "gate_authorizes": false,
+      "verification_errors": [
+        "One or more persisted evidence checks failed."
+      ]
+    },
+    {
+      "case": "wrong_entropy_unit",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": true,
+      "evidence_verifies": false,
+      "gate_authorizes": false,
+      "verification_errors": [
+        "One or more persisted evidence checks failed."
+      ]
+    },
+    {
+      "case": "policy_missing",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": false,
+      "evidence_verifies": false,
+      "gate_authorizes": false,
+      "verification_errors": [
+        "FileNotFoundError"
+      ]
+    },
+    {
+      "case": "constraint_violation",
+      "logs_cards_contract": "retains information; no automated rejection check",
+      "replay_only_accepts": true,
+      "evidence_verifies": true,
+      "gate_authorizes": false,
+      "verification_errors": []
+    }
+  ]
+}

@@ -1,16 +1,18 @@
-\section{Reproducibility and Revision Evidence}
+\input{tables/mechanism_positioning}
+\section{Code and Data Availability}
 \label{app:repro}
-The revision preserves the historical sources and numerical assets in a checksum-indexed snapshot. A version inventory and work log are maintained in the accompanying \texttt{revisao\_artigo} directory. The reference repository is \CompassRepoURL; local revised code and hashes, rather than the unmodified remote HEAD, identify the changes evaluated here.
+\label{app:mechanism-positioning}
+The reference repository is \CompassRepoURL. The executable computational snapshot accompanying this manuscript is \path{revisao_artigo/rodada4/pacote_avaliador.zip}, identified by SHA-256 \texttt{108d5ff9f550dec8\allowbreak 82b6691b24ec2b534\allowbreak 0c5515ab3fd550a1\allowbreak 98e32e72e947688}. Its manifest binds source, inputs, protocol, scripts and expected outputs. Commit 227f7fada6f98f44a79a6982dfda26413dcd29ac identifies the published base release, not this snapshot. The embedded paper and present manuscript report the same computational results.
 
-The historical packet runs used are ASSISTments, OULAD and synthetic snapshots from 26 January 2026, all seed 42. Their full paths and SHA-256 digests appear in the computational revision report. No new fit of those historical models is claimed.
+\paragraph{Computational reproduction.}
+After extracting the archive, follow its \path{README.md}: use Python 3.12, install \path{requirements.lock}, and run \texttt{python reproduce.py --output-dir actual}. The runner verifies the manifest, regenerates four JSON reports and compares them structurally with the expected outputs, excluding Python patch-version metadata. It runs 20 application tests and checks seven export-contract vectors. The authors executed these checks after extraction; external independent execution remains a separate validation step. The lock records the tested environment; other platforms may require compatibility work.
 
-\paragraph{Rebuilding the analysis.}
-From the project root, the script \path{revisao_artigo/scripts/recalcular_evidencias.py} regenerates computational reports, candidate tables, group-risk summaries, study aggregates and the English diagnostic figure. It uses the preserved case packets and, for the study, the author's local response ZIP. The author confirmed the original assignment mapping in this revision. Outputs are in \path{paper_assets/revised/}. Individual response text is not copied to those outputs.
+The source packets are ASSISTments, OULAD and synthetic scored runs from 26 January 2026, all seed 42. The snapshot supplies packet inputs, partition IDs, frozen policies, group counts, expected test metrics and fault results. It does not refit those predictors. Synthetic training fixtures used by application tests are separate from the preserved scored runs. Byte hashes and unsigned local manifests establish consistency within the bundle, not external authenticity against coordinated replacement.
 
-The report records complete thresholds, capacities, IDs, counts and comparisons with historical CSVs. Fixed-budget and full-grid results have separate domains. Script source and an environment lock accompany the revision. Application tests include a synthetic end-to-end run and corruption checks; they do not substitute for re-fitting real-data predictors.
+\paragraph{Full-sample and uncertainty analyses.}
+The project script \path{revisao_artigo/scripts/recalcular_evidencias.py} generates full-sample candidate tables, group-risk summaries, study aggregates and the diagnostic figure from the preserved inputs. Outputs are in \path{paper_assets/revised/}; structured reports record grids, thresholds, capacities, IDs and counts before display rounding. Fixed-budget and full-grid analyses retain distinct candidate domains. Source and environment inventories accompany these analyses.
 
-\paragraph{Access limitations.}
-Historical packet labels and audit groups are retrospective evaluation data. Participant responses remain local in this revision; sharing consent and institutional rules must be checked before redistribution. Aggregate counts and scripts are included. A computational reproduction can run without the study data and must report the study as skipped, never silently substitute generated participants. The revised study analysis was retrospective, not preregistered.
+\paragraph{Participant data and access restrictions.}
+The snapshot excludes participant responses and free text and cannot recompute the human study. That analysis requires locally retained response CSVs and scoring keys. Public materials provide aggregates and methods; generated participants never substitute for restricted responses. Participation and consent records do not establish redistribution rights: individual-data release requires resolution of institutional requirements and sharing permissions. The study analysis and policy-transfer check are retrospective, without prospective preregistration.
 
-\paragraph{Compilation and verification.}
-The multi-file LaTeX project is compiled with Tectonic, with its release recorded in the revision tools inventory. Generated tables use unrounded metrics and round only for display. All rendered pages are inspected for clipping and broken references. Source snapshots, checksums, software versions and verification records distinguish the historical release from this corrected draft.
+The accompanying LaTeX source and computational snapshot have separate inventories. Table~\ref{tab:mechanism-positioning} compares the implemented mechanisms with established approaches and identifies their limits.

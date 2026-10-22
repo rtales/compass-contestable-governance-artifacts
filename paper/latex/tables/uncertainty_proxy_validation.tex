@@ -1,7 +1,7 @@
 \begin{table}[t]
 \centering
 \small
-\caption{Recomputed entropy validation. ECE uses 10 equal-width probability bins including score 1; Spearman uses average ranks for ties. Both baseline and temperature stress use entropy in bits.}
+\caption{Recomputed entropy validation. ECE uses 10 equal-width probability bins including score 1; Spearman $\rho=\mathrm{corr}_{\mathrm{rank}}(u,|y-s|)$ uses average ranks for ties; the error is probabilistic absolute error, not binary misclassification. Both baseline and temperature stress use entropy in bits.}
 \label{tab:uncertainty_proxy_validation}
 \begin{tabular}{lrrrr}
 \toprule

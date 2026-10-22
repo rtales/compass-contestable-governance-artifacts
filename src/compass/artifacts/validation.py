@@ -22,7 +22,13 @@ def verify_run(run_dir):
         rows = [json.loads(line) for line in (run_dir / "artifacts/decision_packets.jsonl").read_text().splitlines()]
         required = {"case_id", "score", "entropy", "decision", "policy_hash", "dataset_manifest_hash",
                     "model_hash", "packet_hash", "schema_version", "entropy_unit", "entropy_epsilon", "replay_scope"}
-        complete = bool(rows)
+        # Per-row hashes alone do not establish that the whole batch is present.
+        # Compare the complete roster, independent of serialized row order.
+        ids = [row["case_id"] for row in rows]
+        roster = meta["case_ids"]
+        complete = bool(rows) and len(ids) == len(set(ids)) and sorted(ids) == sorted(roster)
+        complete &= len(roster) == len(set(roster))
+        complete &= meta.get("schema_version") == "2.0" and meta.get("entropy_unit") == "bits"
         for row in rows:
             complete &= required <= row.keys()
             content = {k: v for k, v in row.items() if k != "packet_hash"}

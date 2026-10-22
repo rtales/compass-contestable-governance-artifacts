@@ -1,0 +1,44 @@
+{
+  "scope": "Seven synthetic fixtures; operational contract, not universal verification or novelty proof",
+  "vectors": {
+    "unchanged": {
+      "R": true,
+      "I": true,
+      "A": true
+    },
+    "score_changed_without_rehash": {
+      "R": true,
+      "I": false,
+      "A": false
+    },
+    "case_omitted": {
+      "R": true,
+      "I": false,
+      "A": false
+    },
+    "wrong_model_bytes": {
+      "R": true,
+      "I": false,
+      "A": false
+    },
+    "wrong_entropy_unit": {
+      "R": true,
+      "I": false,
+      "A": false
+    },
+    "policy_missing": {
+      "R": false,
+      "I": false,
+      "A": false
+    },
+    "constraint_violation": {
+      "R": true,
+      "I": true,
+      "A": false
+    }
+  },
+  "A_implies_I": true,
+  "I_implies_R": true,
+  "R_does_not_imply_I_counterexample": "case_omitted",
+  "I_does_not_imply_A_counterexample": "constraint_violation"
+}

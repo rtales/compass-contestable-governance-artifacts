@@ -1,11 +1,27 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it."
+message: "For the scientific contribution, cite the manuscript below; software identity is bound by the publication manifest and Git commit."
 title: "Compass Artifacts: Recipe-driven reproducible governance outputs"
 type: software
 authors:
   - family-names: "Matos"
     given-names: "Tales"
-  - family-names: "Contributors"
-    given-names: "Compass Artifacts"
 version: 0.1.0
-date-released: 2026-01-25
+date-released: 2026-10-21
+repository-code: "https://github.com/rtales/compass-contestable-governance-artifacts"
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "Governing by Artifacts: An Auditable Constraint-Based Framework for Contestable Educational Decision Systems"
+  authors:
+    - family-names: "Matos"
+      given-names: "Tales"
+    - family-names: "Santos"
+      given-names: "Victor Oliveira"
+    - family-names: "Gharabaghi"
+      given-names: "Bahram"
+    - family-names: "Thé"
+      given-names: "Jesse Van Griensven"
+    - family-names: "Macedo"
+      given-names: "Jose Antonio"
+  year: 2026
+  notes: "Consolidated manuscript dated 21 October 2026; not an assertion of publication or acceptance."

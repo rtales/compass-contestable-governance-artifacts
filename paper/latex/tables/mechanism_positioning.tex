@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\caption{Focused mechanism comparison with primary sources. This is not an exhaustive capability audit or a measured benchmark of external tools. Entries describe established mechanisms and delimit our own implementation; silence in a source is not treated as proof of an absent feature.}
+\label{tab:mechanism-positioning}
+\begin{tabularx}{\textwidth}{p{.20\textwidth}XX}
+\toprule
+Source & Established mechanism & Relationship and limit of this work \\
+\midrule
+PROV-O \cite{Lebo2013PROVO} & Entities, activities, agents and derivation relations for provenance interchange. & Our decision-packet contract is domain-specific; no implemented PROV-O interchange is claimed. \\
+ModelDB \cite{Vartak2016ModelDB} & Model/pipeline history, metadata and metric tracking. & Tracking/versioning itself is established; our evaluated target is the decision contract on fixed scores. \\
+Ormenisan et al. \cite{Ormenisan2020TimeTravel} & Change capture and data versions for pipeline reconstruction/debugging. & Our replay does not reconstruct new inference from corrected features. \\
+RFC 9162 \cite{Laurie2021RFC9162} & Signed transparency-log structures and inclusion/consistency proofs for certificates. & Local digests and roster checks are weaker: no signed append-only log or independent authenticity. \\
+Alfrink et al. \cite{Alfrink2023ContestableAI} & Sociotechnical framework for responsiveness to intervention across the lifecycle. & Fixed-score scrutiny is a bounded enabling mechanism, without an implemented institutional appeal and remedy. \\
+\bottomrule
+\end{tabularx}
+\end{table*}

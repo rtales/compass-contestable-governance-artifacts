@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering\small
+\caption{Synthetic fault contracts: expected/observed (E/O), where 1 means agreement or permission and 0 means rejection. Replay compares available decision states; integrity includes replay, hashes, schema and the expected roster. Export is technical permission under declared checks, not institutional legitimacy. Passive logs/cards have no automated rejection contract in this comparison.}
+\label{tab:fault-contracts}
+\begin{tabularx}{\textwidth}{XrrrX}
+\toprule
+Fixture & Replay E/O & Integrity E/O & Export E/O & Reason for export result \\
+\midrule
+Unchanged control & 1/1 & 1/1 & 1/1 & No block \\
+Score edit preserving decisions & 1/1 & 0/0 & 0/0 & Packet hash mismatch \\
+Unselected case omitted & 1/1 & 0/0 & 0/0 & Expected-roster mismatch \\
+Model bytes changed & 1/1 & 0/0 & 0/0 & Model digest mismatch \\
+Incompatible entropy unit & 1/1 & 0/0 & 0/0 & Unit/schema check \\
+Policy content missing & 0/0 & 0/0 & 0/0 & Policy unavailable \\
+Fairness-violating policy & 1/1 & 1/1 & 0/0 & Declared empirical cap \\
+\bottomrule
+\end{tabularx}
+\end{table*}

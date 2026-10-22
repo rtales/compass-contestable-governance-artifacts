@@ -1,7 +1,7 @@
-\documentclass[sigconf,nonacm]{acmart}
+\documentclass[sigconf,nonacm,balance=false]{acmart}
 
 \setcopyright{none}
-\settopmatter{printacmref=false,printfolios=true}
+\settopmatter{printacmref=false,printfolios=true,authorsperrow=2}
 
 
 % --- Packages ---
@@ -10,13 +10,6 @@
 \usepackage{amsmath, amsthm}
 \usepackage{booktabs}
 
-% --- Build switches ---
-\newif\iffinalresults
-% Set to \finalresultstrue for submission once real-data runs are available.
-\finalresultstrue
-
-% --- Writing-time placeholders (auto-populated before submission) ---
-\newcommand{\autofill}{\textit{(auto-populated)}}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{xcolor}
@@ -49,29 +42,38 @@
 
 % Metadata hooks (reproducibility, runs)
 \input{paper_assets/run_meta}
-% Numeric result macros (filled for submission)
+% Numeric result macros
 \input{paper_assets/results_macros}
 
 \emergencystretch=3em
 \tolerance=2500
+% Keep normal column flow through references and appendices.
 \begin{document}
 
 \title{Governing by Artifacts: An Auditable Constraint-Based Framework for Contestable Educational Decision Systems}
 
 \author{Tales Matos}
-\affiliation{%
-  \institution{Federal University of Cear\'a}
-  \department{Department of Computer Science}
-  \country{Brazil}}
-\email{tales.matos@dc.ufc.br}
+\affiliation{\department{School of Engineering}\institution{University of Guelph\\50 Stone Rd E}\city{Guelph, ON N1G 2W1}\country{Canada}}
+\email{tbenigno@uoguelph.ca}
 
-\author{Jose Macedo}
-\affiliation{%
-  \institution{Federal University of Cear\'a}
-  \department{Department of Computer Science}
-  \country{Brazil}}
-\email{jose.macedo@dc.ufc.br}
+\author{Victor Oliveira Santos}
+\affiliation{\department{School of Engineering}\institution{University of Guelph\\50 Stone Rd E}\city{Guelph, ON N1G 2W1}\country{Canada}}
+\email{volive04@uoguelph.ca}
 
+\author{Bahram Gharabaghi}
+\authornote{Corresponding author.}
+\affiliation{\department{School of Engineering}\institution{University of Guelph\\50 Stone Rd E}\city{Guelph, ON N1G 2W1}\country{Canada}}
+\email{bgharaba@uoguelph.ca}
+
+\author{Jesse Van Griensven Thé}
+\affiliation{\institution{Lakes Environmental\\170 Columbia St. W}\city{Waterloo, ON N2L 3L3}\country{Canada}}
+\email{Jesse.the@weblakes.com}
+
+\author{Jose Antonio Macedo}
+\affiliation{\department{Departamento de Computacao}\institution{Federal University of Ceara}\city{Fortaleza, CE 60020-181}\country{Brazil}}
+\email{jose.macedo@insightlab.ufc.br}
+
+\renewcommand{\shortauthors}{Matos et al.}
 
 \begin{CCSXML}
 <ccs2012>
@@ -99,10 +101,12 @@
 \keywords{contestability, algorithmic accountability, procedural justice, public sector AI, educational decision support, fairness, audit trails, policy versioning, abstention}
 
 \begin{abstract}
-Automated educational decision support requires evidence that decisions followed an explicit institutional policy. We present \compa-\ecl-\mas, an artifact-oriented framework combining empirical constraints, policy versioning, deterministic selection over feasible Pareto candidates, and replay of Top-$K$ decisions with abstention. We evaluate governance mechanics using fixed scored cases from ASSISTments, OULAD and a synthetic stress test. The implemented tasks predict correctness or student success; they do not evaluate early-warning intervention targeting. Reclassifying unselected cases changes automation coverage without necessarily changing selection utility, exposing an institutional choice that must be audited. We reconcile historical outputs with a revised implementation that specifies entropy in bits, stable tie rules, artifact verification and an authorization gate for infeasible candidates. An exploratory, counterbalanced study ($N=16$; eight standardized cases) shows diagnostic and remediation accuracy of 0.5625 under logs/cards and 0.921875 under structured evidence; correctness on these two endpoints coincides in every response. The study evaluates the evidence bundle as a whole, not an independently isolated replay effect or field recourse. We release reproducible analyses and explicitly distinguish fixed-score replay, new inference, and unsupported feature-dependent exceptions.
+Educational decision systems need inspectable evidence linking decisions to declared policies. We present \compa-\ecl-\mas, an artifact-oriented framework combining empirical constraints, deterministic selection over feasible Pareto candidates, versioned policies, and replay of Top-$K$ decisions with abstention. Its export contract requires both verified evidence and satisfaction of declared empirical restrictions. We evaluate this contract using fixed correctness or student-success scores from ASSISTments, OULAD and a synthetic stress test. Policy sweeps show how capacity, uncertainty thresholds and the treatment of unselected cases affect feasibility and automation coverage. In a retrospective selection/test partition, ASSISTments and OULAD satisfy the sample constraints; synthetic validation has no feasible policy. Seven synthetic fault fixtures show that replay agreement can coexist with incomplete evidence, and verified evidence can coexist with a constraint violation. An exploratory counterbalanced study ($N=16$; eight standardized cases) finds diagnostic and remediation accuracy of 0.5625 with logs/cards and 0.921875 with structured evidence; the two correctness endpoints coincide in every response. The study evaluates the evidence bundle as a whole. The framework provides contestability-enabling infrastructure through reproducible policy analysis, evidence checks and explicit export rejection. Its demonstrated scope is fixed-score decision reconstruction, with institutional appeal processes and prospective educational effects requiring separate evaluation.
 \end{abstract}
 
 \maketitle
+\hypersetup{pdfauthor={Tales Matos; Victor Oliveira Santos; Bahram Gharabaghi; Jesse Van Griensven Thé; Jose Antonio Macedo}}
+\raggedbottom
 
 \input{sections/00_notation}
 \input{sections/01_introduction}
@@ -112,6 +116,8 @@ Automated educational decision support requires evidence that decisions followed
 \input{sections/05_experiments}
 \input{sections/06_results}
 \input{sections/07_discussion}
+\clearpage
+\twocolumn
 \input{sections/08_conclusion}
 
 \bibliographystyle{ACM-Reference-Format}

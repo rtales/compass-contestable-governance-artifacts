@@ -210,3 +210,13 @@ __marimo__/
 .DS_Store
 outputs/
 erros.csv
+
+# Scientific reproduction outputs and LaTeX build products
+/reproduction/2026-10-21/actual/
+/reproduction/2026-10-21/cache/
+/paper/latex/*.aux
+/paper/latex/*.bbl
+/paper/latex/*.blg
+/paper/latex/*.out
+/paper/latex/*.pdf
+/paper/latex/*.synctex.gz

@@ -1,0 +1,6 @@
+{
+  "original_analysis_sha256": "620190eb26d92bbb2d04f84cb1f34ab4c87f09100eaf993bacd77304932ee1ab",
+  "adaptation": "Parameterize workspace/application/output/study paths; remove internal Markdown logs; preserve computational/statistical formulas.",
+  "fixed_snapshot_sha256": "108d5ff9f550dec882b6691b24ec2b5340c5515ab3fd550a198e32e72e947688",
+  "restricted_participant_data_included": false
+}

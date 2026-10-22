@@ -11,26 +11,39 @@ A score $s_i$ estimates $\Pr(y_i=1\mid x_i)$. All reported rankings are descendi
 \end{equation}
 where $q_i$ clips $s_i$ to $[10^{-7},1-10^{-7}]$ in float64. Entropy and $\gamma$ are in bits; the maximum is one. Thus $\gamma=0.999$ need not admit every case. Invalid probabilities and incompatible units are rejected.
 
-The primary rule applies global abstention first: $u_i>\gamma$ yields \texttt{abstain}. Among eligible cases, the highest scores are selected up to capacity $K$. Equal scores are resolved by ascending persistent case ID. $K$ is a ceiling: fewer than $K$ cases may be selected. In allocation mode the remainder is \texttt{reject}; in screening mode it is \texttt{abstain}. The alternative Top-$K$-only abstention mode first nominates the global Top-$K$, abstains uncertain nominees and does not refill their places. These modes are explicit policy fields in the revised implementation.
+The primary rule applies global abstention first: $u_i>\gamma$ yields \texttt{abstain}. Among eligible cases, the highest scores are selected up to capacity $K$. Equal scores are resolved by ascending persistent case ID. $K$ is a ceiling: fewer than $K$ cases may be selected. In allocation mode the remainder is \texttt{reject}; in screening mode it is \texttt{abstain}. The alternative Top-$K$-only abstention mode first nominates the global Top-$K$, abstains uncertain nominees and does not refill their places. These modes are explicit policy fields in the reference implementation.
 
 \input{tables/decision_states}
 
 \paragraph{Metrics.}
 Let $n_s,n_r,n_a$ count select, reject and abstain, with $n_s+n_r+n_a=n$. Automation coverage is $C=(n_s+n_r)/n=1-n_a/n$; selection rate is $n_s/n$. In screening mode $C\leq K/n$, so a floor $C_{\min}>K/n$ is structurally infeasible. Changing a deferral into a rejection changes institutional responsibility; it does not demonstrate greater educational benefit.
 
-Utility@K is $\sum_{i:d_i=\mathrm{select}}y_i/n_s$, undefined for empty selection. For binary audit groups we report the absolute gap between $\Pr(d=\mathrm{select}\mid y=1,a=0)$ and $\Pr(d=\mathrm{select}\mid y=1,a=1)$. Positive-label denominators include all cases in each group, not only eligible cases. A missing group or zero positive denominator produces insufficient evidence, not a zero gap. Labels support retrospective evaluation; they are not inputs required to replay a future decision.
+The \emph{selected-set positive outcome rate} (PosRate; legacy operational name Utility@K and JSON key \texttt{utility\_at\_k}) is $\sum_{i:d_i=\mathrm{select}}y_i/n_s$, undefined for empty selection. Its denominator is the realized selection count, not capacity $K$. It measures observed correctness or success among selected cases; it is not educational benefit, intervention utility or a causal treatment effect. For binary audit groups we report the absolute gap between $\Pr(d=\mathrm{select}\mid y=1,a=0)$ and $\Pr(d=\mathrm{select}\mid y=1,a=1)$. Positive-label denominators include all cases in each group, not only eligible cases. A missing group or zero positive denominator produces insufficient evidence, not a zero gap. Labels support retrospective evaluation; they are not inputs required to replay a future decision.
 
 \subsection{ECL and the authorization boundary}
 \label{sec:ecl}
 ECL checks a candidate against declared empirical constraints. The paper sweep uses gap $\leq0.05$ and coverage $\geq0.50$. These are example normative choices, not universal safety thresholds. The historical synthetic recipe used a 0.60 coverage floor; the common replay analysis explicitly uses 0.50. Both reject its initial 0.004 coverage.
 
-Historical runs recorded violations while retaining candidate decisions. The revised runner additionally writes an authorization gate: an infeasible or insufficient-evidence result cannot produce an authorized-decision export. Candidate packets remain available for diagnosis. A review-required record is generated, but no human queue is connected and no delivered review is claimed. Statistical feasibility on an audit sample does not certify future population fairness or legal compliance.
+The schema 2.0 runner writes a technical export gate: an infeasible or insufficient-evidence result cannot produce an authorized-decision export. Candidate packets remain available for diagnosis. A review-required record is generated, but no human queue is connected and no delivered review is claimed. Here authorization means only technical permission to export under the declared checks. The gate does not verify an institutional mandate, legitimate policy adoption or resolution of an appeal. Statistical feasibility on an audit sample does not certify future population fairness or legal compliance.
+
+\subsection{Verifiable export contract}
+\label{sec:export-contract}
+We specify the evaluated export path as nested acceptance predicates. The domain is a supported, nonempty fixed-score batch, an accessible declared policy and its local run metadata. Scores must be finite probabilities, case IDs persistent, and the configured audit metrics computable from the supplied retrospective labels and groups. These assumptions do not establish that source data or policy authors are trustworthy.
+
+\paragraph{Replay and evidence.}
+Let $R$ mean that applying the available policy to the supplied scores and IDs reproduces the recorded decision states. It concerns the supplied cases, not whether the entire expected batch is present. Let $V$ mean that the additional evidence checks pass: required schema, units and clipping convention; policy, manifest, model-byte and packet digests; a unique case roster equal to the expected roster in metadata; and agreement between recorded and recomputed entropy within absolute tolerance $10^{-12}$, with zero relative tolerance. The complete verifier accepts exactly when $I=R\land V$ on this supported path. In the API, its legacy field \texttt{replayable} denotes this complete acceptance, whereas \texttt{replay\_only} in the fault experiment evaluates only $R$. A model digest checks bytes without executing the model or proving that it generated the scores.
+
+\paragraph{Constraints and export.}
+Let $F$ mean that the emitted states satisfy the empirical restrictions actually enabled in the declared policy. For the evaluated profiles these are the absolute EOpp-gap cap and coverage floor. A required gap that cannot be estimated yields insufficient evidence and fails this check. Disabling a restriction removes it from $F$; it does not establish that the omitted requirement holds. The runner grants technical permission exactly when $A=I\land F$, recording the gate and exporting authorized decisions only on acceptance. A failed check preserves candidate evidence and records review required, without delivering a human review.
+
+\paragraph{Separation and limits.}
+Thus $A\Rightarrow I\Rightarrow R$; the predicates are nested, not logically independent. Table~\ref{tab:fault-contracts} supplies counterexamples to both converses: an omitted case preserves $R$ while violating $I$, and a constraint-violating policy preserves $I$ while violating $A$. These equivalences are necessary and sufficient conditions for this implemented acceptance path, not for legitimate deployment. Local unsigned metadata anchor completeness; coordinated rewriting can defeat authenticity claims. No predicate establishes data truth, institutional authority, population fairness or remedy. The generalizable design obligation is to evaluate these distinct obligations jointly before export and to preserve a reason for rejection; the experiment tests this obligation for the specified contract rather than proving universal novelty.
 
 \subsection{Candidate search and MAS}
-Candidates in the reported experiment reuse fixed scores and vary policy only. We distinguish the full 80-point $(K,\gamma)$ grid from its 16-point fixed-$K$ subset. Each candidate has an ID defined by dataset, capacity and threshold. The revised runner also supports an explicit policy grid and stores all candidates and the selection report.
+Candidates in the reported experiment reuse fixed scores and vary policy only. We distinguish the full 80-point $(K,\gamma)$ grid from its 16-point fixed-$K$ subset. Each candidate has an ID defined by dataset, capacity and threshold. The runner supports an explicit policy grid and stores all candidates and the selection report.
 
 \begin{algorithm}[t]
-\caption{Revised empirical ECL--Pareto--MAS selection}
+\caption{Empirical ECL--Pareto--MAS selection}
 \label{alg:mas}
 \begin{algorithmic}[1]
 \Require Candidates $\mathcal C$, constraints, criteria $T$, tolerances $\delta_t$
@@ -47,4 +60,4 @@ Candidates in the reported experiment reuse fixed scores and vary policy only. W
 \end{algorithmic}
 \end{algorithm}
 
-Pareto dominance is exact over maximize utility, minimize absolute gap and minimize abstention. Equivalent candidates remain on the frontier. Fairness-first orders gap, utility, abstention; utility-first orders utility, gap, abstention. All reported tolerances are zero; the candidate ID is the final tie-breaker. These conventions replace historical underspecification and are recorded with each revised analysis. Repeated selection under an unchanged policy must be invariant to input row order. Changing criterion order tests policy sensitivity, not determinism by itself.
+Pareto dominance is exact over maximize PosRate, minimize absolute gap and minimize abstention. Equivalent candidates remain on the frontier. Fairness-first orders gap, PosRate, abstention; utility-first orders PosRate, gap, abstention. All reported tolerances are zero; the candidate ID is the final tie-breaker. Each analysis records these conventions alongside its candidate domain and selected policy. Repeated selection under an unchanged policy must be invariant to input row order. Changing criterion order tests policy sensitivity, not determinism by itself.
